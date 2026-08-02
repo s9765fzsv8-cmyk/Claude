@@ -139,18 +139,18 @@ children.push(new Paragraph({
   alignment: AlignmentType.CENTER,
   spacing: { after: 480 },
   children: [new TextRun({
-    text: 'AI Autonomy, Costly Signalling, and the Strategic Meaning of Cyber Pre-Positioning',
+    text: 'AI Autonomy, Costly Signalling and the Strategic Meaning of Cyber Pre-Positioning',
     size: 26, italics: true,
   })],
 }));
 children.push(new Paragraph({
   alignment: AlignmentType.CENTER,
   spacing: { after: 120 },
-  children: [new TextRun({ text: 'Working paper — literature foundation and research design', size: 22 })],
+  children: [new TextRun({ text: 'A working paper in strategic studies', size: 22 })],
 }));
 children.push(new Paragraph({
   alignment: AlignmentType.CENTER,
-  children: [new TextRun({ text: 'Based on a 105-paper corpus; 16 papers extracted in full depth', size: 20, color: '555555' })],
+  children: [new TextRun({ text: 'Literature review, research gap and proposed research design', size: 20, color: '555555' })],
 }));
 children.push(new Paragraph({ children: [new PageBreak()] }));
 
