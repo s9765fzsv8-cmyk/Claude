@@ -268,6 +268,34 @@ data for conventional espionage but rather the pre-positioning… to prepare for
 future acts of sabotage." **Two independent statements of the same criterion strengthen
 it; the negative case constrains what it licenses.**
 
+**★★ A rival hypothesis the paper must test, not assume away.** Braccia (2025) argues
+grey-zone operations "target strategically significant systems while **carefully
+calibrating effects to remain below use-of-force thresholds established in international
+law**. Rather than causing immediate, catastrophic damage that might trigger Article
+5-type responses, these operations focus on persistent access, intelligence gathering,
+and pre-positioning for potential future activation."
+
+If pre-positioning is *designed* to stay below response thresholds, then avoiding
+legibility is the objective. The actor is not communicating resolve; it is acquiring
+options without triggering reaction. Two hypotheses follow:
+
+- **H1 — signal degradation.** Pre-positioning once signalled intent; falling
+  persistence cost erodes the costly-signalling logic that made it legible.
+- **H2 — deliberate non-signal.** It never signalled. Sub-threshold calibration is the
+  design goal, and Guttieri's (2025) reading is a target state inferring intent from an
+  act engineered to avoid conveying it.
+
+**The three-case evidence is arguably more consistent with H2**: prolonged non-use,
+absence of sanctions, and effects calibrated below Article 5. H2 also explains Braccia's
+observation that "the deliberate obfuscation creates sufficient doubt to avoid immediate
+consequences."
+
+**This is the study's central empirical question, and the honest position is that it is
+open.** H1 and H2 make divergent predictions about the effect of autonomy: under H1,
+autonomy degrades an existing channel; under H2, autonomy simply scales option
+acquisition, and no signalling channel is lost because none existed. Discriminating
+between them is what the research design in §8 is for.
+
 **Unresolved.** Whether pre-positioning is *intended* as a signal, or merely *read*
 as one, is not settled by any paper in the corpus. Nor is the question of what happens
 when the signal is denied by its putative sender — now documented from three
@@ -668,6 +696,11 @@ automation).
 *Level 2 — the response.* Code the target state's reaction using Baram's (2026) four
 modes of jointness, which distinguishes technical from diplomatic responses.
 
+**Discriminating H1 from H2.** H1 predicts that the interpretation–response gap widens
+over time as persistence cost falls. H2 predicts the gap is *constant* and tracks
+threshold calibration rather than cost. Coding response mode against estimated
+persistence cost across the case set distinguishes them.
+
 **The dependent variable is the gap between levels** — whether an act coded as
 high-leverage/low-intelligence (i.e. reading as strategic signal) draws a
 correspondingly political response, or is routed to network defenders. The theoretical
@@ -723,6 +756,10 @@ misread signal.
 Pokorny, L. (2026). *Offensive cyber and information warfare strategies targeting
 People's Republic of China military C4ISR systems: A qualitative analysis*. ICL
 Institute. https://doi.org/10.5281/zenodo.19234589
+
+Braccia, C. (2025). *From Vietnam to Volt Typhoon: How the PRC refined grey zone cyber
+tactics before targeting the West* [Preprint]. Authorea.
+https://doi.org/10.22541/au.175390612.20874865/v1
 
 Willett, M. (2022). The cyber dimension of the Russia–Ukraine war. *Survival, 64*(5),
 7–26. https://doi.org/10.1080/00396338.2022.2126193
@@ -786,7 +823,7 @@ Smeets, M. (2022). *No Shortcuts*. Hurst. — via Maschmeyer (2023), Singh et al
 
 ## Status and next steps
 
-**Completed:** 14 of 105 papers extracted (12 deep, 2 condensed); 105 triaged.
+**Completed:** 15 of 105 papers extracted (13 deep, 2 condensed); 105 triaged.
 
 **Outstanding:** Deep extraction of the remaining ~12 Tier A papers (Codreanu;
 Dimitrov; the Russia–Ukraine cyber paper; the remaining Volt Typhoon set) and the 4 Tier B autonomy papers, plus bloc
