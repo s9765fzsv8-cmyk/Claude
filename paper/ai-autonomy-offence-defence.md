@@ -394,6 +394,18 @@ in "China-related cases focused on stealthy access and pre-positioning," and the
 A coercive signal must reach political decision-makers to function. Pre-positioning is
 being routed to system administrators.
 
+**★ The response asymmetry.** Salt Typhoon — espionage against telecom metadata and
+law-enforcement surveillance systems — drew "sanctions imposed by the U.S. Treasury on
+PRC-linked cyber entities" (Urbanczyk et al., 2025; Treasury press release JY2792).
+Volt Typhoon — pre-positioning for disruption of water, energy, communications and
+transport — drew a technical advisory and, in Baram's (2026) words, "no alliance-led
+endorsement or sanctions package."
+
+Same adversary, same period, same target state. **The campaign that stole data was
+punished; the campaign pre-positioned for sabotage was not.** On any strategic reading
+the severity ordering is inverted. State response tracks **legibility and precedent**,
+not gravity — which is exactly what a degraded signalling channel would predict.
+
 **The corpus therefore documents three independent failure modes:**
 1. **Non-reception** — operations "lack sufficient political salience to activate
    political institutions" (Sullivan, 2025).
@@ -730,7 +742,7 @@ Smeets, M. (2022). *No Shortcuts*. Hurst. — via Maschmeyer (2023), Singh et al
 
 ## Status and next steps
 
-**Completed:** 11 of 105 papers extracted in full depth; 105 triaged.
+**Completed:** 13 of 105 papers extracted (11 deep, 2 condensed); 105 triaged.
 
 **Outstanding:** Deep extraction of the remaining ~12 Tier A papers (Codreanu;
 Dimitrov; the Russia–Ukraine cyber paper; the remaining Volt Typhoon set) and the 4 Tier B autonomy papers, plus bloc
