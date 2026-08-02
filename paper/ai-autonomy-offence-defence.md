@@ -14,7 +14,7 @@ corpus. Where the corpus cannot support a claim, this is stated rather than fine
 
 Full-depth extractions: Maschmeyer (2023); Singh, Jash & Nanjappa (2025);
 Butt & Ulina (2026); Guttieri (2025); Sullivan (2025); Baram (2026); Kabir et al.
-(2026); Yigit et al. (2025); Melella (PhD). Extraction files are in
+(2026); Yigit et al. (2025); Melella (PhD); Pokorny (2026). Extraction files are in
 `corpus/extractions/`.
 
 **Revision note.** Extractions 05 (Sullivan) and 06 (Baram) materially changed the
@@ -158,13 +158,38 @@ theoretically argued but empirically rests on one plausibility probe. Butt & Uli
 affirmation rests on vendor-sourced trend data (IBM, Verizon, Cybersecurity Ventures)
 with no discussion of vendor reporting incentives and no limitations section.
 
+**A directional claim, and it favours defence.** Pokorny (2026) reports Lindsay's
+(2013) position:
+
+> "the more technically sophisticated the target, the more difficult it is to achieve a
+> decisive cyber effect, because sophisticated defenders are better able to detect and
+> mitigate intrusions. This 'offense-defense balance' in cyberspace, Lindsay contends,
+> **favors defense at the strategic level**, even if individual tactical attacks may
+> succeed."
+
+**This is the only explicit statement in the corpus about which way the balance tilts,
+and it contradicts the offence-dominance intuition.** It converges with two other corpus
+findings: agentic AI is overwhelmingly defence-facing (Yigit et al., 2025), and fully
+autonomous offence remains "largely theoretical" (Butt & Ulina, 2026).
+
+Two cautions. Lindsay (2013) is **not in the corpus** — this is Pokorny's
+characterisation, and it must be verified against the original before it bears weight.
+And Pokorny's monograph is self-published, built on 16 unclassified sources, and is
+itself an *offensive targeting* document, i.e. a primary source expressing a policy
+position rather than a neutral analysis.
+
 **Unresolved.** The corpus contains **no paper that measures or operationalises the
 cyber offence–defence balance.** The canonical treatment (Slayton, 2017,
 *International Security*) appears only as a citation *within* Maschmeyer's
 bibliography. This is a corpus limitation, and it must be declared.
 
 **Synthesis.** For the RQ, the significance is that the offence–defence frame is
-contested at its foundation. A study asking how AI autonomy *shifts* the balance must
+contested at its foundation *and* at its direction. The corpus contains one author
+rejecting the frame entirely (Maschmeyer, 2023), one asserting offence-dominance
+without argument (Butt & Ulina, 2026), and one reporting a defence-favouring position
+(Lindsay, via Pokorny, 2026). **A study asking how AI "shifts the balance" must
+therefore establish which baseline it is shifting from — and the corpus does not
+settle that.** A study asking how AI autonomy *shifts* the balance must
 first defend the claim that there is a balance worth measuring — or reframe the
 dependent variable in terms the corpus better supports, such as the cost and
 credibility of persistent access.
@@ -602,6 +627,10 @@ misread signal.
 
 ## 10. References (corpus papers cited)
 
+Pokorny, L. (2026). *Offensive cyber and information warfare strategies targeting
+People's Republic of China military C4ISR systems: A qualitative analysis*. ICL
+Institute. https://doi.org/10.5281/zenodo.19234589
+
 Butt, M. S., & Ulina, N. S. (2026). Cyber warfare in the AI era: Emerging attack
 trends, defensive strategies and policy challenges, 2022–2026. *The Critical Review of
 Social Sciences Studies, 4*(1), 6176–6192.
@@ -649,13 +678,15 @@ Iasiello, E. (2023). Cyber attribution. *IEEE Security & Privacy, 21*(2). — vi
 Libicki, M. (2009). *Cyberdeterrence and Cyberwar*. — via Maschmeyer (2023)
 Schneider, J. (2019). — via Maschmeyer (2023)
 **Slayton, R. (2017). What is the cyber offense-defense balance? *International Security, 41*(3), 72–109.** — via Maschmeyer (2023). *Highest priority acquisition.*
+**Lindsay, J. R. (2013).** on cyber power and conventional military power — via Pokorny (2026). *Second priority: currently the corpus's only directional claim, and unverified.*
+Healey, J. (2019). on forward operations and miscalculation — via Pokorny (2026)
 Smeets, M. (2022). *No Shortcuts*. Hurst. — via Maschmeyer (2023), Singh et al. (2025)
 
 ---
 
 ## Status and next steps
 
-**Completed:** 9 of 105 papers extracted in full depth; 105 triaged.
+**Completed:** 10 of 105 papers extracted in full depth; 105 triaged.
 
 **Outstanding:** Deep extraction of the remaining ~12 Tier A papers (Codreanu;
 Dimitrov; the Russia–Ukraine cyber paper; the remaining Volt Typhoon set) and the 4 Tier B autonomy papers, plus bloc
