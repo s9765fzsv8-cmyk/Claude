@@ -285,6 +285,21 @@ options without triggering reaction. Two hypotheses follow:
   design goal, and Guttieri's (2025) reading is a target state inferring intent from an
   act engineered to avoid conveying it.
 
+**The corpus contains explicit advocates for both.** Dimitrov and Andreev (2025) state
+H1 directly: Volt Typhoon reflects "China's increasing reliance on the **prepositioning
+of cyber assets in U.S. critical infrastructure as a means of deterrence and coercion**…
+not merely intelligence gathering missions, but pre-emptive measures designed to embed
+China's cyber capabilities into critical infrastructure, ensuring its influence in times
+of crisis."
+
+This is a documented scholarly disagreement, not an analytical construct — which is a
+stronger position from which to write than an invented gap.
+
+It is worth noting that the H1 case is weaker than its advocates allow. Dimitrov and
+Andreev concede that at Guam "**forensic investigations did not reveal immediate
+sabotage**," and that the intrusions "pointed to intelligence gathering and strategic
+mapping" — evidence consistent with the espionage reading they reject.
+
 **The three-case evidence is arguably more consistent with H2**: prolonged non-use,
 absence of sanctions, and effects calibrated below Article 5. H2 also explains Braccia's
 observation that "the deliberate obfuscation creates sufficient doubt to avoid immediate
@@ -689,9 +704,12 @@ uncritical use of vendor trend data.
 typology-then-coding design:
 
 *Level 1 — the act.* Code each campaign on Guttieri's (2025) two dimensions,
-**intelligence yield** and **operational leverage**, plus a third, **estimated
-persistence cost** (proxied by dwell time, tradecraft sophistication, and degree of
-automation).
+**intelligence yield** and **operational leverage**; a third, **estimated persistence
+cost** (proxied by dwell time, tradecraft sophistication, and degree of automation); and
+a fourth, **target contingency-specificity** — whether the compromised node's value is
+tied to a named contingency (as with Guam and a Taiwan scenario; Dimitrov & Andreev,
+2025) or is generic infrastructure. Contingency-specific targeting is stronger evidence
+of intent than intelligence yield alone.
 
 *Level 2 — the response.* Code the target state's reaction using Baram's (2026) four
 modes of jointness, which distinguishes technical from diplomatic responses.
@@ -756,6 +774,11 @@ misread signal.
 Pokorny, L. (2026). *Offensive cyber and information warfare strategies targeting
 People's Republic of China military C4ISR systems: A qualitative analysis*. ICL
 Institute. https://doi.org/10.5281/zenodo.19234589
+
+Dimitrov, D., & Andreev, E. (2025). China's strategic competition in cyberspace: Volt
+Typhoon and Salt Typhoon as a projection of power, a more aggressive posture and a future
+beyond espionage. In *Environment. Technology. Resources* (Vol. 2, pp. 115–122). RTU
+Press. https://doi.org/10.17770/etr2025vol2.8618
 
 Braccia, C. (2025). *From Vietnam to Volt Typhoon: How the PRC refined grey zone cyber
 tactics before targeting the West* [Preprint]. Authorea.
@@ -823,10 +846,11 @@ Smeets, M. (2022). *No Shortcuts*. Hurst. — via Maschmeyer (2023), Singh et al
 
 ## Status and next steps
 
-**Completed:** 15 of 105 papers extracted (13 deep, 2 condensed); 105 triaged.
+**Completed:** 16 of 105 papers extracted (14 deep, 2 condensed); 105 triaged.
 
-**Outstanding:** Deep extraction of the remaining ~12 Tier A papers (Codreanu;
-Dimitrov; the Russia–Ukraine cyber paper; the remaining Volt Typhoon set) and the 4 Tier B autonomy papers, plus bloc
+**Outstanding:** Two low-yield Tier A items (a student term paper applying the Diamond
+Model; *Law, Conflict and Hybrid Warfare*) and the *CDR* volume container, whose two
+relevant articles (Guttieri, Sullivan) are already extracted and the 4 Tier B autonomy papers, plus bloc
 characterisation of the ~80 technical papers.
 
 **Principal risk to publication:** the corpus lacks the canonical offence–defence
