@@ -14,7 +14,7 @@ corpus. Where the corpus cannot support a claim, this is stated rather than fine
 
 Full-depth extractions: Maschmeyer (2023); Singh, Jash & Nanjappa (2025);
 Butt & Ulina (2026); Guttieri (2025); Sullivan (2025); Baram (2026); Kabir et al.
-(2026); Yigit et al. (2025); Melella (PhD); Pokorny (2026). Extraction files are in
+(2026); Yigit et al. (2025); Melella (PhD); Pokorny (2026); Codreanu (2025). Extraction files are in
 `corpus/extractions/`.
 
 **Revision note.** Extractions 05 (Sullivan) and 06 (Baram) materially changed the
@@ -217,9 +217,33 @@ signal's *receipt* is contested, which is a condition for signalling failure.
 statements of two US officials — sources with an institutional stake in the
 interpretation. This is not a weakness she conceals, but it is a weakness.
 
+**★ The negative case.** Codreanu (2025) supplies the corpus's only instance of
+pre-positioning followed by non-use, and it is decisive for the theme:
+
+> "In 2018, Washington accused Russia of infiltrating multiple sectors of US critical
+> infrastructure, including nuclear facilities, energy, aviation, and even water supply
+> networks (Lonergan & Poznansky 2025). **So far, however, Russia has not exploited
+> these footholds to launch direct cyberattacks on the US**."
+
+Seven-plus years of maintained access without use. This qualifies the
+Nakasone/Guttieri inference sharply: if persistent access "likely reflects preparation
+for conflict," preparation can evidently persist indefinitely without conflict.
+**Pre-positioning is better characterised as option-generation than as commitment** —
+consistent with Guttieri's own "portfolio of future options" phrasing, but cutting
+against the warning-indicator reading her decision rule invites.
+
+Codreanu also independently reproduces the decision rule itself, from a different
+institutional vantage: "the method of operation and chosen targets did not fit the
+pattern of a traditional cyber espionage campaign… the goal was not the extraction of
+data for conventional espionage but rather the pre-positioning… to prepare for possible
+future acts of sabotage." **Two independent statements of the same criterion strengthen
+it; the negative case constrains what it licenses.**
+
 **Unresolved.** Whether pre-positioning is *intended* as a signal, or merely *read*
 as one, is not settled by any paper in the corpus. Nor is the question of what happens
-when the signal is denied by its putative sender.
+when the signal is denied by its putative sender — now documented from three
+independent sources (Singh et al., 2025; Codreanu, 2025, quoting PRC MFA spokesperson
+Lin Jian dismissing the allegations as "disinformation").
 
 **Synthesis.** Guttieri answers the RQ's second clause more directly than any other
 corpus paper — but answers it for a world of human-paced operations.
@@ -501,6 +525,14 @@ signalling instrument in its own right.
 offence–defence balance. The cost structure of persistent access. Adversary intent
 behind pre-positioning. Chinese doctrinal reasoning.
 
+**A finding that constrains the whole argument.** Pre-positioning has twice been
+followed by prolonged non-use — Russia since 2018, China since 2023 (Codreanu, 2025).
+The corpus contains **no case of pre-positioning followed by attack.** Every
+inference in the literature about what pre-positioning portends therefore rests on
+zero positive instances. This should be stated plainly in the paper: it is the single
+largest evidentiary weakness in the field, and acknowledging it is more defensible than
+writing around it.
+
 **Implications.** Two risks, running in opposite directions, and the corpus supports
 both.
 
@@ -552,10 +584,18 @@ it.
 process tracing on the interpretation of each campaign by target-state officials.
 The dependent variable is *signal credibility*, not "the balance."
 
-**Case selection.** Volt Typhoon as primary (the only case with corpus coverage), with
-Flax Typhoon, Salt Typhoon, and Silk Typhoon as within-family comparisons (identified
-in Singh et al., 2025), and Russian operations in Ukraine as an out-of-family
-contrast (Guttieri, 2025).
+**Case selection.** A paired design with variation on the outcome:
+
+| Case | Pre-positioned | Used | Response |
+|---|---|---|---|
+| **Russia, US critical infrastructure (2018– )** | Yes | **No, 7+ years** | — |
+| **Volt Typhoon (2023– )** | Yes | No to date | Type 3 advisory (Baram, 2026) |
+
+The Russian 2018 case (Codreanu, 2025, via Lonergan & Poznansky, 2025) is essential:
+it is the corpus's only negative case and supplies the variation absent from every
+fully-extracted paper. Within-family comparisons: Flax, Salt and Silk Typhoon
+(Singh et al., 2025). Out-of-family contrast: Russian operations in Ukraine
+(Guttieri, 2025).
 
 **Data.** The **European Repository of Cyber Incidents (EuRepoC)**, used by Baram
 (2026) and citable via Zettl-Schabath et al. (2025), supplies a structured incident
@@ -631,6 +671,9 @@ Pokorny, L. (2026). *Offensive cyber and information warfare strategies targetin
 People's Republic of China military C4ISR systems: A qualitative analysis*. ICL
 Institute. https://doi.org/10.5281/zenodo.19234589
 
+Codreanu, C. (2025). *Typhoons, bears, and pandas: Latest major cyber espionage
+campaigns* (Policy Paper No. 43). Romanian Diplomatic Institute.
+
 Butt, M. S., & Ulina, N. S. (2026). Cyber warfare in the AI era: Emerging attack
 trends, defensive strategies and policy challenges, 2022–2026. *The Critical Review of
 Social Sciences Studies, 4*(1), 6176–6192.
@@ -680,13 +723,14 @@ Schneider, J. (2019). — via Maschmeyer (2023)
 **Slayton, R. (2017). What is the cyber offense-defense balance? *International Security, 41*(3), 72–109.** — via Maschmeyer (2023). *Highest priority acquisition.*
 **Lindsay, J. R. (2013).** on cyber power and conventional military power — via Pokorny (2026). *Second priority: currently the corpus's only directional claim, and unverified.*
 Healey, J. (2019). on forward operations and miscalculation — via Pokorny (2026)
+**Lonergan, S., & Poznansky, M. (2025).** on Russian pre-positioning and non-use — via Codreanu (2025). *Supports the negative case; verify in original.*
 Smeets, M. (2022). *No Shortcuts*. Hurst. — via Maschmeyer (2023), Singh et al. (2025)
 
 ---
 
 ## Status and next steps
 
-**Completed:** 10 of 105 papers extracted in full depth; 105 triaged.
+**Completed:** 11 of 105 papers extracted in full depth; 105 triaged.
 
 **Outstanding:** Deep extraction of the remaining ~12 Tier A papers (Codreanu;
 Dimitrov; the Russia–Ukraine cyber paper; the remaining Volt Typhoon set) and the 4 Tier B autonomy papers, plus bloc
