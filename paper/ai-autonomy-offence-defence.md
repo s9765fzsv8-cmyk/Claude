@@ -6,19 +6,21 @@
 
 ## Note on the evidence base
 
-This paper is built on a corpus of **105 PDFs** supplied by the author. **Six papers**
+This paper is built on a corpus of **105 PDFs** supplied by the author. **Nine papers**
 have been extracted in full depth; all 105 have been triaged by full-text term search.
 Every substantive claim below is cited to a paper in that corpus, or explicitly
 labelled as (a) my analytical synthesis or (b) supplementary literature outside the
 corpus. Where the corpus cannot support a claim, this is stated rather than finessed.
 
 Full-depth extractions: Maschmeyer (2023); Singh, Jash & Nanjappa (2025);
-Butt & Ulina (2026); Guttieri (2025); Sullivan (2025); Baram (2026). Extraction files
-are in `corpus/extractions/`.
+Butt & Ulina (2026); Guttieri (2025); Sullivan (2025); Baram (2026); Kabir et al.
+(2026); Yigit et al. (2025); Melella (PhD). Extraction files are in
+`corpus/extractions/`.
 
 **Revision note.** Extractions 05 (Sullivan) and 06 (Baram) materially changed the
-argument advanced in the first draft. The change is documented in §4.3 and §6 rather
-than silently absorbed.
+argument advanced in the first draft; extraction 09 (Melella) **falsified a claim made
+in the second draft**. Both changes are documented in §4.1 and §4.3 rather than
+silently absorbed.
 
 ---
 
@@ -250,9 +252,42 @@ disrupt critical infrastructure and escalate tensions far beyond its intended sc
 
 ## 4. Research Gap
 
-### 4.1 The core gap, evidenced
+### 4.1 The core gap, evidenced — and its correct scope
 
-Across the four fully-extracted papers, term counts are unambiguous:
+**Statement of the gap.** *The intersection of AI autonomy and the offence–defence
+balance has been identified as a research direction within the literature, and remains
+uninvestigated — including by the author who identified it.*
+
+An earlier draft of this paper claimed that **no** corpus paper connects AI autonomy to
+the offence–defence balance. **Extraction 09 falsified that claim and it has been
+withdrawn.** Melella's doctoral dissertation uses `offense-defense`/`offence-defence`
+21 times, devotes Chapter I §4 to "Offence-Defence Balance in Cyberspace," engages AI
+across a dedicated chapter on the NATO Locked Shields exercise, and states directly:
+
+> "**The advancement of technologies, particularly artificial intelligence, is changing
+> the landscape of cyberspace. Studying how these emerging technologies affect the
+> offensive-defensive balance could reveal new dynamics and challenges.**"
+
+He adds a second observation that bears directly on this paper's framing:
+
+> "An under-explored area is **how actors perceive the offensive-defensive balance and
+> how these perceptions influence their policy and strategy decisions.**"
+
+**The gap survives, in a more precise and better-warranted form.** Melella *names* the
+intersection as future research; he does not investigate it. His dependent variable is
+**coordination**, not the balance. His AI chapter develops an ML-based IDS dataset for
+an exercise — defensive tooling, not strategic consequence. The offence–defence material
+is literature review, the AI material is dataset engineering, and the two are never
+joined analytically.
+
+This is a weaker claim about novelty and a **stronger claim about warrant**: an
+independent doctoral researcher in security studies, working the same terrain, arrived
+at the same gap. That is better evidence that the question matters than an absence of
+mentions could ever be. It also means the paper must be positioned as *answering a
+recognised open question*, not as discovering an unnoticed one — a distinction reviewers
+care about.
+
+**The remaining eight extractions do sustain the pattern.** Term counts:
 
 | Paper | Theorises strategy | Engages AI autonomy |
 |---|---|---|
@@ -261,10 +296,16 @@ Across the four fully-extracted papers, term counts are unambiguous:
 | Guttieri (2025) | ✓✓ | 0 mentions |
 | Butt & Ulina (2026) | ✗ | ✓ |
 
-**The papers that theorise cyber strategy do not engage AI. The paper that engages AI
-does not theorise.** Corpus-wide triage confirms the pattern: of 105 papers, only 5
-contain the word `agentic`, and 5 return on `offense-defense balance` — of which
-verification showed at least one false positive.
+**Among these, the papers that theorise cyber strategy do not engage AI, and the papers
+that engage AI do not theorise.** The pattern holds bilaterally: Yigit et al. (2025) —
+the corpus's substantive agentic-AI paper, 25 mentions, from an established research
+group — contains **zero** occurrences of `Volt Typhoon`, `offense-defense`, or
+`deterrence`. Kabir et al. (2026), the only corpus item returned by both the
+`Volt Typhoon` and `agentic` searches, mentions `agentic` once, in a bibliography entry.
+
+Corpus-wide triage: of 105 papers, only 5 contain `agentic` and 5 return on
+`offense-defense balance` — of which verification showed at least one false positive
+(Singh et al., 2025, contains zero occurrences).
 
 ### 4.2 Conceptual gap
 No corpus paper defines the *unit* in which an offence–defence shift would be
@@ -528,10 +569,13 @@ require supplementary literature.
 
 **To scholarship.** Three contributions.
 
-*First*, it connects two literatures the corpus shows are disconnected: strategic
-theorising of cyber persistence, and technical work on AI autonomy. **Six for six**
-among fully-extracted papers — spanning *EJIR*, *Contemporary Security Policy*, and the
-*Cyber Defense Review* — the strategists do not mention AI.
+*First*, it investigates an intersection that the literature has **named but not
+studied**. Melella's dissertation proposes that "studying how these emerging
+technologies affect the offensive-defensive balance could reveal new dynamics and
+challenges," then studies coordination instead. Eight of the nine fully-extracted papers
+sustain the disconnect bilaterally — strategists (Maschmeyer, Guttieri, Sullivan, Baram)
+do not mention AI; AI researchers (Yigit et al., Kabir et al.) do not mention
+deterrence, signalling, or the balance.
 
 *Second*, it identifies and interrogates the **cost premise** in the leading account of
 pre-positioning-as-signal, a premise Guttieri (2025) states but does not examine, and
@@ -570,6 +614,19 @@ Baram, G. (2026). Re-ordering accountability: The significance of joint public
 attribution in a fragmented cyberspace. *Contemporary Security Policy*. Advance online
 publication. https://doi.org/10.1080/13523260.2026.2662220
 
+Melella, C. (n.d.). *Coordination in offensive and defensive cyberoperations:
+Dissecting China, Russia, and NATO's approaches in cyberspace* [Doctoral dissertation,
+Università degli Studi di Genova]. *Year requires confirmation.*
+
+Yigit, Y., Ferrag, M. A., Ghanem, M. C., Sarker, I. H., Maglaras, L. A., Chrysoulas, C.,
+Moradpoor, N., Tihanyi, N., & Janicke, H. (2025). Generative AI and LLMs for critical
+infrastructure protection: Evaluation benchmarks, agentic AI, challenges, and
+opportunities. *Sensors, 25*(6), 1666. https://doi.org/10.3390/s25061666
+
+Kabir, M. H., Siddike, M. A. M., Razib, M. D., & Uddin, M. R. (2026). A national-scale
+AI-driven cyber defense framework for protecting U.S. critical infrastructure against
+nation-state attacks. *Journal of Computer Science and Technology Studies, 8*(6), 94–107.
+
 Maschmeyer, L. (2023). Subversion, cyber operations, and reverse structural power in
 world politics. *European Journal of International Relations, 29*(1), 79–103.
 https://doi.org/10.1177/13540661221117051
@@ -598,7 +655,7 @@ Smeets, M. (2022). *No Shortcuts*. Hurst. — via Maschmeyer (2023), Singh et al
 
 ## Status and next steps
 
-**Completed:** 6 of 105 papers extracted in full depth; 105 triaged.
+**Completed:** 9 of 105 papers extracted in full depth; 105 triaged.
 
 **Outstanding:** Deep extraction of the remaining ~12 Tier A papers (Codreanu;
 Dimitrov; the Russia–Ukraine cyber paper; the remaining Volt Typhoon set) and the 4 Tier B autonomy papers, plus bloc
