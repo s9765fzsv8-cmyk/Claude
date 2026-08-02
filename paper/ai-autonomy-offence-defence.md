@@ -183,6 +183,35 @@ cyber offence–defence balance.** The canonical treatment (Slayton, 2017,
 *International Security*) appears only as a citation *within* Maschmeyer's
 bibliography. This is a corpus limitation, and it must be declared.
 
+**★ The only wartime empirical judgement, and it favours defence.** Willett (2022), in
+*Survival* — IISS, the corpus's highest-ranked venue — assesses the Russia–Ukraine war:
+
+> "a sustained Russian campaign to hack into and disrupt Ukraine's critical national
+> infrastructure, resulting in **intense sparring between offence and defence, but with
+> defence dominating most of the time**, given its access to good intelligence and
+> top-class cyber-security expertise."
+
+**★★ And the balance is dyad-conditional, not technology-determined:**
+
+> "a cyber conflict between Russia and a state with weaker cyber security than Ukraine,
+> or one between NATO and Russia (or China), would perhaps see **a different balance
+> between offence and defence**."
+
+**This is the most consequential theoretical point in the corpus.** The balance is not a
+property of the technology but of the *pairing* — specifically of defender capability
+and the assistance available to it. Ukraine's defence was carried by US and UK agencies
+and by Microsoft, Google and Cisco; a differently resourced defender yields a different
+balance with identical offensive technology.
+
+**It therefore reframes the research question.** "Does AI autonomy favour offence or
+defence?" is malformed. The answerable question is: **which side is better positioned to
+absorb autonomy, under what conditions?** On corpus evidence — defence-facing agentic AI
+(Yigit et al., 2025), offensive autonomy "largely theoretical" (Butt & Ulina, 2026),
+Lindsay's sophistication paradox (via Pokorny, 2026), and Willett's wartime judgement —
+the answer currently leans defender, *for well-resourced defenders*. The distributional
+implication is that autonomy widens the gap between capable and incapable defenders
+rather than shifting a single global balance.
+
 **Synthesis.** For the RQ, the significance is that the offence–defence frame is
 contested at its foundation *and* at its direction. The corpus contains one author
 rejecting the frame entirely (Maschmeyer, 2023), one asserting offence-dominance
@@ -596,12 +625,24 @@ it.
 process tracing on the interpretation of each campaign by target-state officials.
 The dependent variable is *signal credibility*, not "the balance."
 
-**Case selection.** A paired design with variation on the outcome:
+**Case selection.** A three-case design with variation on the outcome:
 
-| Case | Pre-positioned | Used | Response |
+| Case | Pre-positioned | Used | Outcome / response |
 |---|---|---|---|
-| **Russia, US critical infrastructure (2018– )** | Yes | **No, 7+ years** | — |
-| **Volt Typhoon (2023– )** | Yes | No to date | Type 3 advisory (Baram, 2026) |
+| **Russia → US critical infrastructure (2018– )** | Yes | **No, 7+ years** | No response recorded |
+| **Volt Typhoon (2023– )** | Yes | No to date | Type 3 advisory, no sanctions (Baram, 2026) |
+| **Russia → Ukraine (2021–22)** | Yes | **Yes (Industroyer2, Apr 2022)** | **Attempt defeated by defence** (Willett, 2022) |
+
+Three pre-positioning cases; one attempted use; **zero successful strategic effects.**
+The Ukrainian case is indispensable — it is the only instance in the corpus where
+pre-positioning was converted to attack, and the conversion failed: the malware
+"would have shut off power for two million people had the attack succeeded," but
+"no power outages in fact occurred" (Willett, 2022).
+
+A fourth, control case is available: **Estonia 2007**, which Willett reads as threshold
+discovery — Russia "probably learned what sorts of cyber attacks on a NATO state the
+Alliance would not consider close to its threshold for triggering an Article 5
+collective response." This is signalling by *probing* rather than by presence.
 
 The Russian 2018 case (Codreanu, 2025, via Lonergan & Poznansky, 2025) is essential:
 it is the corpus's only negative case and supplies the variation absent from every
@@ -683,6 +724,9 @@ Pokorny, L. (2026). *Offensive cyber and information warfare strategies targetin
 People's Republic of China military C4ISR systems: A qualitative analysis*. ICL
 Institute. https://doi.org/10.5281/zenodo.19234589
 
+Willett, M. (2022). The cyber dimension of the Russia–Ukraine war. *Survival, 64*(5),
+7–26. https://doi.org/10.1080/00396338.2022.2126193
+
 Codreanu, C. (2025). *Typhoons, bears, and pandas: Latest major cyber espionage
 campaigns* (Policy Paper No. 43). Romanian Diplomatic Institute.
 
@@ -742,7 +786,7 @@ Smeets, M. (2022). *No Shortcuts*. Hurst. — via Maschmeyer (2023), Singh et al
 
 ## Status and next steps
 
-**Completed:** 13 of 105 papers extracted (11 deep, 2 condensed); 105 triaged.
+**Completed:** 14 of 105 papers extracted (12 deep, 2 condensed); 105 triaged.
 
 **Outstanding:** Deep extraction of the remaining ~12 Tier A papers (Codreanu;
 Dimitrov; the Russia–Ukraine cyber paper; the remaining Volt Typhoon set) and the 4 Tier B autonomy papers, plus bloc
