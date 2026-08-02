@@ -2,7 +2,7 @@ const fs = require('fs');
 const {
   Document, Packer, Paragraph, TextRun, HeadingLevel, Table, TableRow, TableCell,
   WidthType, ShadingType, AlignmentType, BorderStyle, PageOrientation, LevelFormat,
-  TableOfContents, PageBreak, convertInchesToTwip,
+  TableOfContents, PageBreak, TableLayoutType,
 } = require('docx');
 
 const SRC = '/home/user/Claude/paper/ai-autonomy-offence-defence.md';
@@ -69,21 +69,52 @@ const TABLE_W = 9360; // 6.5in usable on Letter with 1in margins
 
 function buildTable(rows) {
   const cols = rows[0].length;
-  const colW = Math.floor(TABLE_W / cols);
-  const widths = new Array(cols).fill(colW);
-  widths[cols - 1] = TABLE_W - colW * (cols - 1);
+
+  // ---- measure: weight each column by its typical content length ----
+  // header text counts for less (headers are short but the column may be wide)
+  const weights = new Array(cols).fill(0);
+  for (let c = 0; c < cols; c++) {
+    let total = 0, n = 0;
+    for (let r = 0; r < rows.length; r++) {
+      const raw = clean(rows[r][c] || '').replace(/\*+/g, '');
+      // long cells matter more than short ones, but sub-linearly
+      total += Math.sqrt(raw.length + 1) * (r === 0 ? 0.6 : 1);
+      n += (r === 0 ? 0.6 : 1);
+    }
+    weights[c] = n ? total / n : 1;
+  }
+
+  // ---- allocate: proportional, then clamp, then re-normalise ----
+  const MIN = Math.round(TABLE_W * 0.085);           // no column narrower than ~8.5%
+  const MAX = Math.round(TABLE_W * (cols <= 3 ? 0.55 : 0.40));
+  const sum = weights.reduce((a, b) => a + b, 0);
+  let widths = weights.map(w => Math.round((w / sum) * TABLE_W));
+  widths = widths.map(w => Math.min(MAX, Math.max(MIN, w)));
+
+  // re-normalise so the columns sum exactly to TABLE_W
+  const drift = TABLE_W - widths.reduce((a, b) => a + b, 0);
+  if (drift !== 0) {
+    // push the drift onto the widest column, which can absorb it
+    const widest = widths.indexOf(Math.max(...widths));
+    widths[widest] += drift;
+  }
+
+  // ---- type size scales down as the table gets wider ----
+  const fs = cols >= 6 ? 16 : cols === 5 ? 17 : cols === 4 ? 18 : 19;
 
   const trs = rows.map((cells, ri) => new TableRow({
     tableHeader: ri === 0,
+    cantSplit: false,
     children: cells.map((c, ci) => new TableCell({
       width: { size: widths[ci], type: WidthType.DXA },
       shading: ri === 0
         ? { type: ShadingType.CLEAR, fill: 'E8EDF2', color: 'auto' }
         : undefined,
-      margins: { top: 60, bottom: 60, left: 100, right: 100 },
+      margins: { top: 50, bottom: 50, left: 80, right: 80 },
       children: [new Paragraph({
-        spacing: { before: 20, after: 20 },
-        children: inline(clean(c), { size: 19, bold: ri === 0 ? true : undefined }),
+        spacing: { before: 15, after: 15, line: 240 },
+        alignment: AlignmentType.LEFT,
+        children: inline(clean(c), { size: fs, bold: ri === 0 ? true : undefined }),
       })],
     })),
   }));
@@ -91,6 +122,7 @@ function buildTable(rows) {
   return new Table({
     columnWidths: widths,
     width: { size: TABLE_W, type: WidthType.DXA },
+    layout: TableLayoutType.FIXED,
     rows: trs,
   });
 }
