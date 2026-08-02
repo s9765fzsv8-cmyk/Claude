@@ -417,6 +417,26 @@ connecting autonomy to offensive operations:
 > future system could recognize targets, determine attack routes, and conduct portions
 > of an operation without human participation."
 
+**The bloc's implicit theory.** The ~80 technical papers share an unargued premise: a
+speed mismatch between machine-paced attack and human-paced defence. Ajax (2026) states
+it plainly — "modern cyberattacks are increasingly automated and occur at speeds that
+exceed human response capabilities" — and every architecture reviewed nonetheless retains
+a human oversight layer, conceding that "full autonomy… introduces important risks,
+particularly in areas requiring high accountability and human judgment."
+
+**A caution about the bloc as evidence.** These papers cannot be cited as an
+undifferentiated body. Three were read in full and they span the full quality range:
+Yigit et al. (2025) in *Sensors*, from an established group, is credible; Kabir et al.
+(2026) supplies usable dwell-time data but reports irreconcilable incident counts; Ajax
+(2026) has no venue, no affiliation, no empirical content, and a reference list
+containing papers on neural machine translation, fisheries certification and mindfulness
+in the chemical industry — none related to its subject. **The bloc establishes direction
+of effort, not consensus, and any use of it requires per-paper quality assessment.**
+
+An attempt to quantify the bloc by full-text search was abandoned: Drive's matching
+returned ~68 of 105 papers for `federated learning`, including Maschmeyer's subversion
+article. Counts derived that way would be fabricated, and none appear in this paper.
+
 **Strength of evidence.** Weak. The claim is asserted, sourced to OpenAI (2024) and
 Schneier (2023), in a very new and low-ranked journal. Its value is that it is a
 *conservative* estimate from a source with no incentive to be conservative: as of 2026,
@@ -983,7 +1003,8 @@ Smeets, M. (2022). *No Shortcuts*. Hurst. — via Maschmeyer (2023), Singh et al
 
 ## Status and next steps
 
-**Completed:** 16 of 105 papers extracted (14 deep, 2 condensed); 105 triaged.
+**Completed:** 17 of 105 papers extracted (14 deep, 2 condensed, plus a bloc
+characterisation of the ~80 technical papers from a sample of three); 105 triaged.
 
 **Outstanding:** Two low-yield Tier A items (a student term paper applying the Diamond
 Model; *Law, Conflict and Hybrid Warfare*) and the *CDR* volume container, whose two
