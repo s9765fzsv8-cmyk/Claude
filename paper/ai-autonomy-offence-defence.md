@@ -6,14 +6,19 @@
 
 ## Note on the evidence base
 
-This paper is built on a corpus of **105 PDFs** supplied by the author. Four papers
+This paper is built on a corpus of **105 PDFs** supplied by the author. **Six papers**
 have been extracted in full depth; all 105 have been triaged by full-text term search.
 Every substantive claim below is cited to a paper in that corpus, or explicitly
 labelled as (a) my analytical synthesis or (b) supplementary literature outside the
 corpus. Where the corpus cannot support a claim, this is stated rather than finessed.
 
 Full-depth extractions: Maschmeyer (2023); Singh, Jash & Nanjappa (2025);
-Butt & Ulina (2026); Guttieri (2025). Extraction files are in `corpus/extractions/`.
+Butt & Ulina (2026); Guttieri (2025); Sullivan (2025); Baram (2026). Extraction files
+are in `corpus/extractions/`.
+
+**Revision note.** Extractions 05 (Sullivan) and 06 (Baram) materially changed the
+argument advanced in the first draft. The change is documented in §4.3 and §6 rather
+than silently absorbed.
 
 ---
 
@@ -38,6 +43,26 @@ Butt & Ulina (2026); Guttieri (2025). Extraction files are in `corpus/extraction
 | **`Volt Typhoon`** | **0** | 6 | 2 | **13** |
 | **`pre-position*`** | **0** | **0** | **0** | **3** |
 | **Relevance to RQ** | Baseline statement that offence–defence framing is *wrong* for cyber | Contested attribution of Volt Typhoon; PRC counter-narrative | Only corpus paper linking AI autonomy to offensive operations | **Anchor paper**: pre-positioning as strategic signal |
+
+### Evidence matrix (continued)
+
+| | **Sullivan (2025)** | **Baram (2026)** |
+|---|---|---|
+| **Venue** | *The Cyber Defense Review* 10(1) | ***Contemporary Security Policy*** (ranked) |
+| **Objective** | Explain and remedy the "fog of law" in cyber | Explain variation in joint public attribution |
+| **Research question** | Not formal | Why do states attribute jointly, and why in one form over another? |
+| **Theoretical framework** | Rules vs standards; deterrence vs Cyber Persistence Theory | Cyber norms; deterrence signalling; alliance politics |
+| **Methodology** | Doctrinal legal analysis of DoD *Law of War Manual* | **Typology + coding of 20 incidents, EuRepoC dataset, 2015–2025** |
+| **Cases / data** | Volt Typhoon, Salt Typhoon (passing); Stuxnet | 20 joint attribution cases; Russia 11, China 7, DPRK 1, Iran 1 |
+| **Key concepts** | Fog of law; gray zone; tacit bargaining; technical vs political attribution | Jointness; four coordination modes; norm signalling |
+| **Major argument** | Legal ambiguity, a deterrence-era choice, now misaligns with persistent engagement | Joint attribution is not one practice but four, with different purposes |
+| **Principal finding** | Cyber operations are cheap and low-salience; unilateral clarification is the viable path | **Volt Typhoon drew a Type 3 response — technical advisory, no sanctions, no endorsement** |
+| **Limitations acknowledged** | Notes policy failure ≠ theory failure | **Exemplary: Western/allied reporting bias declared explicitly** |
+| **`artificial intelligence`** | **0** | **0** |
+| **`autonom*`** | **1** (bibliography only) | **0** |
+| **`Volt Typhoon`** | 2 | 7 |
+| **`signal*`** | present | **28** |
+| **Relevance to RQ** | Cost baseline; tacit bargaining; salience problem | **Empirical anchor: documents the signalling failure** |
 
 ---
 
@@ -247,11 +272,50 @@ measured for cyber. Maschmeyer (2023) argues the concept may not travel to cyber
 all. Without a defined dependent variable, "shift in the balance" is not yet a
 researchable proposition.
 
-### 4.3 Theoretical gap
-Guttieri's (2025) reading of pre-positioning as signal rests on an unexamined premise:
-that persistence requires "technical competence and **strategic patience**." This is a
-costly-signalling logic — the act signals intent because it is expensive. **No paper in
-the corpus asks what happens to that logic when the cost falls.**
+### 4.3 Theoretical gap — REVISED after extractions 05 and 06
+
+The first draft of this paper argued that Guttieri's (2025) reading of pre-positioning
+rests on an unexamined costly-signalling premise — persistence requires "technical
+competence and **strategic patience**" — and that AI autonomy would erode it.
+
+**Two subsequent extractions require that claim to be restated, and strengthen it.**
+
+**First, a cost tension inside the corpus.** Sullivan (2025), writing in the *same
+issue of the same journal* as Guttieri, asserts the opposite baseline: cyber operations
+are conducted "inexpensively," most do "not" require significant investment, and "the
+low cost of cyber operations extends far beyond the financial realm." Two Army Cyber
+Institute authors, one issue, incompatible cost premises.
+
+The tension resolves by disaggregating cost. Sullivan addresses the **cost of entry**;
+Guttieri addresses the **cost of undetected multi-year persistence in hardened
+infrastructure**. The signalling inference rests on the second. Pre-positioning signals
+intent not because intrusion is hard, but because *staying* is. The variable AI
+autonomy threatens is therefore the cost of *sustained, undetected presence at scale* —
+a narrower and more defensible claim than the first draft made.
+
+**Second, and more consequentially: the signalling function is already failing.**
+Baram (2026) codes Volt Typhoon as a **Type 3** event — "a shared advisory with pooled
+IoCs and defensive guidance… **No alliance-led endorsement or sanctions package
+followed**." The paradigmatic pre-positioning case drew the weakest available form of
+collective response. Baram identifies the mechanism: joint technical advisories cluster
+in "China-related cases focused on stealthy access and pre-positioning," and their
+"primary audience here is **network defenders, not only state elites**."
+
+A coercive signal must reach political decision-makers to function. Pre-positioning is
+being routed to system administrators.
+
+**The corpus therefore documents three independent failure modes:**
+1. **Non-reception** — operations "lack sufficient political salience to activate
+   political institutions" (Sullivan, 2025).
+2. **Denial** — the putative sender disowns the signal; the PRC calls Volt Typhoon a US
+   fabrication and counter-accuses over the MARBLE toolkit (Singh et al., 2025).
+3. **Misrouting** — response is technical, not diplomatic (Baram, 2026, *with data*).
+
+**The gap, restated.** The literature contains a sharp interpretive claim about what
+pre-positioning *means* (Guttieri, 2025) and empirical evidence about how states
+actually *respond* to it (Baram, 2026) — and these do not match. **No paper reconciles
+them, and none asks what AI autonomy does to a signalling mechanism that is already
+failing.**
 
 ### 4.4 Empirical gap
 The corpus contains no dataset on autonomy in operational cyber campaigns, no measured
@@ -305,11 +369,24 @@ at sub-task assistance — reconnaissance, vulnerability discovery, exploit adap
 while noting that "fully autonomous offensive cyber weapons are still largely
 theoretical."
 
-These two developments have not been analysed together. **If autonomy reduces the cost
-of establishing and maintaining persistent access, then the costly-signalling logic on
-which pre-positioning's strategic meaning depends is undermined.** The same observable
-act would cease to convey deliberate high-level intent. This is not a technical
-problem but a problem of strategic interpretation.
+Yet states do not appear to *act* as though pre-positioning carries this meaning.
+Baram (2026), coding twenty joint public attribution cases from the European Repository
+of Cyber Incidents, finds that Volt Typhoon drew only a joint technical advisory: "No
+alliance-led endorsement or sanctions package followed." Such advisories cluster in
+cases of "stealthy access and pre-positioning," and their "primary audience here is
+network defenders, not only state elites." Sullivan (2025) supplies the reason:
+operations of this kind "lurk in the shadows," lacking "sufficient political salience
+to activate political institutions." Singh, Jash and Nanjappa (2025) record a third
+obstacle — the PRC denies the campaign outright and counter-accuses.
+
+**There is thus a gap between what pre-positioning is held to mean and how states
+respond to it.** Guttieri establishes the interpretation; Baram shows the response does
+not follow. This paper argues that the discrepancy is explained by the erosion of the
+costly-signalling logic on which the interpretation depends — and that AI autonomy,
+by lowering the cost of sustained undetected presence, will widen it further. The
+same observable act will convey progressively less about intent, precisely as the
+volume of such observations rises. This is not a technical problem but a problem of
+strategic interpretation.
 
 **Research question.** *How fast and how far will AI/agentic autonomy shift the
 offence–defence balance, and when does pre-positioning itself constitute a strategic
@@ -358,10 +435,22 @@ signalling instrument in its own right.
 offence–defence balance. The cost structure of persistent access. Adversary intent
 behind pre-positioning. Chinese doctrinal reasoning.
 
-**Implications.** If Guttieri's decision rule is doctrine's operative heuristic, and
-if autonomy erodes its premise, then the risk is **misattributed intent at scale** —
+**Implications.** Two risks, running in opposite directions, and the corpus supports
+both.
+
+*Over-reading.* If Guttieri's (2025) decision rule is doctrine's operative heuristic
+and autonomy erodes its cost premise, the risk is **misattributed intent at scale** —
 reading automated persistence as deliberate strategic warning. Given Guttieri's own
 entanglement argument, that misreading is escalatory.
+
+*Under-reading.* Baram's (2026) data shows the current response pattern is already the
+opposite: Volt Typhoon drew a technical advisory and nothing more. If genuine
+strategic preparation is routinely processed as a network-defence matter, the failure
+is not escalation but **warning failure**.
+
+These are not alternatives to choose between; they are the two ways a degraded signal
+fails. **Signal degradation, not offence-dominance, is the mechanism by which AI
+autonomy destabilises** — and this reframing is what the corpus can actually support.
 
 ---
 
@@ -402,15 +491,28 @@ Flax Typhoon, Salt Typhoon, and Silk Typhoon as within-family comparisons (ident
 in Singh et al., 2025), and Russian operations in Ukraine as an out-of-family
 contrast (Guttieri, 2025).
 
-**Data.** Corpus papers; official attribution statements and advisories; vendor
-threat reports **treated as interested evidence, not neutral fact** — a caution the
-corpus itself warrants, given Butt & Ulina's (2026) uncritical use of vendor trend
-data.
+**Data.** The **European Repository of Cyber Incidents (EuRepoC)**, used by Baram
+(2026) and citable via Zettl-Schabath et al. (2025), supplies a structured incident
+base and removes the need to build one. Supplemented by official attribution statements
+and advisories, and by vendor threat reports **treated as interested evidence, not
+neutral fact** — a caution the corpus itself warrants, given Butt & Ulina's (2026)
+uncritical use of vendor trend data.
 
-**Analytical framework.** Code each campaign on Guttieri's two dimensions —
-intelligence yield and operational leverage — and add a third, **estimated persistence
-cost**. The theoretical prediction: as automation reduces persistence cost, the
-inferential link from access to intent weakens.
+**Analytical framework.** A two-level coding scheme, following Baram's (2026)
+typology-then-coding design:
+
+*Level 1 — the act.* Code each campaign on Guttieri's (2025) two dimensions,
+**intelligence yield** and **operational leverage**, plus a third, **estimated
+persistence cost** (proxied by dwell time, tradecraft sophistication, and degree of
+automation).
+
+*Level 2 — the response.* Code the target state's reaction using Baram's (2026) four
+modes of jointness, which distinguishes technical from diplomatic responses.
+
+**The dependent variable is the gap between levels** — whether an act coded as
+high-leverage/low-intelligence (i.e. reading as strategic signal) draws a
+correspondingly political response, or is routed to network defenders. The theoretical
+prediction: as persistence cost falls, that gap widens.
 
 **Methods.** Qualitative content analysis of attribution statements; structured
 comparison; process tracing of interpretation.
@@ -424,12 +526,21 @@ require supplementary literature.
 
 ## 9. Research Contribution
 
-**To scholarship.** The study connects two literatures the corpus shows are
-disconnected: strategic theorising of cyber persistence, and technical work on AI
-autonomy. Four for four among fully-extracted papers, the theorists do not mention AI.
-More specifically, it identifies and interrogates the **cost premise** in the leading
-account of pre-positioning-as-signal — a premise Guttieri (2025) states but does not
-examine.
+**To scholarship.** Three contributions.
+
+*First*, it connects two literatures the corpus shows are disconnected: strategic
+theorising of cyber persistence, and technical work on AI autonomy. **Six for six**
+among fully-extracted papers — spanning *EJIR*, *Contemporary Security Policy*, and the
+*Cyber Defense Review* — the strategists do not mention AI.
+
+*Second*, it identifies and interrogates the **cost premise** in the leading account of
+pre-positioning-as-signal, a premise Guttieri (2025) states but does not examine, and
+which Sullivan (2025) implicitly contradicts from within the same journal issue.
+
+*Third, and most importantly*, it reconciles an unnoticed **discrepancy between
+interpretation and response**: Guttieri (2025) establishes that pre-positioning reads
+as preparation for conflict, while Baram (2026) demonstrates empirically that states do
+not respond as though it does. No existing work joins these findings.
 
 **Why it matters academically.** It reframes the offence–defence question in terms the
 literature can actually sustain. Rather than asking whether AI favours attack or
@@ -455,6 +566,10 @@ Guttieri, K. (2025). Fighting through disruption: Reframing cyber resilience for
 projection and strategic credibility. *The Cyber Defense Review, 10*(1), 93–114.
 https://doi.org/10.55682/cdr/egvf-mkys
 
+Baram, G. (2026). Re-ordering accountability: The significance of joint public
+attribution in a fragmented cyberspace. *Contemporary Security Policy*. Advance online
+publication. https://doi.org/10.1080/13523260.2026.2662220
+
 Maschmeyer, L. (2023). Subversion, cyber operations, and reverse structural power in
 world politics. *European Journal of International Relations, 29*(1), 79–103.
 https://doi.org/10.1177/13540661221117051
@@ -463,6 +578,9 @@ Singh, N. K., Jash, A., & Nanjappa, Y. (2025). Navigating the nexus: Geopolitica
 international relations and technical dimensions of US-China cyber strategic
 competition. *Cogent Social Sciences, 11*(1), 2499171.
 https://doi.org/10.1080/23311886.2025.2499171
+
+Sullivan, S. (2025). Toward clarity in cyber's "fog of law". *The Cyber Defense
+Review, 10*(1), 59–71. https://doi.org/10.55682/cdr/v8z4-sxne
 
 ### Works cited *within* corpus papers but NOT in the corpus (supplementary — must be obtained)
 
@@ -480,11 +598,10 @@ Smeets, M. (2022). *No Shortcuts*. Hurst. — via Maschmeyer (2023), Singh et al
 
 ## Status and next steps
 
-**Completed:** 4 of 105 papers extracted in full depth; 105 triaged.
+**Completed:** 6 of 105 papers extracted in full depth; 105 triaged.
 
-**Outstanding:** Deep extraction of the remaining ~14 Tier A papers (Sullivan 2025;
-joint public attribution; Codreanu; Dimitrov; the Russia–Ukraine cyber paper; the
-remaining Volt Typhoon set) and the 4 Tier B autonomy papers, plus bloc
+**Outstanding:** Deep extraction of the remaining ~12 Tier A papers (Codreanu;
+Dimitrov; the Russia–Ukraine cyber paper; the remaining Volt Typhoon set) and the 4 Tier B autonomy papers, plus bloc
 characterisation of the ~80 technical papers.
 
 **Principal risk to publication:** the corpus lacks the canonical offence–defence
