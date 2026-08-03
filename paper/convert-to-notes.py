@@ -93,6 +93,28 @@ S = {
    'Buchanan, *The Cybersecurity Dilemma*.'),
 }
 
+
+# verified links, taken from the source PDFs themselves
+LINKS = {
+ 'Guttieri':   'https://doi.org/10.55682/cdr/egvf-mkys',
+ 'Sullivan':   'https://doi.org/10.55682/cdr/v8z4-sxne',
+ 'Baram':      'https://doi.org/10.1080/13523260.2026.2662220',
+ 'Willett':    'https://doi.org/10.1080/00396338.2022.2126193',
+ 'Maschmeyer': 'https://doi.org/10.1177/13540661221117051',
+ 'Codreanu':   'https://www.idr.ro',
+ 'Singh':      'https://doi.org/10.1080/23311886.2025.2499171',
+ 'Dimitrov':   'https://doi.org/10.17770/etr2025vol2.8618',
+ 'Butt':       'https://thecrsss.com/index.php/Journal/about',
+ 'Yigit':      'https://doi.org/10.3390/s25061666',
+ 'Kabir':      'https://www.al-kindipublisher.com/index.php/jcsts',
+ 'Pokorny':    'https://doi.org/10.5281/zenodo.19234589',
+ 'Braccia':    'https://doi.org/10.22541/au.175390612.20874865/v1',
+ 'Urbanczyk':  'https://doi.org/10.36227/techrxiv.175085869.97198541/v1',
+ 'Ferdaus':    'https://ssrn.com/abstract=5249574',
+ 'Eichensehr': 'https://www.uclalawreview.org/the-law-politics-of-cyberattack-attribution/',
+ 'Zettl':      'https://eurepoc.eu',
+}
+
 # map surname tokens found in text to keys
 ALIAS = {
  'Guttieri':'Guttieri','Sullivan':'Sullivan','Baram':'Baram','Willett':'Willett',
@@ -116,9 +138,17 @@ def note_for(keys):
     parts = []
     for k in keys:
         full, short = S[k]
-        parts.append(full if k not in seen else short)
+        txt = full if k not in seen else short
+        url = LINKS.get(k)
+        if url and 'http' not in txt:
+            txt = txt.rstrip().rstrip('.') + ', ' + url + '.'
+        parts.append(txt.strip())
         seen.add(k)
-    notes.append(' '.join(p.rstrip() for p in parts) if len(parts) > 1 else parts[0])
+    if len(parts) == 1:
+        notes.append(parts[0])
+    else:
+        trimmed = [re.sub(r'\.$', '', p) for p in parts]
+        notes.append('; '.join(trimmed) + '.')
     return len(notes)
 
 # --- work sentence by sentence so markers land at sentence ends ---
