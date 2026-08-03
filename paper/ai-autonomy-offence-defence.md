@@ -24,7 +24,7 @@ The paper sets out two rival explanations and a way to test them. Either AI is w
 
 In May 2023 the United States and its Five Eyes partners named China as the source of a campaign they called Volt Typhoon. Chinese operators had been living inside American critical infrastructure, using the target's own system tools so that nothing looked out of place.[^1] They were found in energy, water, communications and transport networks, and in systems supporting United States military operations on Guam, the main American base for any Pacific crisis.[^2]
 
-The odd thing about Volt Typhoon was not how clever it was. It was that the operation made no sense as spying. General Paul Nakasone put it bluntly. There is, he said, "absolutely no intelligence to be gathered by putting malicious code in [critical infrastructure] networks".[^3] American officials said the campaign "did not fit the pattern of a traditional cyber espionage campaign".[^4]
+The odd thing about Volt Typhoon was not how clever it was. It was that the operation made no sense as spying. General Paul Nakasone put it bluntly. There is, he said, "absolutely no intelligence to be gathered by putting malicious code in [critical infrastructure] networks."[^3] American officials said the campaign "did not fit the pattern of a traditional cyber espionage campaign."[^4]
 
 At the same time, artificial intelligence began taking over parts of cyber operations. Butt and Ulina find that AI now helps with scouting targets, finding weaknesses and adjusting attack tools, but that fully automatic attack systems are still "largely theoretical." Yigit and colleagues define an agentic AI system as one "capable of autonomous action, real-time adaptation, and multi-step problem-solving aligned with specific contexts and objectives."[^5]
 
@@ -183,7 +183,7 @@ Sullivan traces how American doctrine moved from deterrence to constant engageme
 
 Operations themselves start to carry meaning. As Sullivan puts it, "defend forward operations to dismantle specific foreign threats and not others signal to an adversary a sense of the types of most threatening or inappropriate cyber threats." He calls this tacit bargaining.
 
-He also separates two kinds of blame. "Even when technical attribution is possible, political attribution rarely follows," because naming a government publicly "is subject to political considerations that may counsel against attribution".[^36] Knowing who did it and saying so are different decisions.
+He also separates two kinds of blame. "Even when technical attribution is possible, political attribution rarely follows," because naming a government publicly "is subject to political considerations that may counsel against attribution."[^36] Knowing who did it and saying so are different decisions.
 
 Willett records what is at stake.[^37] President Biden named a cyber breach as the most likely path to the United States finding itself in "a real shooting war" with a major power. NATO has said it would judge Article 5 case by case and "could consider an accumulation of minor attacks as crossing that threshold." Willett also notes that after the 2007 attacks on Estonia, Russia "probably learned what sorts of cyber attacks on a NATO state the Alliance would not consider close to its threshold." That is learning by testing, which is different from pre-positioning.
 
@@ -329,15 +329,15 @@ The cost of holding access cannot be seen directly and has to be estimated. What
 
 ### 6.1 Settled
 
-Cyber competition is continuous, not a series of separate incidents.[^68] Infrastructure is the target. Foreign access to American infrastructure happened and was publicly attributed.[^69] Automatic defence tools are being built and deployed.[^80]
+Cyber competition is continuous, not a series of separate incidents.[^68] Infrastructure is the target. Foreign access to American infrastructure happened and was publicly attributed.[^69] Automatic defence tools are being built and deployed.[^70]
 
 ### 6.2 Disputed
 
-Whether attack-defence theory applies to cyberspace, with Maschmeyer against.[^70] Which side holds the advantage, with Butt and Ulina for attackers, and Lindsay through Pokorny and Willett for defenders.[^71] Whether pre-positioning carries a message, with Dimitrov and Andreev for and Braccia against.[^72] Whether these operations are cheap, with Sullivan and Guttieri at odds.[^73]
+Whether attack-defence theory applies to cyberspace, with Maschmeyer against.[^71] Which side holds the advantage, with Butt and Ulina for attackers, and Lindsay through Pokorny and Willett for defenders.[^72] Whether pre-positioning carries a message, with Dimitrov and Andreev for and Braccia against.[^73] Whether these operations are cheap, with Sullivan and Guttieri at odds.[^74]
 
 ### 6.3 Emerging
 
-AI helping with attack tasks, though not yet running attacks.[^74] Resilience recast as a fighting capability rather than an IT function.[^75] Public blame understood as a form of signalling in its own right.[^76]
+AI helping with attack tasks, though not yet running attacks.[^75] Resilience recast as a fighting capability rather than an IT function.[^76] Public blame understood as a form of signalling in its own right.[^77]
 
 ### 6.4 Unknown
 
@@ -361,11 +361,11 @@ These are not two options to choose between. They are the two ways a weak signal
 
 ### 7.1 To scholarship
 
-The study takes up a subject the field has named without studying. Melella proposes looking at how new technology affects the balance, then looks at coordination.[^77] Fifteen of the sixteen studies keep the two halves apart, since those writing about strategy do not discuss artificial intelligence and those writing about artificial intelligence do not discuss deterrence, warning or the balance.
+The study takes up a subject the field has named without studying. Melella proposes looking at how new technology affects the balance, then looks at coordination.[^78] Fifteen of the sixteen studies keep the two halves apart, since those writing about strategy do not discuss artificial intelligence and those writing about artificial intelligence do not discuss deterrence, warning or the balance.
 
-The study examines the assumption about cost sitting underneath the leading account of pre-positioning as warning, an assumption Guttieri states without examining and Sullivan contradicts in the same issue of the same journal.[^78]
+The study examines the assumption about cost sitting underneath the leading account of pre-positioning as warning, an assumption Guttieri states without examining and Sullivan contradicts in the same issue of the same journal.[^79]
 
-It also reconciles a mismatch nobody has noticed. Guttieri shows that pre-positioning reads as preparation for war. Baram shows that governments do not act as if it does.[^79] The gap between how Volt Typhoon and Salt Typhoon were answered makes the point sharper.
+It also reconciles a mismatch nobody has noticed. Guttieri shows that pre-positioning reads as preparation for war. Baram shows that governments do not act as if it does.[^80] The gap between how Volt Typhoon and Salt Typhoon were answered makes the point sharper.
 
 And it records a fact the field has not faced, which is that no case exists where pre-positioning produced a successful strategic result.
 
@@ -395,23 +395,23 @@ The stakes are practical. If governments read automatic, routine access as delib
 
 ## NOTES
 
-[^1]: Karen Guttieri, "Fighting through Disruption: Reframing Cyber Resilience for Power Projection and Strategic Credibility," *The Cyber Defense Review* 10, no. 1 (2025): 93-114, https://doi.org/10.55682/cdr/egvf-mkys. Claudiu Codreanu, *Typhoons, Bears, and Pandas: Latest Major Cyber Espionage Campaigns*, Policy Paper 43 (Bucharest: Romanian Diplomatic Institute, 2025), https://www.idr.ro. Nistha Kumari Singh, Amrita Jash, and Yashwanth Nanjappa, "Navigating the Nexus: Geopolitical, International Relations and Technical Dimensions of US-China Cyber Strategic Competition," *Cogent Social Sciences* 11, no. 1 (2025): 2499171, https://doi.org/10.1080/23311886.2025.2499171.
+[^1]: Karen Guttieri, "Fighting through Disruption: Reframing Cyber Resilience for Power Projection and Strategic Credibility," *The Cyber Defense Review* 10, no. 1 (2025): 93-114, https://doi.org/10.55682/cdr/egvf-mkys; Claudiu Codreanu, *Typhoons, Bears, and Pandas: Latest Major Cyber Espionage Campaigns*, Policy Paper 43 (Bucharest: Romanian Diplomatic Institute, 2025), https://www.idr.ro; Nistha Kumari Singh, Amrita Jash, and Yashwanth Nanjappa, "Navigating the Nexus: Geopolitical, International Relations and Technical Dimensions of US-China Cyber Strategic Competition," *Cogent Social Sciences* 11, no. 1 (2025): 2499171, https://doi.org/10.1080/23311886.2025.2499171.
 [^2]: Dimitar Dimitrov and Evgeni Andreev, "China's Strategic Competition in Cyberspace: Volt Typhoon and Salt Typhoon as a Projection of Power, a More Aggressive Posture and a Future beyond Espionage," in *Environment. Technology. Resources: Proceedings of the 16th International Scientific and Practical Conference* (Rezekne: RTU Press, 2025), 2:115-22, https://doi.org/10.17770/etr2025vol2.8618.
 [^3]: Guttieri, "Fighting through Disruption."
 [^4]: Codreanu, *Typhoons, Bears, and Pandas*.
-[^5]: Muhammad Saqib Butt and Ninta Sri Ulina, "Cyber Warfare in the AI Era: Emerging Attack Trends, Defensive Strategies and Policy Challenges, 2022-2026," *The Critical Review of Social Sciences Studies* 4, no. 1 (2026): 6176-92. Yagmur Yigit et al., "Generative AI and LLMs for Critical Infrastructure Protection: Evaluation Benchmarks, Agentic AI, Challenges, and Opportunities," *Sensors* 25, no. 6 (2025): 1666, https://doi.org/10.3390/s25061666.
+[^5]: Muhammad Saqib Butt and Ninta Sri Ulina, "Cyber Warfare in the AI Era: Emerging Attack Trends, Defensive Strategies and Policy Challenges, 2022-2026," *The Critical Review of Social Sciences Studies* 4, no. 1 (2026): 6176-92; Yagmur Yigit et al., "Generative AI and LLMs for Critical Infrastructure Protection: Evaluation Benchmarks, Agentic AI, Challenges, and Opportunities," *Sensors* 25, no. 6 (2025): 1666, https://doi.org/10.3390/s25061666.
 [^6]: Guttieri, "Fighting through Disruption."
 [^7]: Gil Baram, "Re-ordering Accountability: The Significance of Joint Public Attribution in a Fragmented Cyberspace," *Contemporary Security Policy*, advance online publication, 2026, https://doi.org/10.1080/13523260.2026.2662220.
 [^8]: Scott Sullivan, "Toward Clarity in Cyber's 'Fog of Law,'" *The Cyber Defense Review* 10, no. 1 (2025): 59-71, https://doi.org/10.55682/cdr/v8z4-sxne.
 [^9]: Singh, Jash, and Nanjappa, "Navigating the Nexus."
 [^10]: Cosimo Melella, "Coordination in Offensive and Defensive Cyberoperations: Dissecting China, Russia, and NATO's Approaches in Cyberspace" (PhD diss., Universita degli Studi di Genova, n.d.).
 [^11]: Lennart Maschmeyer, "Subversion, Cyber Operations, and Reverse Structural Power in World Politics," *European Journal of International Relations* 29, no. 1 (2023): 79-103, https://doi.org/10.1177/13540661221117051.
-[^12]: Jon R. Lindsay, 2013, cited in Pokorny, *Offensive Cyber and Information Warfare Strategies*. Rebecca Slayton, "What Is the Cyber Offense-Defense Balance? Conceptions, Causes, and Assessment," *International Security* 41, no. 3 (2017): 72-109, https://doi.org/10.1162/ISEC_a_00267, cited in Maschmeyer, "Subversion, Cyber Operations, and Reverse Structural Power." Erik Gartzke and Jon Lindsay, 2015, cited in Maschmeyer, "Subversion, Cyber Operations, and Reverse Structural Power." Martin Libicki, *Cyberdeterrence and Cyberwar* (Santa Monica: RAND, 2009), cited in Maschmeyer, "Subversion, Cyber Operations, and Reverse Structural Power."
+[^12]: Jon R; Lindsay, 2013, cited in Pokorny, *Offensive Cyber and Information Warfare Strategies*; Rebecca Slayton, "What Is the Cyber Offense-Defense Balance? Conceptions, Causes, and Assessment," *International Security* 41, no. 3 (2017): 72-109, https://doi.org/10.1162/ISEC_a_00267, cited in Maschmeyer, "Subversion, Cyber Operations, and Reverse Structural Power." Erik Gartzke and Jon Lindsay, 2015, cited in Maschmeyer, "Subversion, Cyber Operations, and Reverse Structural Power"; Martin Libicki, *Cyberdeterrence and Cyberwar* (Santa Monica: RAND, 2009), cited in Maschmeyer, "Subversion, Cyber Operations, and Reverse Structural Power.."
 [^13]: Butt and Ulina, "Cyber Warfare in the AI Era."
-[^14]: Laszlo Pokorny, *Offensive Cyber and Information Warfare Strategies Targeting People's Republic of China Military C4ISR Systems: A Qualitative Analysis* (New Jersey: ICL Institute, 2026), https://doi.org/10.5281/zenodo.19234589. Lindsay, cited in Pokorny.
+[^14]: Laszlo Pokorny, *Offensive Cyber and Information Warfare Strategies Targeting People's Republic of China Military C4ISR Systems: A Qualitative Analysis* (New Jersey: ICL Institute, 2026), https://doi.org/10.5281/zenodo.19234589; Lindsay, cited in Pokorny.
 [^15]: Marcus Willett, "The Cyber Dimension of the Russia-Ukraine War," *Survival* 64, no. 5 (2022): 7-26, https://doi.org/10.1080/00396338.2022.2126193.
-[^16]: Maschmeyer, "Subversion, Cyber Operations, and Reverse Structural Power." Singh, Jash, and Nanjappa, "Navigating the Nexus." Max Smeets, *No Shortcuts: Why States Struggle to Develop a Military Cyber-Force* (London: Hurst, 2022), cited in Maschmeyer, "Subversion, Cyber Operations, and Reverse Structural Power."
-[^17]: Maschmeyer, "Subversion, Cyber Operations, and Reverse Structural Power." Slayton, "What Is the Cyber Offense-Defense Balance?"
+[^16]: Maschmeyer, "Subversion, Cyber Operations, and Reverse Structural Power." Singh, Jash, and Nanjappa, "Navigating the Nexus"; Max Smeets, *No Shortcuts: Why States Struggle to Develop a Military Cyber-Force* (London: Hurst, 2022), cited in Maschmeyer, "Subversion, Cyber Operations, and Reverse Structural Power."
+[^17]: Maschmeyer, "Subversion, Cyber Operations, and Reverse Structural Power"; Slayton, "What Is the Cyber Offense-Defense Balance?"
 [^18]: Guttieri, "Fighting through Disruption."
 [^19]: Codreanu, *Typhoons, Bears, and Pandas*.
 [^20]: Dimitrov and Andreev, "China's Strategic Competition in Cyberspace."
@@ -426,13 +426,13 @@ The stakes are practical. If governments read automatic, routine access as delib
 [^29]: Willett, "The Cyber Dimension of the Russia-Ukraine War."
 [^30]: Butt and Ulina, "Cyber Warfare in the AI Era."
 [^31]: Yigit et al., "Generative AI and LLMs for Critical Infrastructure Protection."
-[^32]: Yigit et al., "Generative AI and LLMs for Critical Infrastructure Protection." Md Humayun Kabir et al., "A National-Scale AI-Driven Cyber Defense Framework for Protecting U.S. Critical Infrastructure against Nation-State Attacks," *Journal of Computer Science and Technology Studies* 8, no. 6 (2026): 94-107.
-[^33]: Guttieri, "Fighting through Disruption." Ben Buchanan, *The Cybersecurity Dilemma*, cited in Guttieri, "Fighting through Disruption."
+[^32]: Yigit et al., "Generative AI and LLMs for Critical Infrastructure Protection"; Md Humayun Kabir et al., "A National-Scale AI-Driven Cyber Defense Framework for Protecting U.S. Critical Infrastructure against Nation-State Attacks," *Journal of Computer Science and Technology Studies* 8, no. 6 (2026): 94-107.
+[^33]: Guttieri, "Fighting through Disruption"; Ben Buchanan, *The Cybersecurity Dilemma*, cited in Guttieri, "Fighting through Disruption."
 [^34]: Fiona Cunningham, 2022, cited in Guttieri, "Fighting through Disruption."
 [^35]: Sullivan, "Toward Clarity in Cyber's 'Fog of Law.'"
-[^36]: Sullivan, "Toward Clarity in Cyber's 'Fog of Law.'" Kristen E. Eichensehr, "The Law and Politics of Cyberattack Attribution," *UCLA Law Review* 67 (2020): 520-98, cited in Sullivan, "Toward Clarity in Cyber's 'Fog of Law.'"
+[^36]: Sullivan, "Toward Clarity in Cyber's 'Fog of Law.'" Kristen E; Eichensehr, "The Law and Politics of Cyberattack Attribution," *UCLA Law Review* 67 (2020): 520-98, cited in Sullivan, "Toward Clarity in Cyber's 'Fog of Law.'."
 [^37]: Willett, "The Cyber Dimension of the Russia-Ukraine War."
-[^38]: Sullivan, "Toward Clarity in Cyber's 'Fog of Law.'" Pokorny, *Offensive Cyber and Information Warfare Strategies*.
+[^38]: Sullivan, "Toward Clarity in Cyber's 'Fog of Law.'"; Pokorny, *Offensive Cyber and Information Warfare Strategies*.
 [^39]: Melella, "Coordination in Offensive and Defensive Cyberoperations."
 [^40]: Maschmeyer, "Subversion, Cyber Operations, and Reverse Structural Power."
 [^41]: Guttieri, "Fighting through Disruption."
@@ -452,7 +452,7 @@ The stakes are practical. If governments read automatic, routine access as delib
 [^55]: Guttieri, "Fighting through Disruption."
 [^56]: Dimitrov and Andreev, "China's Strategic Competition in Cyberspace."
 [^57]: Braccia, "From Vietnam to Volt Typhoon."
-[^58]: Guttieri, "Fighting through Disruption." Sullivan, "Toward Clarity in Cyber's 'Fog of Law.'" Michael Fischerkeller, Emily Goldman, and Richard Harknett, *Cyber Persistence Theory: Redefining National Security in Cyberspace*, cited in Guttieri, "Fighting through Disruption," and Sullivan, "Toward Clarity in Cyber's 'Fog of Law.'"
+[^58]: Guttieri, "Fighting through Disruption"; Sullivan, "Toward Clarity in Cyber's 'Fog of Law.'" Michael Fischerkeller, Emily Goldman, and Richard Harknett, *Cyber Persistence Theory: Redefining National Security in Cyberspace*, cited in Guttieri, "Fighting through Disruption," and Sullivan, "Toward Clarity in Cyber's 'Fog of Law.'"
 [^59]: Willett, "The Cyber Dimension of the Russia-Ukraine War."
 [^60]: Maschmeyer, "Subversion, Cyber Operations, and Reverse Structural Power."
 [^61]: Codreanu, *Typhoons, Bears, and Pandas*. Lonergan and Poznansky, cited in Codreanu.
@@ -462,19 +462,19 @@ The stakes are practical. If governments read automatic, routine access as delib
 [^65]: Butt and Ulina, "Cyber Warfare in the AI Era."
 [^66]: Baram, "Re-ordering Accountability."
 [^67]: Guttieri, "Fighting through Disruption." Dimitrov and Andreev, "China's Strategic Competition in Cyberspace."
-[^68]: Guttieri, "Fighting through Disruption." Sullivan, "Toward Clarity in Cyber's 'Fog of Law.'"
-[^69]: Guttieri, "Fighting through Disruption." Baram, "Re-ordering Accountability." Codreanu, *Typhoons, Bears, and Pandas*.
-[^70]: Maschmeyer, "Subversion, Cyber Operations, and Reverse Structural Power."
-[^71]: Willett, "The Cyber Dimension of the Russia-Ukraine War." Butt and Ulina, "Cyber Warfare in the AI Era." Pokorny, *Offensive Cyber and Information Warfare Strategies*. Lindsay, cited in Pokorny.
-[^72]: Dimitrov and Andreev, "China's Strategic Competition in Cyberspace." Braccia, "From Vietnam to Volt Typhoon."
-[^73]: Guttieri, "Fighting through Disruption." Sullivan, "Toward Clarity in Cyber's 'Fog of Law.'"
-[^74]: Butt and Ulina, "Cyber Warfare in the AI Era."
-[^75]: Guttieri, "Fighting through Disruption."
-[^76]: Sullivan, "Toward Clarity in Cyber's 'Fog of Law.'" Baram, "Re-ordering Accountability."
-[^77]: Melella, "Coordination in Offensive and Defensive Cyberoperations."
-[^78]: Guttieri, "Fighting through Disruption." Sullivan, "Toward Clarity in Cyber's 'Fog of Law.'"
-[^79]: Baram, "Re-ordering Accountability."
-[^80]: Yigit et al., "Generative AI and LLMs for Critical Infrastructure Protection." Kabir et al., "A National-Scale AI-Driven Cyber Defense Framework."
+[^68]: Guttieri, "Fighting through Disruption"; Sullivan, "Toward Clarity in Cyber's 'Fog of Law.'"
+[^69]: Guttieri, "Fighting through Disruption"; Baram, "Re-ordering Accountability"; Codreanu, *Typhoons, Bears, and Pandas*.
+[^70]: Yigit et al., "Generative AI and LLMs for Critical Infrastructure Protection"; Kabir et al., "A National-Scale AI-Driven Cyber Defense Framework."
+[^71]: Maschmeyer, "Subversion, Cyber Operations, and Reverse Structural Power."
+[^72]: Willett, "The Cyber Dimension of the Russia-Ukraine War." Butt and Ulina, "Cyber Warfare in the AI Era"; Pokorny, *Offensive Cyber and Information Warfare Strategies*; Lindsay, cited in Pokorny.
+[^73]: Dimitrov and Andreev, "China's Strategic Competition in Cyberspace"; Braccia, "From Vietnam to Volt Typhoon."
+[^74]: Guttieri, "Fighting through Disruption"; Sullivan, "Toward Clarity in Cyber's 'Fog of Law.'"
+[^75]: Butt and Ulina, "Cyber Warfare in the AI Era."
+[^76]: Guttieri, "Fighting through Disruption."
+[^77]: Sullivan, "Toward Clarity in Cyber's 'Fog of Law.'"; Baram, "Re-ordering Accountability."
+[^78]: Melella, "Coordination in Offensive and Defensive Cyberoperations."
+[^79]: Guttieri, "Fighting through Disruption"; Sullivan, "Toward Clarity in Cyber's 'Fog of Law.'"
+[^80]: Baram, "Re-ordering Accountability."
 
 ## Bibliography
 
