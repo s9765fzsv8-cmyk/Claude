@@ -2,14 +2,15 @@ const fs = require('fs');
 const {
   Document, Packer, Paragraph, TextRun, HeadingLevel, Table, TableRow, TableCell,
   WidthType, ShadingType, AlignmentType, BorderStyle, PageOrientation, LevelFormat,
-  TableOfContents, PageBreak, TableLayoutType,
+  TableOfContents, PageBreak, TableLayoutType, FootnoteReferenceRun,
 } = require('docx');
 
 const SRC = '/home/user/Claude/paper/ai-autonomy-offence-defence.md';
 const OUT = '/home/user/Claude/paper/ai-autonomy-offence-defence.docx';
 
-const md = fs.readFileSync(SRC, 'utf8');
-const lines = md.split('\n');
+let md = fs.readFileSync(SRC, 'utf8');
+
+
 
 // ---- inline parser: **bold**, *italic*, `code` ----
 function inline(text, base = {}) {
@@ -48,12 +49,13 @@ function inline(text, base = {}) {
   };
 
   // bold content may contain single asterisks (italics), just not a literal **
-  const re = /(\*\*\*[^*]+\*\*\*|\*\*(?:[^*]|\*(?!\*))+?\*\*|\*[^*]+\*)/g;
+  const re = /(\[\^\d+\]|\*\*\*[^*]+\*\*\*|\*\*(?:[^*]|\*(?!\*))+?\*\*|\*[^*]+\*)/g;
   let last = 0, m;
   while ((m = re.exec(work)) !== null) {
     emit(work.slice(last, m.index), {});
     const tok = m[0];
-    if (tok.startsWith('***')) emit(tok.slice(3, -3), { bold: true, italics: true });
+    if (tok.startsWith('[^')) { runs.push(new FootnoteReferenceRun(Number(tok.slice(2, -1)))); }
+    else if (tok.startsWith('***')) emit(tok.slice(3, -3), { bold: true, italics: true });
     else if (tok.startsWith('**')) emitNested(tok.slice(2, -2), { bold: true });
     else emit(tok.slice(1, -1), { italics: true });
     last = m.index + tok.length;
@@ -126,6 +128,28 @@ function buildTable(rows) {
     rows: trs,
   });
 }
+
+// pull the NOTES block out and turn it into Word footnotes
+const footnotes = {};
+const notesIdx = md.indexOf('\n## NOTES');
+if (notesIdx !== -1) {
+  const after = md.slice(notesIdx);
+  const bibIdx = after.indexOf('\n## Bibliography');
+  const notesBlock = bibIdx === -1 ? after : after.slice(0, bibIdx);
+  const rest = bibIdx === -1 ? '' : after.slice(bibIdx);
+  md = md.slice(0, notesIdx) + rest;
+  const re = /^\[\^(\d+)\]:\s*([\s\S]*?)(?=\n\[\^\d+\]:|$)/gm;
+  let m;
+  while ((m = re.exec(notesBlock)) !== null) {
+    footnotes[Number(m[1])] = {
+      children: [new Paragraph({
+        spacing: { after: 60, line: 220 },
+        children: inline(clean(m[2].replace(/\s+/g, ' ')), { size: 17 }),
+      })],
+    };
+  }
+}
+const lines = md.split('\n');
 
 const children = [];
 
@@ -270,6 +294,7 @@ while (i < lines.length) {
 }
 
 const doc = new Document({
+  footnotes,
   creator: 'Strategic Studies research',
   title: 'The Price of Patience',
   description: 'AI autonomy, costly signalling, and the strategic meaning of cyber pre-positioning',
