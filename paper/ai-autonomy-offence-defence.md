@@ -2,425 +2,451 @@
 
 ## Abstract
 
-Persistent adversary access to civilian critical infrastructure, commonly called pre-positioning, is widely read as strategic warning. That reading depends on an assumption its proponents state but do not examine: that persistence is expensive, and therefore indicates deliberate intent. This paper examines the assumption and asks what artificial intelligence autonomy does to it.
+When a foreign state plants software inside another country's power grid or water system and leaves it there, analysts usually read this as a warning sign. They assume the state is preparing for war. That reading rests on a simple idea: staying hidden inside a network for years is hard and expensive, so anyone who bothers must be serious. This paper tests that idea and asks what happens to it as artificial intelligence takes over more of the work.
 
-The study draws on sixteen works selected for their relevance to the offence-defence balance, cyber pre-positioning and machine autonomy. Three findings follow. First, the interpretive claim and the behavioural record do not match. Pre-positioning is read as preparation for conflict, yet the Volt Typhoon campaign drew only a joint technical advisory, while the contemporaneous Salt Typhoon espionage campaign drew financial sanctions. Second, the literature contains three cases of pre-positioning and one attempted use, and no case in which pre-positioning was followed by successful strategic effect. Every inference about what pre-positioning portends therefore rests on no positive instances. Third, the offence-defence balance in cyberspace is a property of the pairing of adversaries rather than of the technology, which makes the question of whether autonomy favours attack the wrong one, and the question of which side absorbs autonomy better the answerable one.
+Sixteen studies were examined. Three things stand out.
 
-The paper specifies two competing hypotheses and proposes a design to distinguish them. Either autonomy degrades an existing signalling channel, or pre-positioning never signalled at all, being calibrated to remain below the thresholds that trigger response. The paper does not settle the question. It establishes that the question is open, that the literature has named it without investigating it, and that present evidence leans toward the second explanation.
+First, what analysts say and what governments do are not the same. Volt Typhoon, the Chinese campaign found inside American infrastructure in 2023, is described as preparation for conflict. Yet the United States answered it with a technical advisory and no punishment. A Chinese spying campaign in the same period, Salt Typhoon, drew financial sanctions. The lesser act was punished and the graver one was not.
 
-**Keywords:** offence-defence balance; cyber pre-positioning; costly signalling; artificial intelligence autonomy; Volt Typhoon; critical infrastructure protection; escalation
+Second, there is no case on record where pre-positioning led to a successful attack. There are three cases of it happening, one attempt that failed, and nothing else. Everything the field says about what pre-positioning means rests on no successful examples.
+
+Third, whether attack or defence has the advantage in cyberspace depends on who is fighting whom, not on the technology itself. So the useful question is not whether AI helps attackers. It is which side is better placed to use it.
+
+The paper sets out two rival explanations and a way to test them. Either AI is weakening a warning system that used to work, or pre-positioning never worked as a warning and was always designed to stay quiet. The paper does not decide between them. It shows that the question is open, that the field has noticed it without studying it, and that the evidence so far points toward the second.
+
+**Keywords:** offence-defence balance; cyber pre-positioning; costly signalling; artificial intelligence; Volt Typhoon; critical infrastructure; escalation
 
 ---
 
 ## 1. Introduction
 
-### 1.1 Strategic background
+### 1.1 Background
 
-In May 2023 the United States and its Five Eyes partners attributed to Chinese state-sponsored actors a campaign designated Volt Typhoon, which had established persistent access in American critical infrastructure using living-off-the-land techniques (Guttieri, 2025; Codreanu, 2025; Singh, Jash and Nanjappa, 2025). The campaign targeted energy, water, communications and transport systems, and included networks supporting United States Department of Defense operations in Guam, a logistics hub for Indo-Pacific contingencies (Dimitrov and Andreev, 2025).
+In May 2023 the United States and its Five Eyes partners named China as the source of a campaign they called Volt Typhoon. Chinese operators had been living inside American critical infrastructure, using the target's own system tools so that nothing looked out of place (Guttieri 2025; Codreanu 2025; Singh, Jash, and Nanjappa 2025). They were found in energy, water, communications and transport networks, and in systems supporting United States military operations on Guam, the main American base for any Pacific crisis (Dimitrov and Andreev 2025).
 
-What distinguished Volt Typhoon was not its technical sophistication but its apparent lack of purpose by the standards of espionage. General Paul Nakasone observed that there is "absolutely no intelligence to be gathered by putting malicious code in [critical infrastructure] networks" (quoted in Guttieri, 2025). United States authorities held that "the method of operation and chosen targets did not fit the pattern of a traditional cyber espionage campaign" (Codreanu, 2025).
+The odd thing about Volt Typhoon was not how clever it was. It was that the operation made no sense as spying. General Paul Nakasone put it bluntly. There is, he said, "absolutely no intelligence to be gathered by putting malicious code in [critical infrastructure] networks" (quoted in Guttieri 2025). American officials said the campaign "did not fit the pattern of a traditional cyber espionage campaign" (Codreanu 2025).
 
-During the same period, artificial intelligence systems began to acquire the capacity to conduct parts of cyber operations without human direction. Butt and Ulina (2026) place current capability at the level of task assistance, covering reconnaissance, vulnerability discovery and exploit adaptation, while noting that fully autonomous offensive cyber weapons remain "largely theoretical". Yigit et al. (2025) define agentic artificial intelligence as a system "capable of autonomous action, real-time adaptation, and multi-step problem-solving aligned with specific contexts and objectives".
+At the same time, artificial intelligence began taking over parts of cyber operations. Butt and Ulina (2026) find that AI now helps with scouting targets, finding weaknesses and adjusting attack tools, but that fully automatic attack systems are still "largely theoretical." Yigit and colleagues (2025) define an agentic AI system as one "capable of autonomous action, real-time adaptation, and multi-step problem-solving aligned with specific contexts and objectives."
 
-### 1.2 Problem statement
+### 1.2 The problem
 
-Guttieri (2025) offers a rule for reading persistent access. Where access yields little intelligence but confers substantial operational leverage, it "likely reflects preparation for conflict". The inference works because persistence is costly. In her account it requires "technical competence and strategic patience". This is the logic of costly signalling: the act carries information about intent because it is expensive to sustain.
+Guttieri (2025) gives analysts a rule for reading these intrusions. If someone holds access that produces little useful intelligence but would give them great power in a crisis, that access "likely reflects preparation for conflict."
 
-States do not appear to act as though pre-positioning carries that meaning. Baram (2026), coding twenty joint public attribution cases drawn from the European Repository of Cyber Incidents, finds that Volt Typhoon produced only a joint technical advisory, and that "no alliance-led endorsement or sanctions package followed". Advisories of this type cluster in cases of stealthy access and pre-positioning, and their "primary audience here is network defenders, not only state elites". Sullivan (2025) explains why. Operations of this kind "lurk in the shadows", and lack "sufficient political salience to activate political institutions to punish the perpetrator". Singh, Jash and Nanjappa (2025) record a third obstacle, namely that China denies the campaign and makes a reciprocal accusation.
+The rule works because staying hidden is difficult. In her words it takes "technical competence and strategic patience." This is what scholars call costly signalling. An act tells you something about intentions precisely because it is expensive to carry out. Cheap talk proves nothing. Expensive acts prove something.
 
-There is therefore a gap between what pre-positioning is held to mean and how states respond to it. Guttieri supplies the interpretation. Baram shows that the response does not follow. No study joins these findings, and none asks what machine autonomy does to a signalling mechanism that already performs poorly.
+But governments do not behave as though they believe this. Baram (2026) studied twenty cases where two or more states publicly blamed the same attacker. For Volt Typhoon, she found, the response was a shared technical advisory and nothing more. "No alliance-led endorsement or sanctions package followed." Advisories like this cluster around quiet intrusion cases, and their "primary audience here is network defenders, not only state elites."
+
+Sullivan (2025) explains why. These operations "lurk in the shadows." They lack "sufficient political salience to activate political institutions to punish the perpetrator." Nobody sees a burning building, so nobody demands a response. Singh, Jash, and Nanjappa (2025) add a third problem. China denies the campaign happened and accuses the United States of the same thing.
+
+So there is a gap. Analysts say pre-positioning is a warning. Governments do not treat it as one. Nobody has put these two findings side by side, and nobody has asked what AI does to a warning system that is already this weak.
 
 ### 1.3 Research question
 
-How fast and how far will artificial intelligence and agentic autonomy shift the offence-defence balance, and when does pre-positioning itself constitute a strategic signal or a source of instability?
+How fast and how far will AI and machine autonomy shift the balance between attack and defence, and when does pre-positioning count as a strategic signal or as a cause of instability?
 
-### 1.4 Research objectives
+### 1.4 Objectives
 
-1. To establish how the literature distinguishes pre-positioning as espionage from pre-positioning as signal.
-2. To identify the cost assumptions on which that distinction depends.
-3. To assess the present state and direction of operational cyber autonomy.
-4. To theorise the consequences for signalling, escalation and stability when the cost of persistence falls.
-5. To derive indicators by which analysts might detect that transition.
+1. To set out how the literature tells spying apart from signalling.
+2. To find the assumptions about cost that this distinction depends on.
+3. To assess where machine autonomy stands now and where it is heading.
+4. To work out what happens to warning, escalation and stability if staying hidden becomes cheap.
+5. To suggest signs by which analysts could spot that change.
 
-### 1.5 Significance of the study
+### 1.5 Why it matters
 
-The academic contribution is to connect two bodies of work that have developed separately. Melella (n.d.) proposes that "studying how these emerging technologies affect the offensive-defensive balance could reveal new dynamics and challenges", and then examines coordination instead.
+For scholarship, the value is in joining two literatures that have grown up apart. Melella (n.d.) writes that "studying how these emerging technologies affect the offensive-defensive balance could reveal new dynamics and challenges," and then studies something else.
 
-The policy contribution is more immediate. Doctrine treats infrastructure pre-positioning as strategic warning. If that reading is unreliable, states risk either responding to activity that carries no message, or failing to respond to preparation that does.
+For policy, the value is more direct. Governments treat foreign implants in infrastructure as a warning of coming attack. If that reading is wrong, states may either punish activity that means nothing, or ignore preparation that means a great deal.
 
-### 1.6 Scope and delimitations
+### 1.6 Scope and limits
 
-The study addresses state and state-sponsored operations against critical infrastructure. It does not address cybercrime, information operations or lethal autonomous weapons except where these bear on the argument. The empirical focus is the period from 2018 to 2026, which covers the earliest documented case of pre-positioning without use and the most recent assessments of machine autonomy.
+This study looks at states and state-backed groups attacking critical infrastructure. It does not cover ordinary crime, propaganda campaigns or armed robots, except where these touch the argument. The period covered runs from 2018 to 2026.
 
-Three limits should be stated at the outset. The literature examined is drawn from open sources and is oriented toward the United States and its allies. No Chinese-language doctrinal material is included. The quality of available work varies, and Section 2.1 distinguishes peer-reviewed scholarship from preprints and unreviewed material.
+Three limits should be admitted now. The sources are open, published material. They lean heavily towards the United States and its allies. No Chinese-language military writing is included. Quality also varies, and Section 2.1 says which sources are peer reviewed and which are not.
 
-### 1.7 Structure of the paper
+### 1.7 How the paper is arranged
 
-Section 2 reviews the literature by theme. Section 3 identifies the research gap. Section 4 sets out the theoretical framework and the competing hypotheses. Section 5 proposes a research design. Section 6 synthesises what the literature establishes and what it leaves unsettled. Section 7 states the contribution. Section 8 concludes.
+Section 2 reviews the literature by theme. Section 3 sets out the gap. Section 4 gives the theory and the two rival explanations. Section 5 proposes a research design. Section 6 sums up what is known and what is not. Section 7 states the contribution. Section 8 concludes.
 
 ---
 
 ## 2. Literature Review
 
-### 2.1 The evidence base
+### 2.1 The sources
 
-Sixteen works form the basis of this review. Table 1 records their venue, method and standing. Quality varies, and the assessment column is not decorative. Two of the sixteen carry no institutional affiliation and no peer review, and one contains internally inconsistent data. These are used for the events they record rather than for the claims they make.
+Sixteen studies form the base of this review. Table 1 lists them with their venue, method and standing.
 
-**Table 1. Works reviewed**
+The standing column matters. Two of the sixteen have no named institution behind them and no peer review. One reports figures that contradict each other. These are used for the events they describe, not for the conclusions they draw.
+
+**Table 1. Studies reviewed**
 
 | Study | Venue | Method | Standing |
 |---|---|---|---|
-| Maschmeyer (2023) | European Journal of International Relations | Theory building with plausibility probe | Peer reviewed, ranked |
-| Willett (2022) | Survival (IISS) | Expert assessment of the Russia-Ukraine war | Peer reviewed, ranked |
-| Baram (2026) | Contemporary Security Policy | Typology and coding of twenty cases | Peer reviewed, ranked |
-| Guttieri (2025) | The Cyber Defense Review | Conceptual argument with case studies | Peer reviewed |
-| Sullivan (2025) | The Cyber Defense Review | Doctrinal legal analysis | Peer reviewed |
-| Yigit et al. (2025) | Sensors | Survey and benchmark review | Peer reviewed |
-| Singh, Jash and Nanjappa (2025) | Cogent Social Sciences | Comparative case study | Peer reviewed |
-| Dimitrov and Andreev (2025) | Environment. Technology. Resources | Doctrinal case analysis | Conference proceedings |
-| Codreanu (2025) | Romanian Diplomatic Institute | Open-source policy analysis | Institute paper, not reviewed |
-| Melella (n.d.) | University of Genoa | Doctoral dissertation | Not peer reviewed; year unconfirmed |
-| Butt and Ulina (2026) | Critical Review of Social Sciences Studies | Analytical review of secondary sources | Unranked journal |
-| Kabir et al. (2026) | Journal of Computer Science and Technology Studies | Framework with incident coding | Unranked; data inconsistent |
-| Pokorny (2026) | ICL Institute | Open-source analysis of sixteen sources | Self-published |
-| Braccia (2025) | Authorea | Grey zone analysis | Preprint, no affiliation |
-| Urbanczyk et al. (2025) | TechRxiv | Kill chain case study | Preprint, not reviewed |
-| Ferdaus et al. (n.d.) | SSRN | Survey chapter | Working paper |
+| Maschmeyer 2023 | European Journal of International Relations | Theory with one test case | Peer reviewed, ranked |
+| Willett 2022 | Survival (IISS) | Expert assessment of the war in Ukraine | Peer reviewed, ranked |
+| Baram 2026 | Contemporary Security Policy | Coding of twenty cases | Peer reviewed, ranked |
+| Guttieri 2025 | The Cyber Defense Review | Argument with case studies | Peer reviewed |
+| Sullivan 2025 | The Cyber Defense Review | Legal analysis | Peer reviewed |
+| Yigit et al. 2025 | Sensors | Survey and benchmark review | Peer reviewed |
+| Singh, Jash, and Nanjappa 2025 | Cogent Social Sciences | Comparative case study | Peer reviewed |
+| Dimitrov and Andreev 2025 | Environment. Technology. Resources | Case analysis | Conference paper |
+| Codreanu 2025 | Romanian Diplomatic Institute | Open-source analysis | Institute paper, not reviewed |
+| Melella n.d. | University of Genoa | Doctoral thesis | Not reviewed; year unconfirmed |
+| Butt and Ulina 2026 | Critical Review of Social Sciences Studies | Review of secondary sources | Unranked journal |
+| Kabir et al. 2026 | Journal of Computer Science and Technology Studies | Framework and incident coding | Unranked; figures inconsistent |
+| Pokorny 2026 | ICL Institute | Analysis of sixteen sources | Self-published |
+| Braccia 2025 | Authorea | Grey zone analysis | Preprint, no institution |
+| Urbanczyk et al. 2025 | TechRxiv | Case study | Preprint, not reviewed |
+| Ferdaus et al. n.d. | SSRN | Survey chapter | Working paper |
 
-### 2.2 Theme one: is the offence-defence balance the right frame for cyberspace?
+### 2.2 Does the attack and defence balance even apply to cyberspace?
 
-Offence-defence theory holds that the relative ease of attack and defence shapes the likelihood of conflict. Applied to cyberspace, it has produced a durable assumption of offensive advantage. Maschmeyer (2023) reports this position and rejects it. Conventional wisdom, he writes, "attempts to explain this paradox militarily through offense-defense theory, diagnosing a strong offensive advantage for cyber weapons", but that theory "faces significant theoretical and empirical challenges", a judgement he supports by reference to Gartzke and Lindsay (2015), Libicki (2009) and Slayton (2017). His alternative is that cyber operations are instruments of subversion rather than of warfare, and that they reverse structural power by turning the benefits of a central position into sources of harm.
+The old idea is simple. When attacking is easier than defending, wars become more likely. Applied to cyberspace, this produced a common belief that attackers hold the advantage.
 
-Three further positions appear in the literature, and they are not compatible with one another.
+Maschmeyer (2023) reports that belief and rejects it. The usual view, he writes, "attempts to explain this paradox militarily through offense-defense theory, diagnosing a strong offensive advantage for cyber weapons." But this theory "faces significant theoretical and empirical challenges." He supports the point by pointing to Gartzke and Lindsay (2015), Libicki (2009) and Slayton (2017). His own answer is that cyber operations are a form of subversion rather than warfare. They work by turning a country's strengths into weaknesses.
 
-Butt and Ulina (2026) assert offensive advantage. On their account innovation continues "on the offensive side, including AI-powered attacks, supply chain compromise, attacks on critical infrastructure, influence operations, deepfakes and that's where the defenders are behind". The claim is asserted rather than demonstrated, and rests on trend data drawn from commercial vendors without discussion of the incentives shaping such reporting.
+Three other positions appear, and they do not agree with each other.
 
-Pokorny (2026) reports the opposite finding from Lindsay (2013). On that account "the more technically sophisticated the target, the more difficult it is to achieve a decisive cyber effect, because sophisticated defenders are better able to detect and mitigate intrusions", so that the balance "favors defense at the strategic level, even if individual tactical attacks may succeed". Two cautions apply. Lindsay is not among the works reviewed here, so this is a second-hand characterisation requiring verification. Pokorny's own monograph is self-published, rests on sixteen unclassified sources, and is written as an offensive planning document, which makes it a source expressing a policy position rather than a neutral assessment.
+Butt and Ulina (2026) say attackers are ahead. New tricks keep coming "on the offensive side, including AI-powered attacks, supply chain compromise, attacks on critical infrastructure, influence operations, deepfakes and that's where the defenders are behind." They state this rather than prove it, and their figures come from security companies that sell protection, without any discussion of that conflict of interest.
 
-Willett (2022) provides the only judgement grounded in an observed conflict. Assessing the cyber dimension of the Russia-Ukraine war for the International Institute for Strategic Studies, he describes "a sustained Russian campaign to hack into and disrupt Ukraine's critical national infrastructure, resulting in intense sparring between offence and defence, but with defence dominating most of the time, given its access to good intelligence and top-class cyber-security expertise".
+Pokorny (2026) reports the opposite view from Lindsay (2013). On that account "the more technically sophisticated the target, the more difficult it is to achieve a decisive cyber effect, because sophisticated defenders are better able to detect and mitigate intrusions." The balance therefore "favors defense at the strategic level, even if individual tactical attacks may succeed." Two warnings apply here. Lindsay is not among the sources read for this study, so this is a second-hand account that needs checking. Pokorny's own work is self-published, rests on sixteen unclassified sources, and is written as a plan for attacking China, which makes it a statement of policy preference rather than neutral analysis.
 
-Willett adds a qualification that carries more theoretical weight than the finding itself. A conflict "between Russia and a state with weaker cyber security than Ukraine, or one between NATO and Russia (or China), would perhaps see a different balance between offence and defence". The balance is thus a property of the pairing rather than of the technology. Ukrainian defence was sustained by United States and United Kingdom agencies and by commercial firms including Microsoft, Google and Cisco. The same offensive tools directed at a differently resourced defender would produce a different result.
+Willett (2022) offers the only judgement based on watching an actual war. Writing for the International Institute for Strategic Studies about Russia and Ukraine, he describes "a sustained Russian campaign to hack into and disrupt Ukraine's critical national infrastructure, resulting in intense sparring between offence and defence, but with defence dominating most of the time, given its access to good intelligence and top-class cyber-security expertise."
 
-The evidence supporting each position is uneven. Maschmeyer's rejection is argued theoretically but rests empirically on a single case he himself describes as a plausibility probe. The assertion by Butt and Ulina is unargued. Lindsay's claim reaches this review at second hand. Only Willett's judgement is grounded in observed conflict, and it is explicitly bounded to August 2022 and to a well-matched pair of adversaries. His finding that Russia lacked the capabilities needed to impair military units and command systems is consistent with Smeets (2022) on the difficulty states face in developing military cyber forces, a work cited by both Maschmeyer (2023) and Singh, Jash and Nanjappa (2025).
+He then adds a line that matters more than the finding. A war "between Russia and a state with weaker cyber security than Ukraine, or one between NATO and Russia (or China), would perhaps see a different balance between offence and defence."
 
-No work reviewed here measures or operationalises the cyber offence-defence balance. The canonical treatment, Slayton (2017), appears only within Maschmeyer's bibliography.
+The balance, in other words, is not a fixed property of the technology. It depends on who is facing whom. Ukraine held out because American and British agencies helped, and because Microsoft, Google and Cisco helped. Send the same Russian tools against a poorer defender and the result changes.
 
-The implication for this study is that a paper asking how autonomy shifts the balance must first establish which baseline it is shifting from, and the literature does not supply one.
+The evidence behind each position is thin in different ways. Maschmeyer argues well but tests his idea on one case, which he himself calls a plausibility probe. Butt and Ulina simply assert. Lindsay reaches this paper second-hand. Only Willett watched a war, and even he limits his judgement to August 2022 and to two evenly matched sides. His finding that Russia could not disable Ukrainian military systems fits Smeets (2022) on how hard states find it to build cyber forces, a work cited by Maschmeyer (2023) and by Singh, Jash, and Nanjappa (2025).
 
-### 2.3 Theme two: pre-positioning as espionage, preparation or signal
+No study reviewed here actually measures the balance. The standard treatment of the concept, Slayton (2017), appears only inside Maschmeyer's bibliography.
 
-Persistent access to critical infrastructure is ambiguous on its face. The same implant supports intelligence collection, attack preparation and coercive signalling.
+The lesson for this paper is straightforward. Anyone asking how AI shifts the balance must first say what the balance was before. The literature does not tell us.
 
-Guttieri (2025) makes the ambiguity her subject. Pre-positioned actors, she writes, "maintain a portfolio of future options", choosing among "escalating the attack, disrupting services, conducting surveillance, or withdrawing", and over time they "accumulate a form of latent power on the network". Her rule for reading such access follows from the assessments of Nakasone and the analyst James Lewis. Taken together, she argues, their insights "offer a strong interpretive signal: when persistent access offers low intelligence gain but high leverage, it likely reflects preparation for conflict".
+### 2.3 Is pre-positioning spying, preparation, or a message?
 
-Codreanu (2025) reaches the same criterion independently and from a different institutional vantage. United States authorities held that the goal "was not the extraction of data for conventional espionage but rather the pre-positioning in key points of critical infrastructure to prepare for possible future acts of sabotage". Two independent statements of one criterion strengthen it.
+The same implant can serve three purposes. It can collect intelligence, prepare an attack, or send a warning. From the outside they look identical.
 
-Two further works take opposing positions on what the criterion licenses.
+Guttieri (2025) takes this problem head on. Intruders who settle in, she writes, "maintain a portfolio of future options." They can choose among "escalating the attack, disrupting services, conducting surveillance, or withdrawing." Over time they "accumulate a form of latent power on the network."
 
-Dimitrov and Andreev (2025) hold that pre-positioning functions coercively. Volt Typhoon, they argue, reflects China's "increasing reliance on the prepositioning of cyber assets in U.S. critical infrastructure as a means of deterrence and coercion", and constitutes not intelligence gathering but "pre-emptive measures designed to embed China's cyber capabilities into critical infrastructure, ensuring its influence in times of crisis". Their own evidence sits awkwardly with this reading. They concede that at Guam "forensic investigations did not reveal immediate sabotage" and that the intrusions "pointed to intelligence gathering and strategic mapping", which is consistent with the espionage interpretation they reject.
+Her rule for telling the cases apart comes from Nakasone and the analyst James Lewis. Together, she argues, their views "offer a strong interpretive signal: when persistent access offers low intelligence gain but high leverage, it likely reflects preparation for conflict."
 
-Braccia (2025) holds the opposite. Grey zone operations, on this account, "target strategically significant systems while carefully calibrating effects to remain below use-of-force thresholds established in international law". Rather than causing damage that might trigger a collective defence response, they "focus on persistent access, intelligence gathering, and pre-positioning for potential future activation". If operations are designed to remain below the threshold of response, then illegibility is the objective rather than a defect. This work is an unreviewed preprint carrying no institutional affiliation, and its factual claims should be taken from the government advisories it cites rather than from the preprint itself. The conceptual point, drawn from the wider grey zone literature, is nonetheless serious.
+Codreanu (2025) arrives at the same rule from a different place, working at the Romanian Diplomatic Institute with different sources. American officials held that the aim "was not the extraction of data for conventional espionage but rather the pre-positioning in key points of critical infrastructure to prepare for possible future acts of sabotage." Two independent statements of one rule make it stronger.
 
-Three obstacles to the signalling reading appear in the literature, each documented independently.
+Two further studies disagree about what the rule allows us to conclude.
 
-The first is non-reception. Sullivan (2025) observes that cyber operations "rarely possess sufficient political salience to activate political institutions to punish the perpetrator in any way that might provoke meaningful blowback", and that campaigns such as Volt Typhoon and Salt Typhoon "lurk in the shadows, compromising entire populations while leaving little trace".
+Dimitrov and Andreev (2025) treat pre-positioning as a form of pressure. Volt Typhoon, they argue, shows China's "increasing reliance on the prepositioning of cyber assets in U.S. critical infrastructure as a means of deterrence and coercion." These are not spying missions but "pre-emptive measures designed to embed China's cyber capabilities into critical infrastructure, ensuring its influence in times of crisis." Their own evidence sits awkwardly with this. They admit that at Guam "forensic investigations did not reveal immediate sabotage" and that the intrusions "pointed to intelligence gathering and strategic mapping." That is the spying explanation they set out to reject.
 
-The second is denial. Singh, Jash and Nanjappa (2025) record that China's National Computer Virus Emergency Response Centre answered the attribution by accusing the United States of operating a toolkit to erase digital footprints, and that the Chinese Ministry of Foreign Affairs issued remarks on the "hyping up" of Volt Typhoon. Codreanu (2025) records the ministry spokesperson dismissing the allegations as disinformation.
+Braccia (2025) argues the opposite. Grey zone operations, he writes, "target strategically significant systems while carefully calibrating effects to remain below use-of-force thresholds established in international law." Rather than doing damage that might trigger a collective response, they "focus on persistent access, intelligence gathering, and pre-positioning for potential future activation."
 
-The third is misdirection of the response. Baram (2026) codes Volt Typhoon as a joint technical advisory, noting that "no alliance-led endorsement or sanctions package followed", and that for advisories of this type the "primary audience here is network defenders, not only state elites". A coercive signal must reach political decision-makers to work. This one reached system administrators.
+If that is right, staying invisible is the whole point. The operator is not trying to send a message at all. This is a preprint with no institution behind it, so its factual claims should be taken from the government advisories it cites rather than from the preprint. The idea itself, drawn from wider work on grey zone conflict, is worth taking seriously.
 
-Urbanczyk et al. (2025) supply a comparison that sharpens the point. The Salt Typhoon campaign, which compromised telecommunications providers and obtained access to law enforcement surveillance systems, produced "sanctions imposed by the U.S. Treasury on PRC-linked cyber entities". The same adversary, in the same period, against the same target state, drew financial sanctions for espionage and a technical advisory for pre-positioning. On any strategic reading the severity ordering is inverted, since implants in water and power systems are graver than the collection of metadata. State response appears to track the legibility of an act and the availability of precedent rather than its gravity.
+Three problems with the signalling reading appear in the literature, each found independently.
 
-Codreanu (2025) records the only case of pre-positioning followed by prolonged non-use. Reporting Lonergan and Poznansky (2025), he notes that in 2018 the United States accused Russia of infiltrating nuclear, energy, aviation and water infrastructure, and that "so far, however, Russia has not exploited these footholds to launch direct cyberattacks on the US". Seven years of maintained access without use qualifies the inference from access to intent. If persistent access indicates preparation for conflict, preparation can evidently continue for years without conflict.
+**Nobody notices.** Sullivan (2025) observes that cyber operations "rarely possess sufficient political salience to activate political institutions to punish the perpetrator in any way that might provoke meaningful blowback." Campaigns such as Volt Typhoon and Salt Typhoon "lurk in the shadows, compromising entire populations while leaving little trace."
 
-Willett (2022) records the one case in which pre-positioning was converted to attack. Russia had been "conducting reconnaissance of, and pre-positioning cyber capabilities on, certain Ukrainian energy and communications networks from at least March 2021". In April 2022 an intrusion into a major Ukrainian energy facility was set to deliver disruptive effect. "Ukrainian cyber security neutralised it." The malware "would have shut off power for two million people had the attack succeeded", but "no power outages in fact occurred". Malware targeting liquefied natural gas safety controllers was likewise detected before use, and the Federal Bureau of Investigation disabled a Russian router network before it could be employed.
+**The sender denies it.** Singh, Jash, and Nanjappa (2025) record that China's National Computer Virus Emergency Response Centre answered the accusation by accusing the United States of running a tool to erase digital traces, and that the Chinese foreign ministry complained about the "hyping up" of Volt Typhoon. Codreanu (2025) records the ministry spokesman calling the allegations disinformation.
 
-The literature therefore contains three cases of pre-positioning, one attempted use, and no instance of successful strategic effect.
+**The message goes to the wrong people.** Baram (2026) classes the Volt Typhoon response as a joint technical advisory, noting that "no alliance-led endorsement or sanctions package followed," and that for advisories of this kind the "primary audience here is network defenders, not only state elites." A threat has to reach the people who make decisions. This one reached system administrators.
 
-### 2.4 Theme three: machine autonomy and the absence of strategic analysis
+Urbanczyk and colleagues (2025) sharpen the point with a comparison. Salt Typhoon, which broke into telephone companies and reached police surveillance systems, produced "sanctions imposed by the U.S. Treasury on PRC-linked cyber entities." Same country, same period, same victim. Spying got sanctions. Planting weapons in the power grid got an advisory. By any strategic measure that ordering is backwards, since implants in water and electricity systems are worse than stolen call records. Governments seem to respond to what is easy to explain and what fits past practice, not to what is dangerous.
 
-Butt and Ulina (2026) provide the only treatment among the works reviewed that connects autonomy to offensive operations. Their assessment is conservative. "While fully autonomous offensive cyber weapons are still largely theoretical, AI is being used to aid in reconnaissance, vulnerability discovery, phishing, malware development, and the adaptation of cyber exploits." Future systems, they suggest, "could recognize targets, determine attack routes, and conduct portions of an operation without human participation". The value of the statement lies in its caution, since the authors have no incentive to understate the pace of change.
+Codreanu (2025) records the one case where pre-positioning went nowhere. Drawing on Lonergan and Poznansky (2025), he notes that in 2018 the United States accused Russia of getting inside nuclear, energy, aviation and water systems, and that "so far, however, Russia has not exploited these footholds to launch direct cyberattacks on the US." Seven years of holding access without using it. If access means an attack is coming, the attack can evidently stay away for a very long time.
 
-Yigit et al. (2025), writing from Edinburgh Napier University and the University of Liverpool, supply the definition of agentic artificial intelligence used in this paper and identify a means of measuring the capability in question. The CYBERSECEVAL 3 benchmark, they note, incorporates "offensive security capabilities, such as automated social engineering, scaling manual offensive operations, and autonomous offensive strategies", and covers "autonomous offensive cyber operations". Benchmark results across successive model generations would constitute a time series for the pace question, replacing estimation with measurement. The authors also record limits, confirming earlier observations of "limitations in zero-shot LLMs for adversarial attack detection" and dataset constraints in evaluating such tools.
+Willett (2022) records the one case where pre-positioning turned into an attack. Russia had been "conducting reconnaissance of, and pre-positioning cyber capabilities on, certain Ukrainian energy and communications networks from at least March 2021." In April 2022 an intrusion into a large Ukrainian power facility was set to fire. "Ukrainian cyber security neutralised it." The malware "would have shut off power for two million people had the attack succeeded," but "no power outages in fact occurred." Malware aimed at gas plant safety systems was caught before use, and the FBI shut down a Russian network of hijacked routers before it could be turned on.
 
-Two features of this work bear on the argument. Autonomy is presented almost entirely as a defensive capability. Yigit et al. describe agentic systems as enabling "proactive defence and resilience in real time by autonomously learning, adapting, and orchestrating multi-step mitigation strategies". Kabir et al. (2026) likewise propose an autonomous response function within a national defensive framework.
+So the record holds three cases of pre-positioning, one attempt, and no success.
 
-Kabir et al. (2026) also provide two figures useful to this study, subject to a caution. Coding nation-state intrusions from 2020 to 2024, they report a mean dwell time of 197 days, and characterise Volt Typhoon as having persisted "up to 5 years", "pre-positioned for destructive action". They further report that "73.6% of events were first discovered by entities other than the victim organisation's security teams". The caution is that the study's incident counts do not reconcile. The abstract reports 847 confirmed intrusions, while the results section reports 89 confirmed attacks and 253 confirmed events, with no explanation offered. The counts should not be cited. The dwell time and detection figures should be corroborated against independent industry reporting before use.
+### 2.4 Machine autonomy, with no strategy attached
 
-The detection figure carries an implication that runs against the intuitive reading of autonomy. If most intrusions are found by third parties rather than by victims, persistence is currently sustained in part by the weakness of defensive detection. Improved autonomous detection would raise the cost of persistence rather than lower it.
+Butt and Ulina (2026) give the only account here that connects autonomy to attack. It is cautious. "While fully autonomous offensive cyber weapons are still largely theoretical, AI is being used to aid in reconnaissance, vulnerability discovery, phishing, malware development, and the adaptation of cyber exploits." In time, they suggest, systems "could recognize targets, determine attack routes, and conduct portions of an operation without human participation." The caution is what makes it useful. These authors have no reason to play down how fast things are moving.
 
-Fifteen of the sixteen works reviewed do not connect machine autonomy to the offence-defence balance. Those that theorise cyber strategy, including Maschmeyer, Guttieri, Sullivan, Baram, Willett and Codreanu, make no reference to artificial intelligence. Those that examine artificial intelligence, including Yigit et al. and Kabir et al., make no reference to deterrence, signalling or the balance.
+Yigit and colleagues (2025), writing from Edinburgh Napier University and the University of Liverpool, supply both the definition of agentic AI used here and a way of measuring it. The CYBERSECEVAL 3 benchmark, they note, tests "offensive security capabilities, such as automated social engineering, scaling manual offensive operations, and autonomous offensive strategies," and covers "autonomous offensive cyber operations." Scores from this benchmark across successive generations of models would give a real measurement of how fast autonomy is arriving, instead of guesswork. The authors also note limits, confirming earlier findings of "limitations in zero-shot LLMs for adversarial attack detection."
 
-### 2.5 Theme four: deterrence, denial and the security dilemma
+Two things stand out in this work. Autonomy appears almost entirely on the defensive side. Yigit and colleagues describe agentic systems as delivering "proactive defence and resilience in real time by autonomously learning, adapting, and orchestrating multi-step mitigation strategies." Kabir and colleagues (2026) likewise put automatic response inside a national defensive system.
 
-Guttieri (2025) situates pre-positioning within Buchanan's cybersecurity dilemma, "an extension of the traditional security dilemma in which a state's efforts to secure itself provoke escalation from others". Her policy conclusion favours denial over punishment. "Deterrence by punishment is difficult to execute when adversaries can exploit ambiguity. In contrast, preventing adversaries from achieving their goals through resilience remains insufficiently emphasized."
+Kabir and colleagues also supply two useful numbers, with a warning attached. Coding state intrusions from 2020 to 2024, they report an average of 197 days between break-in and discovery, and describe Volt Typhoon as lasting "up to 5 years," "pre-positioned for destructive action." They also report that "73.6% of events were first discovered by entities other than the victim organisation's security teams."
 
-She also identifies a mechanism by which pre-positioning becomes destabilising. Reporting Cunningham (2022), she notes that China employs cyber, counter-space and precision systems "as stand-ins for nuclear escalation, leveraging them for signaling and coercion", and concludes that "rather than deterring escalation, China's use of cyber operations appears designed to shape conditions for conflict". The interdependence of cyber, space and nuclear systems, however, "undermines their reliability as controlled instruments of deterrence or coercion", such that "even a limited cyberattack could inadvertently disrupt critical infrastructure and escalate tensions far beyond its intended scope".
+The warning is that their incident totals do not add up. The abstract claims 847 confirmed intrusions. The results section reports 89 confirmed attacks and 253 confirmed events. No explanation is offered. Those totals should not be quoted. The dwell time and discovery figures should be checked against independent industry reporting before use.
 
-Sullivan (2025) traces the doctrinal shift from deterrence to persistent engagement and draws out its consequences for communication between adversaries. Deterrence "is reactive and punitive", while persistent engagement "is proactively preventive"; deterrence "is episodic in nature", while persistence theory's "defining trait is the continuous operations that it requires". Where deterrence favoured strategic ambiguity, continuous contact "both facilitates and benefits from clarity over ambiguity". Operations themselves become a medium of communication, since "defend forward operations to dismantle specific foreign threats and not others signal to an adversary a sense of the types of most threatening or inappropriate cyber threats". Sullivan calls this tacit bargaining.
+That discovery figure carries an implication worth noting. If most intrusions are found by outsiders rather than by the victim, then intruders survive partly because defenders cannot see them. Better automatic detection would make hiding harder, not easier. Autonomy might therefore raise the cost of persistence rather than lower it.
 
-Sullivan also distinguishes technical from political attribution. "Even when technical attribution is possible, political attribution rarely follows", because public identification of a perpetrating state "is subject to political considerations that may counsel against attribution" (Eichensehr, 2020, as reported in Sullivan, 2025).
+Fifteen of the sixteen studies do not link machine autonomy to the balance between attack and defence. Those writing about strategy, including Maschmeyer, Guttieri, Sullivan, Baram, Willett and Codreanu, never mention artificial intelligence. Those writing about artificial intelligence, including Yigit and Kabir with their colleagues, never mention deterrence, signalling or the balance.
 
-Willett (2022) records the escalation stakes. President Biden identified a cyber breach as the most likely cause of the United States entering "a real shooting war" with a major power, and NATO has stated that it would assess Article 5 thresholds case by case and "could consider an accumulation of minor attacks as crossing that threshold". Willett also notes that after the 2007 operations against Estonia the Russians "probably learned what sorts of cyber attacks on a NATO state the Alliance would not consider close to its threshold", which describes a form of threshold discovery through probing that is distinct from pre-positioning.
+### 2.5 Deterrence, denial and the security dilemma
 
-Sullivan (2025) and Pokorny (2026) converge on a related gap. Sullivan describes a persistent fog of law surrounding cyber operations. Pokorny observes that "a significant gap in the public literature concerns the precise rules of engagement governing forward operations, the potential for miscalculation, and the legal implications of continuously operating within the sovereign networks of other states".
+Guttieri (2025) places pre-positioning inside Buchanan's cybersecurity dilemma, "an extension of the traditional security dilemma in which a state's efforts to secure itself provoke escalation from others." Her conclusion favours denial over punishment. "Deterrence by punishment is difficult to execute when adversaries can exploit ambiguity. In contrast, preventing adversaries from achieving their goals through resilience remains insufficiently emphasized."
 
-### 2.6 Summary of the review
+She also shows how pre-positioning becomes dangerous. Drawing on Cunningham (2022), she notes that China uses cyber, space and precision weapons "as stand-ins for nuclear escalation, leveraging them for signaling and coercion," and concludes that "rather than deterring escalation, China's use of cyber operations appears designed to shape conditions for conflict." But because cyber, space and nuclear systems are tangled together, this tangle "undermines their reliability as controlled instruments of deterrence or coercion." The result is that "even a limited cyberattack could inadvertently disrupt critical infrastructure and escalate tensions far beyond its intended scope."
 
-The literature agrees that cyber competition is continuous rather than episodic, that critical infrastructure is the contested object, and that pre-positioning is analytically distinct from espionage. It disagrees on the direction of the offence-defence balance, on whether pre-positioning communicates intent, and on whether cyber operations are cheap or costly to sustain. It does not connect machine autonomy to any of these questions.
+Sullivan (2025) traces how American doctrine moved from deterrence to constant engagement, and what that did to communication between rivals. Deterrence "is reactive and punitive," while persistent engagement "is proactively preventive." Deterrence "is episodic in nature," while the new approach depends on "the continuous operations that it requires." Where deterrence rewarded keeping your intentions vague, constant contact "both facilitates and benefits from clarity over ambiguity."
+
+Operations themselves start to carry meaning. As Sullivan puts it, "defend forward operations to dismantle specific foreign threats and not others signal to an adversary a sense of the types of most threatening or inappropriate cyber threats." He calls this tacit bargaining.
+
+He also separates two kinds of blame. "Even when technical attribution is possible, political attribution rarely follows," because naming a government publicly "is subject to political considerations that may counsel against attribution" (Eichensehr 2020, reported in Sullivan 2025). Knowing who did it and saying so are different decisions.
+
+Willett (2022) records what is at stake. President Biden named a cyber breach as the most likely path to the United States finding itself in "a real shooting war" with a major power. NATO has said it would judge Article 5 case by case and "could consider an accumulation of minor attacks as crossing that threshold." Willett also notes that after the 2007 attacks on Estonia, Russia "probably learned what sorts of cyber attacks on a NATO state the Alliance would not consider close to its threshold." That is learning by testing, which is different from pre-positioning.
+
+Sullivan (2025) and Pokorny (2026) point to the same missing piece. Sullivan describes a lasting fog of law around cyber operations. Pokorny notes that "a significant gap in the public literature concerns the precise rules of engagement governing forward operations, the potential for miscalculation, and the legal implications of continuously operating within the sovereign networks of other states."
+
+### 2.6 Summary
+
+The literature agrees that cyber competition never stops, that infrastructure is the prize, and that pre-positioning is different from spying. It disagrees about whether attack or defence has the advantage, about whether pre-positioning carries a message, and about whether these operations are cheap or expensive. It says nothing about how machine autonomy affects any of this.
 
 ---
 
-## 3. Research Gap
+## 3. The Research Gap
 
-### 3.1 The gap stated
+### 3.1 The gap
 
-The intersection of machine autonomy and the offence-defence balance has been identified as a research direction within this literature and remains uninvestigated, including by the author who identified it.
+The meeting point of machine autonomy and the attack-defence balance has been named as a subject worth studying and has not been studied, including by the person who named it.
 
-Melella (n.d.) devotes a chapter section to the offence-defence balance in cyberspace, examines artificial intelligence in a chapter on the NATO Locked Shields exercise, and writes that "the advancement of technologies, particularly artificial intelligence, is changing the landscape of cyberspace" and that "studying how these emerging technologies affect the offensive-defensive balance could reveal new dynamics and challenges". He adds that "an under-explored area is how actors perceive the offensive-defensive balance and how these perceptions influence their policy and strategy decisions".
+Melella (n.d.) gives a chapter section to the balance in cyberspace and a chapter to artificial intelligence in the NATO Locked Shields exercise. He writes that "the advancement of technologies, particularly artificial intelligence, is changing the landscape of cyberspace" and that "studying how these emerging technologies affect the offensive-defensive balance could reveal new dynamics and challenges." He adds that "an under-explored area is how actors perceive the offensive-defensive balance and how these perceptions influence their policy and strategy decisions."
 
-He names the intersection and then examines coordination instead. His dependent variable is coordination, not the balance. His treatment of artificial intelligence concerns machine learning for intrusion detection in an exercise setting rather than strategic consequence. The offence-defence material is literature review and the artificial intelligence material is dataset development, and the two are not joined analytically.
+Having named the subject, he studies coordination instead. His research question is about coordination, not the balance. His AI chapter builds a detection dataset for a training exercise. The two halves never meet.
 
-That an independent researcher in security studies arrived at the same question and recorded it as needing research is stronger warrant for the study than an absence of mentions would be. It also means the paper answers a recognised open question rather than discovering an unnoticed one.
+This is good news for the present study. An independent researcher working the same ground reached the same question and wrote it down as needing work. That is stronger support than simply finding no mentions, and it means this paper answers a recognised question rather than claiming to have spotted something nobody saw.
 
 ### 3.2 Conceptual gap
 
-No work reviewed defines the unit in which a shift in the offence-defence balance would be measured for cyberspace. Maschmeyer (2023) argues that the concept may not apply to the domain at all. Without a defined dependent variable, a shift in the balance is not yet a researchable proposition.
+No study says what unit a shift in the balance would be measured in. Maschmeyer (2023) doubts the concept applies to cyberspace at all. Without something to measure, a shift in the balance is not yet a question research can answer.
 
 ### 3.3 Theoretical gap
 
-Guttieri's (2025) reading of pre-positioning rests on the premise that persistence requires strategic patience. This is a costly signalling logic. The act carries information because it is expensive.
+Guttieri (2025) reads pre-positioning as a warning because staying hidden takes patience. The act means something because it is expensive.
 
-Sullivan (2025), writing in the same issue of the same journal, states the opposite baseline. Cyber operations are conducted "inexpensively", most "do not" require significant investment, and "the low cost of cyber operations extends far beyond the financial realm". Two authors at the same institution, publishing together, hold incompatible cost assumptions.
+Sullivan (2025), publishing in the same issue of the same journal, says the opposite. Cyber operations are carried out "inexpensively," most "do not" need serious investment, and "the low cost of cyber operations extends far beyond the financial realm." Two colleagues at one institution, in one issue, working from incompatible assumptions.
 
-The tension resolves if cost is disaggregated. Sullivan addresses the cost of entry. Guttieri addresses the cost of undetected multi-year persistence in hardened infrastructure. The signalling inference rests on the second. Pre-positioning indicates intent not because intrusion is difficult but because remaining undetected is. Neither author draws the distinction, and no work asks what happens to the inference when the cost of remaining falls.
+The disagreement dissolves if cost is split in two. Sullivan is talking about the cost of getting in. Guttieri is talking about the cost of staying in, undetected, for years, inside a defended network. The warning rests on the second, not the first. Pre-positioning means something not because breaking in is hard but because remaining unseen is hard. Neither author separates the two, and nobody asks what happens when the second cost falls.
 
 ### 3.4 Empirical gap
 
-No work reviewed codes pre-positioning incidents on the dimensions its own theory identifies as decisive. Guttieri (2025) supplies a decision rule and applies it to one case in argument rather than in systematic coding. Baram (2026) supplies the coding method but applies it to attribution responses rather than to the acts themselves. Joining the two is available and has not been done. No time series exists for the cost of persistence, and no dataset records autonomy in operational campaigns.
+No study codes pre-positioning cases along the lines its own theory says matter. Guttieri (2025) offers a rule and applies it to one case in prose rather than through systematic coding. Baram (2026) has the coding method but applies it to how governments respond, not to what the intruders did. Joining the two is possible and has not been done. There is no record of how the cost of persistence has changed over time, and no dataset tracking autonomy in real campaigns.
 
 ### 3.5 Methodological gap
 
-One of the sixteen works tests propositions against a coded population. Baram (2026) codes twenty joint attribution cases from the European Repository of Cyber Incidents. Every other work is a review, a doctrinal analysis, an expert assessment, or theory building with illustrative cases. Maschmeyer (2023) describes his own empirical component as a plausibility probe.
+One study out of sixteen tests claims against a body of coded cases. Baram (2026) codes twenty attribution cases from the European Repository of Cyber Incidents. The rest are reviews, legal analyses, expert judgements or arguments illustrated by examples. Maschmeyer (2023) calls his own evidence a plausibility probe.
 
 ### 3.6 Geographic gap
 
-The literature is oriented toward the United States, with China as object rather than subject. Three partial exceptions exist. Singh, Jash and Nanjappa (2025) record China's stated position, Codreanu (2025) quotes the ministry denial, and Pokorny (2026) describes the 2024 restructuring of the Strategic Support Force into the Information Support Force, the Aerospace Force and the Cyberspace Force. No work reviewed engages Chinese-language doctrinal sources. Baram (2026) declares the equivalent bias in her own data, noting that her findings "map Western-led joint public attributions rather than global practices". Any study built on this literature inherits that bias and should declare it.
+The literature looks at China from the outside. Three partial exceptions exist. Singh, Jash, and Nanjappa (2025) record China's stated position. Codreanu (2025) quotes the ministry denial. Pokorny (2026) describes the 2024 reorganisation of the Strategic Support Force into an Information Support Force, an Aerospace Force and a Cyberspace Force. None uses Chinese-language military writing. Baram (2026) admits the same bias in her own data, noting that her findings "map Western-led joint public attributions rather than global practices." Any study built on these sources inherits that bias and should say so.
 
-### 3.7 Temporal gap
+### 3.7 Time gap
 
-Butt and Ulina (2026) hold that fully autonomous offensive operations remain largely theoretical. The literature contains nothing on the rate at which this changes, offering no projections, thresholds or indicators. It does contain the instrument. Yigit et al. (2025) identify CYBERSECEVAL 3 as benchmarking autonomous offensive cyber operations, and results across model generations would constitute a time series. No work uses it for that purpose.
+Butt and Ulina (2026) say fully automatic attack systems remain theoretical. Nothing in the literature says how fast that will change. There are no forecasts, no thresholds and no warning signs. The measuring tool exists, though. Yigit and colleagues (2025) point to CYBERSECEVAL 3, which tests automatic attack capability, and results across model generations would show the trend. Nobody has used it that way.
 
 ### 3.8 Policy gap
 
-Guttieri (2025) argues for deterrence by denial. Butt and Ulina (2026) offer a table of recommendations. Neither addresses how attribution, signalling or escalation management function when operations proceed at machine speed.
+Guttieri (2025) argues for defence by denial. Butt and Ulina (2026) offer a table of recommendations. Neither asks how blame, warning and escalation control work when machines move faster than the people supposed to be in charge.
 
 ---
 
 ## 4. Theoretical Framework
 
-### 4.1 Requirements
+### 4.1 What the framework has to do
 
-The framework must specify a dependent variable that can be measured, accommodate a balance that varies by adversary pairing rather than being fixed, and distinguish between two live explanations of what pre-positioning is.
+It has to give something measurable to study. It has to allow the balance to differ from one pairing of rivals to another. And it has to separate two live explanations of what pre-positioning actually is.
 
-### 4.2 Primary framework: costly signalling within a security dilemma
+### 4.2 Main framework: costly signalling inside a security dilemma
 
-Guttieri's (2025) use of the cybersecurity dilemma, and her grounding of the signalling inference in strategic patience, make costly signalling the implicit frame of the literature. Its value is that it treats cost as the independent variable and signal credibility as the dependent one. This converts an unmeasurable question about the balance into a tractable question about the information content of an observable act.
+Guttieri (2025) already works this way without saying so. She uses the cybersecurity dilemma, and she grounds her warning rule in patience.
 
-Costly signalling also supplies the null case. If an act is not costly it conveys nothing about intent, which is what the second hypothesis below asserts.
+The value of costly signalling is that it turns an argument about the balance, which nobody can measure, into a question about cost and credibility, which can be studied. Cost becomes the thing that changes. Credibility of the warning becomes the thing that changes in response.
 
-### 4.3 Competing hypotheses
+Costly signalling also tells us what an absence looks like. If an act is cheap, it says nothing about intentions. That is exactly what the second explanation below claims.
 
-**Hypothesis 1, signal degradation.** Pre-positioning indicated intent because persistence was expensive to sustain. Machine autonomy reduces that cost and therefore erodes the signal. Dimitrov and Andreev (2025) hold the underlying position, reading pre-positioning as a means of deterrence and coercion.
+### 4.3 The two explanations
 
-**Hypothesis 2, deliberate non-signal.** Pre-positioning never indicated intent. Calibration below the threshold of response is the design objective, and illegibility is a feature rather than a defect. Braccia (2025) holds this position, describing operations calibrated to remain below use-of-force thresholds.
+**Explanation one: the warning is fading.** Pre-positioning once meant something because holding access was expensive. Machine autonomy makes it cheaper, so the meaning drains away. Dimitrov and Andreev (2025) hold the underlying view, treating pre-positioning as pressure and coercion.
 
-The two make different predictions about autonomy. Under the first, autonomy degrades a channel that once carried information. Under the second, autonomy increases the rate at which options are acquired, and no channel is lost because none existed.
+**Explanation two: there never was a warning.** Pre-positioning never meant to say anything. Staying below the level that triggers a response is the design goal, and being hard to read is a feature rather than a fault. Braccia (2025) argues this, describing operations tuned to stay below the use-of-force line.
 
-Present evidence is at least as consistent with the second. Pre-positioning has twice been followed by prolonged non-use, it drew no sanctions in the one case where response has been coded systematically, and its effects appear calibrated below the threshold that would trigger collective defence.
+They predict different futures. Under the first, autonomy is wearing away a channel that used to carry meaning. Under the second, autonomy simply lets states collect more options faster, and nothing is lost because nothing was there.
 
-### 4.4 Secondary framework: cyber persistence theory
+The evidence fits the second at least as well. Pre-positioning has twice been followed by years of nothing. It drew no punishment in the one case anyone has coded properly. And its effects appear tuned to stay under the line that would bring allies in.
 
-Cyber persistence theory, developed by Fischerkeller, Goldman and Harknett and reported by Guttieri (2025) and Sullivan (2025), supplies the baseline of continuous contact against which pre-positioning is structural rather than exceptional. It explains why extracting a signal from persistent access is difficult in principle and not only in practice.
+### 4.4 Supporting framework: cyber persistence theory
 
-### 4.5 Scope condition: the balance varies by pairing
+Cyber persistence theory, developed by Fischerkeller, Goldman, and Harknett and reported by Guttieri (2025) and Sullivan (2025), supplies the background of constant contact. Against that background, sitting inside a rival's networks is normal rather than exceptional. This explains why pulling a clear message out of persistent access is hard as a matter of principle, not just in practice.
 
-Willett (2022) establishes that a conflict against a less capable defender would show a different balance. The framework must therefore index its findings to defender capability rather than treating the balance as a single global property. The consequence is that the claims of the study are claims about pairings, and its distributional expectation is that autonomy widens the distance between well-resourced and poorly-resourced defenders rather than shifting one aggregate balance.
+### 4.5 A condition on the whole argument
 
-### 4.6 Rival framework to be engaged
+Willett (2022) shows that a weaker defender would produce a different balance. The framework must therefore tie its findings to how capable the defender is, rather than treating the balance as one global number. Conclusions become conclusions about particular pairs of rivals. The expectation that follows is that autonomy widens the distance between rich defenders and poor ones rather than tilting one overall balance.
 
-Maschmeyer's (2023) subversion framework should be engaged directly rather than assumed away. If cyber operations are subversion rather than warfare, offence-defence framing is a category error and the question requires reformulation in terms of structural exploitation. This is the most likely ground for objection and should be met in the review rather than in a footnote.
+### 4.6 The rival that must be answered
 
-### 4.7 Framework not recommended
+Maschmeyer (2023) should be answered directly, not ignored. If cyber operations are subversion rather than war, then framing them in terms of attack and defence is a mistake of category, and the question has to be asked differently. This is the most likely objection a reviewer will raise, and it belongs in the main text.
 
-Offence-defence theory is not recommended as the primary lens. The strongest theoretical voice in the literature rejects it, no work reviewed operationalises it, and its canonical treatment is absent. Adopting it would require defending a baseline the evidence does not supply. Costly signalling asks a narrower question the evidence can answer.
+### 4.7 What not to use
+
+Attack-defence theory should not be the main lens. The strongest theorist in this literature rejects it, no study here measures it, and the standard treatment of it is missing from the sources. Using it would mean defending a starting point the evidence does not provide. Costly signalling asks a smaller question the evidence can answer.
 
 ---
 
 ## 5. Methodology
 
-### 5.1 Research design
+### 5.1 Design
 
-A theory-guided structured comparison of pre-positioning campaigns, combined with process tracing of how each campaign was interpreted by officials of the target state. The dependent variable is signal credibility rather than the balance itself.
+A structured comparison of pre-positioning cases, guided by theory, together with a trace of how officials in the target state read each case. What is being explained is the credibility of the warning, not the balance itself.
 
-### 5.2 Case selection
+### 5.2 Cases
 
 **Table 2. Cases**
 
-| Case | Pre-positioned | Used | Outcome or response |
+| Case | Access established | Used | Result or response |
 |---|---|---|---|
-| Russia against United States infrastructure, 2018 onwards | Yes | No, over seven years | No response recorded |
-| Volt Typhoon, 2023 onwards | Yes | No to date | Technical advisory, no sanctions |
-| Russia against Ukraine, 2021 to 2022 | Yes | Yes, April 2022 | Attempt defeated by defence |
+| Russia in United States infrastructure, 2018 onwards | Yes | No, over seven years | Nothing recorded |
+| Volt Typhoon, 2023 onwards | Yes | Not so far | Technical advisory, no sanctions |
+| Russia in Ukraine, 2021 to 2022 | Yes | Yes, April 2022 | Attack stopped by defenders |
 
-The Russian case of 2018, reported by Codreanu (2025) from Lonergan and Poznansky (2025), supplies the negative instance. The Ukrainian case, reported by Willett (2022), supplies the only conversion to attack. Comparisons within the same family are available in the Flax, Salt and Silk Typhoon campaigns identified by Singh, Jash and Nanjappa (2025). Estonia in 2007 offers a control case of threshold discovery by probing rather than by presence.
+The Russian case of 2018, reported by Codreanu (2025) from Lonergan and Poznansky (2025), gives the case where nothing happened. The Ukrainian case, from Willett (2022), gives the only case where access became attack. Further comparisons are available in the Flax, Salt and Silk Typhoon campaigns named by Singh, Jash, and Nanjappa (2025). Estonia in 2007 offers a contrast, since there the learning came from testing rather than from hiding.
 
-### 5.3 Data sources
+### 5.3 Sources of data
 
-The European Repository of Cyber Incidents, compiled by Zettl-Schabath et al. (2025) and used by Baram (2026), supplies a structured incident base and removes the need to construct one. This is supplemented by official attribution statements and advisories. Commercial threat reports are treated as interested evidence rather than as neutral fact, a caution the literature itself warrants given the uncritical use of vendor trend data by Butt and Ulina (2026).
+The European Repository of Cyber Incidents, compiled by Zettl-Schabath and colleagues (2025) and used by Baram (2026), provides a ready-made set of coded incidents. To this can be added official statements and advisories. Reports from security companies are treated as interested evidence rather than neutral fact, a caution this literature earns given how Butt and Ulina (2026) use vendor figures without question.
 
-### 5.4 Analytical framework
+### 5.4 How cases are coded
 
-Coding proceeds on two levels, following the design used by Baram (2026), in which typology construction precedes case coding.
+Coding happens at two levels, following the pattern Baram (2026) used, where a typology is built first and cases are sorted into it afterwards.
 
-At the level of the act, each campaign is coded on four dimensions: intelligence yield and operational leverage, following Guttieri (2025); estimated persistence cost, proxied by dwell time, tradecraft and degree of automation; and target contingency specificity, meaning whether the value of the compromised node is tied to a named contingency, as with Guam and a Taiwan scenario (Dimitrov and Andreev, 2025), or is generic.
+At the level of the act, each campaign is scored on four things: how much intelligence the access yields and how much power it would confer, following Guttieri (2025); how expensive the access is to maintain, estimated from how long it went unnoticed, how skilled the tradecraft was, and how much was automated; and whether the target matters for one named scenario, as Guam does for Taiwan (Dimitrov and Andreev 2025), or is simply general infrastructure.
 
-At the level of the response, the reaction of the target state is coded using the four modes of jointness set out by Baram (2026), which distinguish technical from diplomatic action.
+At the level of the response, what the target government did is sorted using Baram's four types, which separate technical answers from political ones.
 
-The dependent variable is the distance between the two levels, that is, whether an act coded as high leverage and low intelligence yield draws a correspondingly political response or is directed to network defenders.
+What is being explained is the distance between the two levels. Does an act that scores high on power and low on intelligence draw a political response, or does it get handed to network defenders?
 
-### 5.5 Discriminating between the hypotheses
+### 5.5 Telling the two explanations apart
 
-The first hypothesis predicts that the distance between interpretation and response widens over time as persistence cost falls. The second predicts that the distance is constant and tracks threshold calibration rather than cost. Coding response mode against estimated persistence cost across the case set distinguishes them.
+The first explanation predicts that the distance grows over time as holding access becomes cheaper. The second predicts that the distance stays the same and tracks how carefully the operation was tuned to stay below the response line. Scoring response type against estimated cost across the cases separates them.
 
-### 5.6 Limitations
+### 5.6 Limits
 
-Persistence cost cannot be observed directly and must be proxied. Adversary intent is inaccessible. The literature is oriented toward the United States and contains no Chinese-language sources. Claims about the pace of autonomy rest on a small number of sources and will require supplementary material, principally benchmark results. The case set is small, which supports structured comparison but not statistical inference.
+The cost of holding access cannot be seen directly and has to be estimated. What the attacker intended cannot be known. The sources lean towards the United States and include no Chinese-language material. Claims about the speed of autonomy rest on few sources and will need benchmark data added. The number of cases is small, which supports comparison but not statistics.
 
 ---
 
-## 6. Findings from the Literature
+## 6. What the Literature Shows
 
-### 6.1 Established
+### 6.1 Settled
 
-Cyber competition is continuous rather than episodic (Guttieri, 2025; Sullivan, 2025). Critical infrastructure is the contested object. Pre-positioning in United States infrastructure occurred and was officially attributed (Guttieri, 2025; Codreanu, 2025; Baram, 2026). Defensive automation is being developed and deployed (Yigit et al., 2025; Kabir et al., 2026).
+Cyber competition is continuous, not a series of separate incidents (Guttieri 2025; Sullivan 2025). Infrastructure is the target. Foreign access to American infrastructure happened and was publicly attributed (Guttieri 2025; Codreanu 2025; Baram 2026). Automatic defence tools are being built and deployed (Yigit et al. 2025; Kabir et al. 2026).
 
-### 6.2 Contested
+### 6.2 Disputed
 
-Whether offence-defence theory applies to cyberspace, with Maschmeyer (2023) against. The direction of the balance, with Butt and Ulina (2026) for offence, and Lindsay via Pokorny (2026) together with Willett (2022) for defence. Whether pre-positioning communicates intent, with Dimitrov and Andreev (2025) for and Braccia (2025) against. Whether cyber operations are cheap, with Sullivan (2025) and Guttieri (2025) in tension.
+Whether attack-defence theory applies to cyberspace, with Maschmeyer (2023) against. Which side holds the advantage, with Butt and Ulina (2026) for attackers, and Lindsay through Pokorny (2026) and Willett (2022) for defenders. Whether pre-positioning carries a message, with Dimitrov and Andreev (2025) for and Braccia (2025) against. Whether these operations are cheap, with Sullivan (2025) and Guttieri (2025) at odds.
 
 ### 6.3 Emerging
 
-Artificial intelligence assisted offensive tooling at the level of task support (Butt and Ulina, 2026). Resilience reframed as an operational capability rather than an information technology function (Guttieri, 2025). Attribution understood as an instrument of signalling in its own right (Baram, 2026; Sullivan, 2025).
+AI helping with attack tasks, though not yet running attacks (Butt and Ulina 2026). Resilience recast as a fighting capability rather than an IT function (Guttieri 2025). Public blame understood as a form of signalling in its own right (Baram 2026; Sullivan 2025).
 
-### 6.4 Insufficient evidence
+### 6.4 Unknown
 
-The rate at which autonomy diffuses. Any measurement of the offence-defence balance. The cost structure of persistent access. Adversary intent behind pre-positioning. Chinese doctrinal reasoning.
+How fast autonomy spreads. Any measurement of the balance. What holding access actually costs. What the intruders intend. How Chinese planners think.
 
-One absence constrains the whole field. Pre-positioning has twice been followed by prolonged non-use and once by a defeated attempt. There is no case of pre-positioning followed by successful strategic effect. Every inference in this literature about what pre-positioning portends therefore rests on no positive instances.
+One absence shapes the whole field. Pre-positioning has twice led to years of nothing and once to an attack that failed. There is no case where it led to a successful strategic result. Everything this literature says about what pre-positioning means therefore rests on no successful examples.
 
-### 6.5 Implications for strategy and policy
+### 6.5 What follows for strategy and policy
 
-Two risks follow, running in opposite directions, and the evidence supports both.
+Two dangers follow, pointing in opposite directions, and the evidence supports both.
 
-Under the first hypothesis, if Guttieri's rule is the operative heuristic of doctrine and autonomy erodes its cost premise, the risk is misattributed intent at scale, meaning automated persistence read as deliberate warning. Given the interdependence of cyber, space and nuclear systems that Guttieri describes, such a misreading is escalatory.
+If the first explanation is right, and Guttieri's rule is what governments actually use, then autonomy is eroding the assumption underneath it. Governments would then read automatic, routine access as deliberate warning. Given how tangled cyber, space and nuclear systems are, that mistake pushes towards escalation.
 
-Under the second hypothesis, the risk runs the other way. If pre-positioning is calibrated to remain below the threshold of response, and states duly answer with technical advisories, then genuine preparation is being processed as a matter of network defence. The risk is failure of warning, and the difference in response between Volt Typhoon and Salt Typhoon suggests it may already be occurring.
+If the second explanation is right, the danger runs the other way. Operations tuned to stay quiet get quiet answers. Real preparation gets handed to network defenders and treated as a maintenance problem. The danger is not overreaction but missed warning, and the difference between how Volt Typhoon and Salt Typhoon were answered suggests this may already be happening.
 
-These are not alternatives to choose between. They are the two ways in which a degraded signal fails. Degradation of the signal, rather than dominance of offence, is the mechanism by which autonomy would destabilise, and this is the reframing the literature can support.
+These are not two options to choose between. They are the two ways a weak signal fails. What makes autonomy dangerous is the weakening of the signal, not any advantage it gives attackers, and that is a claim this literature can actually support.
 
 ---
 
-## 7. Research Contribution
+## 7. Contribution
 
-### 7.1 Contribution to scholarship
+### 7.1 To scholarship
 
-The study examines an intersection the literature has named but not investigated. Melella (n.d.) proposes examining how emerging technologies affect the offence-defence balance and then examines coordination. Fifteen of the sixteen works reviewed sustain the separation from both sides, since those that theorise strategy do not discuss artificial intelligence and those that examine artificial intelligence do not discuss deterrence, signalling or the balance.
+The study takes up a subject the field has named without studying. Melella (n.d.) proposes looking at how new technology affects the balance, then looks at coordination. Fifteen of the sixteen studies keep the two halves apart, since those writing about strategy do not discuss artificial intelligence and those writing about artificial intelligence do not discuss deterrence, warning or the balance.
 
-The study identifies and examines the cost premise in the leading account of pre-positioning as signal, a premise Guttieri (2025) states without examining and Sullivan (2025) contradicts from within the same journal issue.
+The study examines the assumption about cost sitting underneath the leading account of pre-positioning as warning, an assumption Guttieri (2025) states without examining and Sullivan (2025) contradicts in the same issue of the same journal.
 
-It reconciles a discrepancy between interpretation and response. Guttieri establishes that pre-positioning reads as preparation for conflict. Baram (2026) demonstrates that states do not respond as though it does. The difference between the responses to Volt Typhoon and Salt Typhoon sharpens the point. No existing work joins these findings.
+It also reconciles a mismatch nobody has noticed. Guttieri shows that pre-positioning reads as preparation for war. Baram (2026) shows that governments do not act as if it does. The gap between how Volt Typhoon and Salt Typhoon were answered makes the point sharper.
 
-It records an evidentiary fact the field has not confronted, namely that no documented case exists of pre-positioning followed by successful strategic effect.
+And it records a fact the field has not faced, which is that no case exists where pre-positioning produced a successful strategic result.
 
-### 7.2 Academic significance
+### 7.2 Why it matters academically
 
-The study reframes the offence-defence question in terms the literature can sustain. Rather than asking whether autonomy favours attack or defence, which the literature offers no means of measuring, it asks what autonomy does to the information content of observable acts. That question can be answered.
+The study asks the attack-defence question in a form the literature can actually handle. Instead of asking whether autonomy helps attackers, which nobody can measure, it asks what autonomy does to the information carried by acts we can observe. That question has an answer.
 
-### 7.3 Significance for policymakers and planners
+### 7.3 Why it matters for policymakers and planners
 
-Doctrine treats infrastructure pre-positioning as strategic warning. The two hypotheses carry opposite policy implications and both are live. Distinguishing them determines whether the appropriate correction is restraint in response or escalation of it. Given that limited cyber effects can, in Guttieri's account, escalate tensions beyond their intended scope, the cost of choosing wrongly is high.
+Governments treat foreign implants in infrastructure as a warning. The two explanations point to opposite corrections. Telling them apart decides whether governments should respond less or respond more. Since limited cyber effects can, on Guttieri's account, spread far beyond what anyone intended, getting this wrong is expensive.
 
 ---
 
 ## 8. Conclusion
 
-The strategic meaning of cyber pre-positioning rests on an assumption about cost that the literature states without examining. Persistent access is read as preparation for conflict because remaining undetected is held to be expensive. Machine autonomy bears directly on that assumption, and no study has asked how.
+The meaning we give to foreign implants in critical infrastructure rests on an assumption about cost that the literature states without examining. We read persistent access as preparation for war because staying hidden is supposed to be hard. Machine autonomy bears directly on that assumption, and nobody has asked how.
 
-The evidence assembled here suggests the problem is more fundamental than the erosion of a working signal. Pre-positioning already performs poorly as a signal. It fails to reach political decision-makers, it is denied by the state to which it is attributed, and it draws a technical response where a graver reading would require a political one. The one case in which response has been coded systematically produced no sanctions, while a lesser campaign by the same adversary in the same period produced them.
+The evidence gathered here suggests the trouble runs deeper than a warning system being worn away. Pre-positioning already works poorly as a warning. It does not reach the people who decide. The state accused of it denies it. And it draws a technical answer where a serious reading would demand a political one. In the one case anyone has coded properly, it produced no punishment at all, while a lesser campaign by the same country in the same period did.
 
-Whether autonomy degrades a channel that once carried information, or increases the rate at which options are acquired through a channel that never carried any, is the open question. This paper does not settle it. It establishes that the question is answerable, specifies the two explanations that contend, and proposes a design capable of separating them.
+Whether autonomy is eroding a channel that once carried meaning, or simply speeding up the collection of options through a channel that never carried any, remains open. This paper does not settle it. It shows the question can be answered, sets out the two explanations that compete, and offers a design capable of separating them.
 
-The stakes are not academic. If states read automated persistence as deliberate warning, they may escalate against activity that carries no message. If they continue to treat genuine preparation as a matter for network defenders, they may fail to answer activity that does. Both errors follow from the same weakness in the signal, and neither can be corrected without first establishing whether the signal exists.
+The stakes are practical. If governments read automatic, routine access as deliberate warning, they may punish activity that means nothing. If they keep treating real preparation as a job for network defenders, they may miss activity that means a great deal. Both mistakes come from the same weakness in the signal, and neither can be fixed until we know whether the signal is there at all.
 
 ---
 
 ## References
 
-Baram, G. (2026). Re-ordering accountability: The significance of joint public attribution in a fragmented cyberspace. *Contemporary Security Policy*. Advance online publication. https://doi.org/10.1080/13523260.2026.2662220
+Baram, Gil. 2026. "Re-ordering Accountability: The Significance of Joint Public Attribution in a Fragmented Cyberspace." *Contemporary Security Policy*. Advance online publication. https://doi.org/10.1080/13523260.2026.2662220.
 
-Braccia, C. (2025). *From Vietnam to Volt Typhoon: How the PRC refined grey zone cyber tactics before targeting the West* [Preprint]. Authorea. https://doi.org/10.22541/au.175390612.20874865/v1
+Braccia, Christopher. 2025. "From Vietnam to Volt Typhoon: How the PRC Refined Grey Zone Cyber Tactics before Targeting the West." Preprint, Authorea, July 30. https://doi.org/10.22541/au.175390612.20874865/v1.
 
-Butt, M. S., & Ulina, N. S. (2026). Cyber warfare in the AI era: Emerging attack trends, defensive strategies and policy challenges, 2022-2026. *The Critical Review of Social Sciences Studies, 4*(1), 6176-6192.
+Butt, Muhammad Saqib, and Ninta Sri Ulina. 2026. "Cyber Warfare in the AI Era: Emerging Attack Trends, Defensive Strategies and Policy Challenges, 2022-2026." *The Critical Review of Social Sciences Studies* 4 (1): 6176-92. https://thecrsss.com/index.php/Journal/about.
 
-Codreanu, C. (2025). *Typhoons, bears, and pandas: Latest major cyber espionage campaigns* (Policy Paper No. 43). Romanian Diplomatic Institute.
+Codreanu, Claudiu. 2025. *Typhoons, Bears, and Pandas: Latest Major Cyber Espionage Campaigns*. Policy Paper 43. Bucharest: Romanian Diplomatic Institute. https://www.idr.ro.
 
-Dimitrov, D., & Andreev, E. (2025). China's strategic competition in cyberspace: Volt Typhoon and Salt Typhoon as a projection of power, a more aggressive posture and a future beyond espionage. In *Environment. Technology. Resources: Proceedings of the 16th International Scientific and Practical Conference* (Vol. 2, pp. 115-122). RTU Press. https://doi.org/10.17770/etr2025vol2.8618
+Dimitrov, Dimitar, and Evgeni Andreev. 2025. "China's Strategic Competition in Cyberspace: Volt Typhoon and Salt Typhoon as a Projection of Power, a More Aggressive Posture and a Future beyond Espionage." In *Environment. Technology. Resources: Proceedings of the 16th International Scientific and Practical Conference*, 2:115-22. Rezekne: RTU Press. https://doi.org/10.17770/etr2025vol2.8618.
 
-Ferdaus, M. H., Kaosar, M. G., Alharbi, F., Ali, M. S., Islam, M. M., & Buyya, R. (n.d.). *The digital face of espionage: Analyzing cyber threats to national security* [Book chapter]. SSRN. https://ssrn.com/abstract=5249574
+Ferdaus, Md Hasanul, Mohammed Golam Kaosar, Fares Alharbi, Md Sawkat Ali, Mohammad Manzurul Islam, and Rajkumar Buyya. n.d. "The Digital Face of Espionage: Analyzing Cyber Threats to National Security." SSRN working paper. https://ssrn.com/abstract=5249574.
 
-Guttieri, K. (2025). Fighting through disruption: Reframing cyber resilience for power projection and strategic credibility. *The Cyber Defense Review, 10*(1), 93-114. https://doi.org/10.55682/cdr/egvf-mkys
+Guttieri, Karen. 2025. "Fighting through Disruption: Reframing Cyber Resilience for Power Projection and Strategic Credibility." *The Cyber Defense Review* 10 (1): 93-114. https://doi.org/10.55682/cdr/egvf-mkys.
 
-Kabir, M. H., Siddike, M. A. M., Razib, M. D., & Uddin, M. R. (2026). A national-scale AI-driven cyber defense framework for protecting U.S. critical infrastructure against nation-state attacks. *Journal of Computer Science and Technology Studies, 8*(6), 94-107.
+Kabir, Md Humayun, Md Al Mamun Siddike, MD Razib, and Md Riyad Uddin. 2026. "A National-Scale AI-Driven Cyber Defense Framework for Protecting U.S. Critical Infrastructure against Nation-State Attacks." *Journal of Computer Science and Technology Studies* 8 (6): 94-107. https://www.al-kindipublisher.com/index.php/jcsts.
 
-Maschmeyer, L. (2023). Subversion, cyber operations, and reverse structural power in world politics. *European Journal of International Relations, 29*(1), 79-103. https://doi.org/10.1177/13540661221117051
+Maschmeyer, Lennart. 2023. "Subversion, Cyber Operations, and Reverse Structural Power in World Politics." *European Journal of International Relations* 29 (1): 79-103. https://doi.org/10.1177/13540661221117051.
 
-Melella, C. (n.d.). *Coordination in offensive and defensive cyberoperations: Dissecting China, Russia, and NATO's approaches in cyberspace* [Doctoral dissertation, Universita degli Studi di Genova].
+Melella, Cosimo. n.d. "Coordination in Offensive and Defensive Cyberoperations: Dissecting China, Russia, and NATO's Approaches in Cyberspace." PhD diss., Universita degli Studi di Genova.
 
-Pokorny, L. (2026). *Offensive cyber and information warfare strategies targeting People's Republic of China military command, control, communications, computers, intelligence, surveillance, and reconnaissance (C4ISR) systems: A qualitative analysis*. ICL Institute. https://doi.org/10.5281/zenodo.19234589
+Pokorny, Laszlo. 2026. *Offensive Cyber and Information Warfare Strategies Targeting People's Republic of China Military Command, Control, Communications, Computers, Intelligence, Surveillance, and Reconnaissance (C4ISR) Systems: A Qualitative Analysis*. New Jersey: ICL Institute. https://doi.org/10.5281/zenodo.19234589.
 
-Singh, N. K., Jash, A., & Nanjappa, Y. (2025). Navigating the nexus: Geopolitical, international relations and technical dimensions of US-China cyber strategic competition. *Cogent Social Sciences, 11*(1), 2499171. https://doi.org/10.1080/23311886.2025.2499171
+Singh, Nistha Kumari, Amrita Jash, and Yashwanth Nanjappa. 2025. "Navigating the Nexus: Geopolitical, International Relations and Technical Dimensions of US-China Cyber Strategic Competition." *Cogent Social Sciences* 11 (1): 2499171. https://doi.org/10.1080/23311886.2025.2499171.
 
-Sullivan, S. (2025). Toward clarity in cyber's "fog of law". *The Cyber Defense Review, 10*(1), 59-71. https://doi.org/10.55682/cdr/v8z4-sxne
+Sullivan, Scott. 2025. "Toward Clarity in Cyber's 'Fog of Law.'" *The Cyber Defense Review* 10 (1): 59-71. https://doi.org/10.55682/cdr/v8z4-sxne.
 
-Urbanczyk, J., Skoumal, C., Elshareif, M., Sultana, H., & Plass, M. R. (2025). *State-sponsored intrusions and critical infrastructure: A case study of the Salt Typhoon cyberattack on U.S.* [Preprint]. TechRxiv. https://doi.org/10.36227/techrxiv.175085869.97198541/v1
+Urbanczyk, Jack, Conner Skoumal, Moe Elshareif, Hajira Sultana, and Mathias R. Plass. 2025. "State-Sponsored Intrusions and Critical Infrastructure: A Case Study of the Salt Typhoon Cyberattack on U.S." Preprint, TechRxiv, June 25. https://doi.org/10.36227/techrxiv.175085869.97198541/v1.
 
-Willett, M. (2022). The cyber dimension of the Russia-Ukraine war. *Survival, 64*(5), 7-26. https://doi.org/10.1080/00396338.2022.2126193
+Willett, Marcus. 2022. "The Cyber Dimension of the Russia-Ukraine War." *Survival* 64 (5): 7-26. https://doi.org/10.1080/00396338.2022.2126193.
 
-Yigit, Y., Ferrag, M. A., Ghanem, M. C., Sarker, I. H., Maglaras, L. A., Chrysoulas, C., Moradpoor, N., Tihanyi, N., & Janicke, H. (2025). Generative AI and LLMs for critical infrastructure protection: Evaluation benchmarks, agentic AI, challenges, and opportunities. *Sensors, 25*(6), 1666. https://doi.org/10.3390/s25061666
+Yigit, Yagmur, Mohamed Amine Ferrag, Mohamed C. Ghanem, Iqbal H. Sarker, Leandros A. Maglaras, Christos Chrysoulas, Naghmeh Moradpoor, Norbert Tihanyi, and Helge Janicke. 2025. "Generative AI and LLMs for Critical Infrastructure Protection: Evaluation Benchmarks, Agentic AI, Challenges, and Opportunities." *Sensors* 25 (6): 1666. https://doi.org/10.3390/s25061666.
 
-### Appendix to the references: works cited at second hand
+### Works quoted at second hand
 
-Each work below is referred to in this paper only as reported by one of the sixteen works reviewed. None has been consulted in the original. They are listed separately from the references proper so that the distinction is clear, and each should be obtained and verified before the argument is submitted.
+Each work below is referred to in this paper only as reported by one of the sixteen studies read. None was consulted in the original. They are listed apart from the references so the difference is clear, and each should be obtained and checked before the paper is submitted.
 
-Buchanan, B. *The cybersecurity dilemma*. Reported in Guttieri (2025).
+Buchanan, Ben. *The Cybersecurity Dilemma*. Reported in Guttieri (2025).
 
-Cunningham, F. (2022). Reported in Guttieri (2025).
+Cunningham, Fiona. 2022. Reported in Guttieri (2025).
 
-Eichensehr, K. E. (2020). The law and politics of cyberattack attribution. *UCLA Law Review, 67*, 520-598. Reported in Sullivan (2025).
+Eichensehr, Kristen E. 2020. "The Law and Politics of Cyberattack Attribution." *UCLA Law Review* 67: 520-98. Reported in Sullivan (2025). https://www.uclalawreview.org/the-law-politics-of-cyberattack-attribution/.
 
-Fischerkeller, M., Goldman, E., & Harknett, R. *Cyber persistence theory: Redefining national security in cyberspace*. Reported in Guttieri (2025) and Sullivan (2025).
+Fischerkeller, Michael, Emily Goldman, and Richard Harknett. *Cyber Persistence Theory: Redefining National Security in Cyberspace*. Reported in Guttieri (2025) and Sullivan (2025).
 
-Gartzke, E., & Lindsay, J. (2015). Reported in Maschmeyer (2023).
+Gartzke, Erik, and Jon Lindsay. 2015. Reported in Maschmeyer (2023).
 
-Libicki, M. (2009). *Cyberdeterrence and cyberwar*. RAND. Reported in Maschmeyer (2023).
+Libicki, Martin. 2009. *Cyberdeterrence and Cyberwar*. Santa Monica: RAND. Reported in Maschmeyer (2023).
 
-Lindsay, J. R. (2013). Reported in Pokorny (2026). This is the source of the claim that the balance favours defence at the strategic level, and it requires verification.
+Lindsay, Jon R. 2013. Reported in Pokorny (2026). This is the source of the claim that defence holds the strategic advantage, and it needs checking.
 
-Lonergan, S., & Poznansky, M. (2025). Reported in Codreanu (2025). This is the source for Russian pre-positioning without use since 2018.
+Lonergan, Shawn, and Michael Poznansky. 2025. Reported in Codreanu (2025). This is the source for Russian access held since 2018 without use.
 
-Slayton, R. (2017). What is the cyber offense-defense balance? Conceptions, causes, and assessment. *International Security, 41*(3), 72-109. Reported in Maschmeyer (2023). This is the canonical treatment of the concept and should be the first acquisition.
+Slayton, Rebecca. 2017. "What Is the Cyber Offense-Defense Balance? Conceptions, Causes, and Assessment." *International Security* 41 (3): 72-109. Reported in Maschmeyer (2023). This is the standard treatment of the concept and should be obtained first. https://doi.org/10.1162/ISEC_a_00267.
 
-Smeets, M. (2022). *No shortcuts: Why states struggle to develop a military cyber-force*. Hurst. Reported in Maschmeyer (2023) and by Singh, Jash and Nanjappa (2025).
+Smeets, Max. 2022. *No Shortcuts: Why States Struggle to Develop a Military Cyber-Force*. London: Hurst. Reported in Maschmeyer (2023) and in Singh, Jash, and Nanjappa (2025).
 
-Zettl-Schabath, K., et al. (2025). European Repository of Cyber Incidents. Reported in Baram (2026).
+Zettl-Schabath, Kerstin, et al. 2025. European Repository of Cyber Incidents. Reported in Baram (2026). https://eurepoc.eu.
