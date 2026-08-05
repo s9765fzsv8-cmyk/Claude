@@ -61,43 +61,6 @@ function footNote(s, t) {
     'Say the question up front. When we find it, what does it actually tell us, and does AI change the answer. About one minute.');
 }
 
-/* ===================== 2. WHY INFRASTRUCTURE ===================== */
-{
-  const s = lightSlide('Why critical infrastructure became the target', 'The ground we are defending');
-
-  s.addText('Modern militaries run on civilian systems. Power, water, telecommunications and transport are not separate from defence. They are what defence depends on.',
-    { x: M, y: 1.42, w: 11.9, h: 0.62, margin: 0, fontFace: H, fontSize: 17, italic: true, color: NAVY, lineSpacing: 24 });
-
-  const sectors = [
-    ['Energy', 'Power generation and distribution'],
-    ['Water', 'Supply and treatment systems'],
-    ['Communications', 'Telecom networks and undersea links'],
-    ['Transport', 'Ports, rail and logistics hubs'],
-  ];
-  sectors.forEach((c, i) => {
-    const x = M + i * 3.02;
-    card(s, x, 2.22, 2.8, 1.28);
-    s.addText(c[0], { x: x + 0.25, y: 2.38, w: 2.3, h: 0.34, margin: 0,
-      fontFace: H, fontSize: 16.5, bold: true, color: NAVY });
-    s.addText(c[1], { x: x + 0.25, y: 2.74, w: 2.35, h: 0.62, margin: 0,
-      fontFace: B, fontSize: 12.5, color: INK, lineSpacing: 17 });
-  });
-
-  card(s, M, 3.72, 11.9, 1.55, WARM);
-  s.addText('The clearest example: Guam', { x: M + 0.4, y: 3.9, w: 4.0, h: 0.36, margin: 0,
-    fontFace: H, fontSize: 18, bold: true, color: AMBER });
-  s.addText('Chinese operators were found in systems supporting American military operations on Guam, the logistics hub for any Pacific crisis. A target whose value is tied to one specific scenario, a conflict over Taiwan, tells you more about intent than a target chosen at random.',
-    { x: M + 4.6, y: 3.9, w: 6.9, h: 1.2, margin: 0, fontFace: B, fontSize: 13.5, color: INK, lineSpacing: 19 });
-
-  s.addText('The point: an attacker who reaches these systems does not need to defeat the armed forces. They can slow them down from inside the country that fields them.',
-    { x: M, y: 5.48, w: 11.9, h: 0.62, margin: 0, fontFace: B, fontSize: 15, bold: true, color: NAVY, lineSpacing: 21 });
-
-  footNote(s, 'Sectors and the Guam case as recorded in Guttieri (2025), Codreanu (2025) and Dimitrov and Andreev (2025).');
-  s.addNotes('Establish why infrastructure matters strategically before getting to the puzzle. ' +
-    'The civil and military worlds are not separate any more. Guam is the sharpest illustration: it is not a random target, ' +
-    'it is the base you would need for a Taiwan contingency. Keep this to a minute.');
-}
-
 /* ===================== 3. THE PUZZLE ===================== */
 {
   const s = lightSlide('An intrusion that made no sense as spying', 'The puzzle');
@@ -128,8 +91,16 @@ function footNote(s, t) {
   s.addText('Then head of US Cyber Command', { x: 8.05, y: 4.52, w: 4.25, h: 0.28, margin: 0,
     fontFace: B, fontSize: 12, color: GREY });
 
+  card(s, M, 5.92, 11.9, 1.15, CARD);
+  s.addText('Where they were found', { x: M + 0.4, y: 6.06, w: 3.0, h: 0.32, margin: 0,
+    fontFace: H, fontSize: 15, bold: true, color: NAVY });
+  s.addText('Energy, water, communications and transport networks, and in systems supporting American military operations on Guam, the logistics hub for any Pacific crisis. A target tied to one specific scenario, a conflict over Taiwan, says more about intent than a target chosen at random.',
+    { x: M + 3.5, y: 6.02, w: 8.4, h: 0.95, margin: 0, fontFace: B, fontSize: 13, color: INK, lineSpacing: 18 });
+
   s.addNotes('The striking thing is what did not happen. No theft worth the effort. ' +
-    'Nakasone is saying, in effect, nobody puts code in a power station to read your email. Use the quote and move on.');
+    'Nakasone is saying, in effect, nobody puts code in a power station to read your email. ' +
+    'Use the bottom band to make the infrastructure point: these are the systems defence itself depends on, ' +
+    'and Guam is not a random target, it is the base you would need for a Taiwan contingency.');
 }
 
 /* ===================== 4. HOW THEY STAY HIDDEN ===================== */
@@ -324,35 +295,6 @@ function footNote(s, t) {
   footNote(s, 'Capability assessment from Butt and Ulina (2026) and Yigit et al. (2025); the wartime judgement from Willett (2022).');
   s.addNotes('Push back on the room’s instinct that AI obviously helps attackers. The evidence points the other way for now. ' +
     'The bottom box is the qualifier that matters: who wins depends on who is fighting whom.');
-}
-
-/* ===================== 10. WHY IT IS DANGEROUS ===================== */
-{
-  const s = lightSlide('Why this is dangerous even without an attack', 'Escalation');
-
-  const items = [
-    ['These systems are tangled together', 'Cyber, space and nuclear command systems are deeply connected. A limited action against infrastructure can spread far beyond what anyone intended.'],
-    ['The threshold is unclear and both sides know it', 'NATO judges each case on its merits and has said it could treat an accumulation of small attacks as crossing the line. Nobody knows exactly where the line sits.'],
-    ['Which invites probing', 'After the 2007 attacks on Estonia, Russia learned what kind of operation the Alliance would not treat as an armed attack. Testing the boundary is itself a strategy.'],
-  ];
-  items.forEach((r, i) => {
-    const y = 1.42 + i * 1.36;
-    badge(s, i + 1, M, y + 0.04, 0.55);
-    s.addText(r[0], { x: M + 0.85, y: y, w: 11.05, h: 0.36, margin: 0,
-      fontFace: H, fontSize: 17, bold: true, color: NAVY });
-    s.addText(r[1], { x: M + 0.85, y: y + 0.38, w: 11.05, h: 0.85, margin: 0,
-      fontFace: B, fontSize: 13.5, color: INK, lineSpacing: 19 });
-  });
-
-  card(s, M, 5.62, 11.9, 1.15, WARM);
-  s.addText('President Biden named a cyber breach as the most likely route to the United States finding itself in, as he put it, a real shooting war with a major power.',
-    { x: M + 0.4, y: 5.76, w: 11.1, h: 0.88, margin: 0, valign: 'middle',
-      fontFace: H, fontSize: 16, italic: true, color: NAVY, lineSpacing: 22 });
-
-  footNote(s, 'Entanglement from Guttieri (2025); NATO thresholds, Estonia and the Biden remark from Willett (2022).');
-  s.addNotes('This slide explains why the question is not academic. Even with no attack, the ambiguity is dangerous. ' +
-    'The Estonia point is worth dwelling on: probing to find the limit is itself a use of these operations. ' +
-    'Finish on the Biden line.');
 }
 
 /* ===================== 11. TWO EXPLANATIONS ===================== */
