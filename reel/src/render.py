@@ -39,7 +39,7 @@ BG_BIG = plate.library_bg(int(W * 1.18), int(H * 1.18))
 _sub = Image.open("cut.png")
 _rec, _mj = plate.recolour_jacket(_sub)
 _lit = plate.relight(_rec, _mj)
-SUBJ = dress.build(_lit, _sub)
+SUBJ = dress.build(_lit, _sub)   # unused: presenter removed
 
 # de-fringe: the original matte carried a bright halo from the pale wall behind him
 _al = SUBJ.split()[3]
@@ -80,9 +80,10 @@ for _k in range(30, 0, -1):
                 fill=(232, 178, 104, _al))
 HALO = HALO.filter(ImageFilter.GaussianBlur(95))
 
-SCRIM_BOT = scrim((W, H), 1210, 1860, 0.74, 1.4)
-SCRIM_TOP = scrim((W, H), 980, 20, 0.58, 1.9)
+SCRIM_BOT = scrim((W, H), 900, 1880, 0.80, 1.3)
+SCRIM_TOP = scrim((W, H), 1000, 20, 0.66, 1.7)
 GRAIN = grain_tiles(8)
+PANEL_DROP = 300      # px the panel block is shifted down
 
 VIGN = None
 def _vign():
@@ -404,10 +405,10 @@ def draw_caption(lay, t):
     d = ImageDraw.Draw(lay)
     a = win(t, cur["s"], cur["e"], 0.14, 0.12)
     txt = " ".join(w["w"] for w in cur["words"])
-    f = SANS(58)
-    lines = wrap(d, txt, f, W - 190)
-    total_h = len(lines) * 74
-    y = 1560 - total_h / 2
+    f = SANS(68)
+    lines = wrap(d, txt, f, W - 150)
+    total_h = len(lines) * 86
+    y = 1420 - total_h / 2
     rise = (1 - ease(min(1, (t - cur["s"] + 0.14) / 0.24), 3)) * 12
 
     idx = 0
@@ -430,7 +431,7 @@ def draw_caption(lay, t):
             d = ImageDraw.Draw(lay)
             x += d.textlength(word + " ", font=f)
             idx += 1
-        y += 74
+        y += 86
 
 
 # ---------------------------------------------------------------- frame
@@ -452,40 +453,26 @@ def frame(i):
     if dark > 0.005:
         canvas.alpha_composite(Image.new("RGBA", (W, H), (4, 5, 8, int(255 * dark))))
 
-    # subject
-    sa = ease_io(min(1, max(0, (t - 3.3) / 1.3)))
-    if sa > 0.004:
-        canvas.alpha_composite(HALO if sa >= 1 else
-                               Image.merge("RGBA", (*HALO.split()[:3],
-                                                    HALO.split()[3].point(lambda v: int(v * sa)))))
-    if sa > 0.004:
-        bob = math.sin(t * 0.55) * 2.4 + math.sin(t * 0.23) * 1.6
-        sway = math.sin(t * 0.31) * 2.0
-        sh = SHADOW.copy()
-        if sa < 1:
-            sh.putalpha(sh.split()[3].point(lambda v: int(v * sa)))
-        canvas.alpha_composite(sh)
-        s = SUBJ
-        if sa < 1:
-            s = SUBJ.copy()
-            s.putalpha(SUBJ.split()[3].point(lambda v: int(v * sa)))
-        canvas.alpha_composite(s, (int(SUB_X + sway), int(SUB_Y + bob)))
-
     canvas.alpha_composite(SCRIM_TOP)
     canvas.alpha_composite(SCRIM_BOT)
+
+    # panels are authored around y=300..600, then dropped into the middle of the
+    # frame now that the presenter no longer occupies it
+    pan = Image.new("RGBA", (W, H), (0, 0, 0, 0))
+    draw_rivers(pan, t)
+    draw_abeyance(pan, t)
+    draw_cannot(pan, t)
+    draw_data(pan, t)
+    draw_stat(pan, t)
+    draw_court(pan, t)
+    draw_link(pan, t)
+    draw_sources(pan, t)
+    canvas.alpha_composite(pan, (0, PANEL_DROP))
 
     lay = Image.new("RGBA", (W, H), (0, 0, 0, 0))
     draw_title(lay, t)
     draw_brand(lay, t)
     draw_kicker(lay, t)
-    draw_rivers(lay, t)
-    draw_abeyance(lay, t)
-    draw_cannot(lay, t)
-    draw_data(lay, t)
-    draw_stat(lay, t)
-    draw_court(lay, t)
-    draw_link(lay, t)
-    draw_sources(lay, t)
     draw_caption(lay, t)
     canvas.alpha_composite(lay)
 

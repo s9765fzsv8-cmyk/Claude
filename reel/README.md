@@ -7,7 +7,7 @@ Indus Waters Treaty suspension.
 |---|---|
 | **Runtime** | 70.000 s |
 | **Format** | 1080×1920 (9:16), 30 fps, H.264 High + AAC 160 kbps |
-| **Size** | 37 MB |
+| **Size** | 30 MB |
 
 ## Files
 
@@ -27,11 +27,10 @@ script — no stock footage, no external assets.
 
 - **Voice** — Kokoro-82M neural TTS, British male, 1.20× rate, synthesised
   per section so the prosody carries across sentences rather than word by word.
-- **Presenter plate** — the subject was matted out of the original photo
-  (U²-Net human segmentation with alpha matting), his teal blazer hue-shifted to
-  a mid business blue, a white dress shirt and navy four-in-hand tie painted into
-  the jacket opening, then relit with a warm key from camera left and a cool rim
-  from the right to match the set.
+- **No presenter** — an earlier cut composited the subject from the supplied
+  photo into the set. Because a still photo cannot lip-sync, it read as a pasted
+  portrait rather than someone speaking, so the presenter was cut and the reel
+  now runs as full-frame motion graphics over the set.
 - **Set** — the library is procedurally drawn (bookshelf bays, ~1,400 individual
   book spines, gilt bands, warm lamp pools), then defocused and graded. It is
   never in focus, which is how a real f/2 backdrop behaves.
@@ -57,10 +56,9 @@ ffmpeg -framerate 30 -i frames/f%05d.jpg -i mix.wav -vf hqdn3d=3:3:9:9 \
   -c:a aac -b:a 160k -movflags +faststart -shortest reel.mp4
 ```
 
-## Known limitation
+## Adding a presenter back
 
-The presenter does not lip-sync and is composited seated rather than genuinely
-photographed in a chair — that needs a generative video pass, which the render
-pipeline here cannot do. `production-kit.md` has the prompts and settings to
-produce that version; the voiceover and captions in this folder drop straight
-into it.
+A real on-camera presenter needs a generative video pass, which this pipeline
+cannot do. `production-kit.md` has the prompts and settings for that route —
+`voiceover.wav` and `captions.srt` drop straight into any avatar tool, and
+`src/render_presenter.py.bak` restores the composited-presenter layout.
