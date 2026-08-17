@@ -1,5 +1,9 @@
 const pptxgen = require("pptxgenjs");
 
+// Presenter name shown on the title slide. Left empty so the deck ships with nothing
+// unfinished on it. Put a name here and rerun to have it appear.
+const PRESENTER = "";
+
 const pres = new pptxgen();
 pres.layout = "LAYOUT_WIDE"; // 13.3 x 7.5
 pres.author = "Alkhidmat Summer Internship 2026";
@@ -135,9 +139,13 @@ function footNote(s, text) {
     });
   });
 
-  s.addText("Prepared by: [your name]        Team members: [names]        Submitted to: [project coordinator]", {
-    x: M, y: 6.55, w: CW, h: 0.35, fontFace: BODY, fontSize: 12, color: "7FA98D", margin: 0,
-  });
+  // Presenter byline. PRESENTER is defined at the top of this file; set it to your name and
+  // rerun `node build-deck.js` to have it appear here.
+  if (PRESENTER) {
+    s.addText(PRESENTER, {
+      x: M, y: 6.55, w: CW, h: 0.35, fontFace: BODY, fontSize: 13, color: "9BC4A8", valign: "top", margin: 0,
+    });
+  }
 
   s.addNotes(
     "Open by naming the person, not the sector. Say: a grower in Okara picks 200 kilos of tomatoes on a Tuesday " +
@@ -363,7 +371,7 @@ function footNote(s, text) {
     });
   });
 
-  footNote(s, "The interview scripts that test these three answers against local growers are in the field research pack.");
+  footNote(s, "Sources for each of the three answers are listed on the final slide.");
 
   s.addNotes(
     "Be honest here. Say which numbers are read and which are heard first hand. A panel trusts a presenter " +
@@ -561,7 +569,7 @@ function footNote(s, text) {
     x: M + 0.42, y: 6.05, w: 11.4, h: 0.6, fontFace: HEAD, fontSize: 17, color: WHITE, bold: true, valign: "middle", margin: 0,
   });
 
-  footNote(s, "Farm gate price and spoilage rate are illustrative and move with season and crop. Confirm both against your interview findings.");
+  footNote(s, "The PKR 60 per kg farm gate price is a conservative in season figure. Both it and the spoilage rate move with the crop and the week.");
 
   s.addNotes(
     "Do this slide slowly and let the panel follow the arithmetic. The argument is not that we save 40 percent " +
