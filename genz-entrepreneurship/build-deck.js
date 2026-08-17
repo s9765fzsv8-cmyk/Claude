@@ -1,8 +1,16 @@
 const pptxgen = require("pptxgenjs");
 
-// Presenter name shown on the title slide. Left empty so the deck ships with nothing
-// unfinished on it. Put a name here and rerun to have it appear.
-const PRESENTER = "";
+// ---------------------------------------------------------------------------
+// Submission details for the title slide. Any field left as an empty string is
+// simply not rendered, so the slide never shows a blank or a placeholder.
+// Fill one in and rerun `node build-deck.js` to have it appear.
+// ---------------------------------------------------------------------------
+const PRESENTER = "";                          // e.g. "Presented by Ayesha Khan"
+const DATES     = "15 and 16 August 2026";     // the programme weekend just gone
+const VENUE     = "";                          // only in the project group, left blank rather than guessed
+const TIMINGS   = "";                          // same
+
+const META = [PRESENTER, DATES, VENUE, TIMINGS].filter(Boolean).join("     |     ");
 
 const pres = new pptxgen();
 pres.layout = "LAYOUT_WIDE"; // 13.3 x 7.5
@@ -139,19 +147,19 @@ function footNote(s, text) {
     });
   });
 
-  // Presenter byline. PRESENTER is defined at the top of this file; set it to your name and
-  // rerun `node build-deck.js` to have it appear here.
-  if (PRESENTER) {
-    s.addText(PRESENTER, {
-      x: M, y: 6.55, w: CW, h: 0.35, fontFace: BODY, fontSize: 13, color: "9BC4A8", valign: "top", margin: 0,
+  // Submission details. Built from the constants at the top of this file, and skipped
+  // entirely when none of them are set.
+  if (META) {
+    s.addText(META, {
+      x: M, y: 6.55, w: CW, h: 0.35, fontFace: BODY, fontSize: 12.5, color: "7FA98D", valign: "top", margin: 0,
     });
   }
 
   s.addNotes(
     "Open by naming the person, not the sector. Say: a grower in Okara picks 200 kilos of tomatoes on a Tuesday " +
     "morning. By Thursday they are soft. He sells on Wednesday at whatever the mandi offers. " +
-    "Our idea is one sentence: put a small solar cold room in his village and rent it to him by the crate, by the day. " +
-    "Fill in your name and team members before submitting."
+    "The idea is one sentence: put a small solar cold room in his village and rent it to him by the crate, by the day. " +
+    "Say it and then stop. Do not add anything to it until the next slide."
   );
 }
 
@@ -321,7 +329,8 @@ function footNote(s, text) {
 // ============================================================
 {
   const s = pres.addSlide();
-  sectionHead(s, "04  OUR RESEARCH", "What we read, and what we went and asked.");
+  sectionHead(s, "04  OUR RESEARCH", "What the evidence already says.",
+    "And the part that still has to be asked in the field.");
 
   // left: secondary
   card(s, M, 2.0, 6.0, 4.5, LIGHT);

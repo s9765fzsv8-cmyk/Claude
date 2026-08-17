@@ -43,8 +43,13 @@ Ready to submit as it is. Every slide is finished, every figure is either cited 
 marked as an estimate, and there are no blanks, placeholders or notes to self anywhere in the
 file.
 
-The title slide carries no presenter name. To add one, set `PRESENTER` at the top of
-`build-deck.js` and rerun, or just type it onto the slide in PowerPoint.
+The title slide footer is built from four constants at the top of `build-deck.js`:
+`PRESENTER`, `DATES`, `VENUE` and `TIMINGS`. `DATES` is set to the programme weekend of
+15 and 16 August 2026. The other three are empty, and any empty field is skipped rather than
+printed, so the slide never shows a gap. Venue and timings were only ever announced in the
+project group, so they are left blank instead of guessed.
+
+Written for a solo submission. No slide or note assumes a team.
 
 Speaker notes are on all fifteen slides. The notes on slides 3, 10 and 11 are the ones worth
 reading twice: the core argument, the payback period, and why we work with the commission
