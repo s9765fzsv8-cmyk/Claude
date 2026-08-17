@@ -8,7 +8,7 @@ Alkhidmat Summer Internship 2026, Community Action and Impact Project.
 |---|---|
 | `Thanda-Godam-Pitch.pptx` | The final pitch. 15 slides, speaker notes on every slide. This is the submission. |
 | `Thanda-Godam-Pitch.pdf` | Same deck as a PDF, for sharing or printing if the panel asks. |
-| `field-research-pack.md` | Interview questions for the primary research, and where each answer goes in the deck. Not for submission. |
+| `field-research-pack.md` | Interview scripts to upgrade the slide 5 answers from published to local, plus the two hardest questions a panel can ask and how to answer them. Not for submission. |
 | `build-deck.js` | The script that generates the deck. Run `node build-deck.js` after editing to rebuild. |
 
 ## The idea in one line
@@ -39,13 +39,22 @@ execution and marketing (12), and the final pitch itself.
 
 ## Before you submit
 
-1. Slide 1: fill in your name, your team members' names, and the coordinator's name.
-2. Slide 5: run the interviews in `field-research-pack.md` and replace the three
-   `[your finding]` placeholders with real answers.
-3. Slide 8: the pilot catchment is written as Okara and Depalpur. Change it to whichever
-   district your team can actually visit.
-4. Read the speaker notes. They tell you what to say on each slide and which questions to
-   expect.
+The deck is complete and has no blanks in it apart from one.
+
+1. **Slide 1**: fill in your name, your team members' names, and the coordinator's name.
+   This is the only thing left that I cannot write for you.
+2. Read the speaker notes. They tell you what to say on each slide and which questions to
+   expect. The notes on slides 3, 10 and 11 are the ones worth memorising.
+
+Optional, and it will improve your marks if you do it: run the interviews in
+`field-research-pack.md` and swap the published answers on slide 5 for local ones. Twelve
+growers by phone is an afternoon's work. Part 6 of that file has the two hardest questions a
+panel can ask you and how to answer both.
+
+If your team is presenting somewhere other than Punjab, slide 8 and the speaker notes name
+Depalpur tehsil in Okara district as the pilot site. Change the district and the reasoning
+still holds, as long as you pick a vegetable growing area where the existing cold storage
+serves traders rather than growers.
 
 ## Rebuilding the deck
 

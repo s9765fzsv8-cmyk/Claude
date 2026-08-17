@@ -241,8 +241,8 @@ function footNote(s, text) {
   });
 
   s.addText(
-    "Everyone in the chain who can wait, earns more. The commission agent can wait, so he captures the price movement. " +
-    "The grower typically ends up with 20 to 30 percent of what the customer finally pays in the city.",
+    "Tomato went from roughly PKR 90 a kg to PKR 400 and above within a few weeks this year. Everyone in the chain who can " +
+    "wait captures that movement. The grower, who cannot, ends up with 20 to 30 percent of what the customer finally pays.",
     { x: M, y: 6.15, w: 11.9, h: 0.65, fontFace: BODY, fontSize: 13.5, color: MUTED, margin: 0, valign: "top", lineSpacing: 19 }
   );
 
@@ -337,33 +337,33 @@ function footNote(s, text) {
     x: 7.05, y: 2.0, w: 5.55, h: 4.5, rectRadius: 0.08,
     fill: { color: WHITE }, line: { color: GREEN, width: 1.5 },
   });
-  s.addText("Field research", {
+  s.addText("The three questions that decide it", {
     x: 7.4, y: 2.22, w: 4.9, h: 0.4, fontFace: HEAD, fontSize: 18, color: GREEN, bold: true, margin: 0,
   });
-  s.addText("12 growers, 3 commission agents, 2 cold storage operators", {
-    x: 7.4, y: 2.66, w: 4.9, h: 0.3, fontFace: BODY, fontSize: 11.5, color: MUTED, italic: true, margin: 0,
+  s.addText("From published evidence. Growers interviewed next.", {
+    x: 7.4, y: 2.66, w: 4.9, h: 0.3, fontFace: BODY, fontSize: 11.5, color: MUTED, italic: true, valign: "top", margin: 0,
   });
 
   const qs = [
-    ["How many days can you hold your crop after picking?", "[your finding]"],
-    ["Would you pay PKR 12 per crate per day to wait ten days?", "[your finding]"],
-    ["How much of a load do you normally throw away or sell cheap?", "[your finding]"],
+    ["How long can he hold the crop?",
+      "Days at Pakistani field temperatures. Trials on a Punjab tomato variety hold it for weeks at 10 degrees and 90 percent humidity."],
+    ["Is PKR 12 per crate per day payable?",
+      "Big cold stores charge PKR 3 to 6 per kg a month. We cost more per day and are only paid for the days used."],
+    ["How much does he actually lose?",
+      "15 to 20 percent goes in handling the picked crop, before the 10 to 12 percent lost in transport."],
   ];
   qs.forEach(([q, a], i) => {
-    const y = 3.05 + i * 1.02;
-    numCircle(s, 7.4, y + 0.02, "?", GREEN, WHITE, 0.34);
+    const y = 3.14 + i * 1.1;
+    numCircle(s, 7.4, y + 0.01, i + 1, GREEN, WHITE, 0.32);
     s.addText(q, {
-      x: 7.86, y, w: 4.4, h: 0.5, fontFace: BODY, fontSize: 11.5, color: INK, bold: true, valign: "top", margin: 0, lineSpacing: 14,
+      x: 7.82, y, w: 4.45, h: 0.3, fontFace: BODY, fontSize: 11.5, color: INK, bold: true, valign: "top", margin: 0,
     });
     s.addText(a, {
-      x: 7.86, y: y + 0.52, w: 4.4, h: 0.3, fontFace: BODY, fontSize: 11.5, color: ACCENT, italic: true, valign: "top", margin: 0,
+      x: 7.82, y: y + 0.32, w: 4.45, h: 0.7, fontFace: BODY, fontSize: 11, color: MUTED, valign: "top", margin: 0, lineSpacing: 14,
     });
   });
-  s.addText("Full questionnaire is in the appendix pack.", {
-    x: 7.4, y: 6.12, w: 4.9, h: 0.28, fontFace: BODY, fontSize: 10.5, color: MUTED, valign: "top", margin: 0,
-  });
 
-  footNote(s, "Replace the three placeholders with your own interview findings before you present.");
+  footNote(s, "The interview scripts that test these three answers against local growers are in the field research pack.");
 
   s.addNotes(
     "Be honest here. Say which numbers are read and which are heard first hand. A panel trusts a presenter " +
@@ -464,7 +464,7 @@ function footNote(s, text) {
 
   const blocks = [
     ["Who uses it", GREEN, [
-      "Growers of tomato, onion, potato, chili and leafy vegetables farming under 5 acres.",
+      "Growers under 5 acres, working tomato, chili and leafy vegetables first. These are the crops whose prices move week to week.",
       "They harvest in small lots, sell within two days, and have no storage of their own.",
     ]],
     ["Who pays", ACCENT, [
@@ -499,7 +499,7 @@ function footNote(s, text) {
   const sizing = [
     ["64%", "of all farms in Pakistan are under 5 acres"],
     ["26%", "are under a single acre"],
-    ["300-400", "growing households in our pilot catchment, our own estimate to confirm"],
+    ["300-400", "growing households within 6 km of the pilot site, our own estimate"],
   ];
   sizing.forEach(([big, small], i) => {
     const x = M + 0.42 + i * 3.9;
@@ -511,12 +511,16 @@ function footNote(s, text) {
     });
   });
 
-  footNote(s, "Pilot catchment: one union council in the Okara and Depalpur vegetable belt, roughly a 6 km radius around the unit. Swap this for the district your team can actually reach.");
+  footNote(s, "Pilot site: a union council in Depalpur tehsil, Okara district. Cold storage there was built for potato traders. The vegetable growers alongside them have none.");
 
   s.addNotes(
     "Keep the distinction between user, payer and beneficiary clear, because it is the thing panels probe. " +
     "The grower is both user and payer for storage. The city buyer is the payer for aggregation. " +
-    "Be upfront that the 300 to 400 household figure is our own estimate and not a published number."
+    "Be upfront that the 300 to 400 household figure is our own estimate and not a published number. " +
+    "If asked why Okara: Okara, Depalpur, Kasur, Sahiwal and Pakpattan carry about 75 percent of Punjab's potato crop, " +
+    "so the district already has cold storage, all of it sized and contracted for potato traders. The vegetable growers " +
+    "farming next to it get nothing from it. That contrast is the reason we chose the site, and it is also why we lead " +
+    "with tomato, chili and leafy greens rather than potato."
   );
 }
 
@@ -734,6 +738,7 @@ function footNote(s, text) {
   const risks = [
     ["Growers do not trust us with their crop", "Weigh, tag and photograph at the gate. Printed receipt every time. A village committee with two growers on it holds the second key."],
     ["Arguments over quality on collection", "The grade is agreed and written on the receipt when the crop goes in, with the entry photograph attached to it."],
+    ["The whole market crashes, not just one day's price", "Storage buys days, it does not buy a different market. We lead with tomato, chili and leafy greens, where prices move week to week."],
     ["The room sits empty out of season", "Rotate to crops with different calendars, and offer the same room for seed, dairy and mango season overflow."],
     ["Solar or compressor breakdown", "A service contract with the supplier from day one, spare parts held locally, and a small generator that can run the compressor alone."],
     ["The commission agent works against us", "He is offered crate space at the same rate as everyone else. We compete with his storage, not with his credit."],
@@ -741,16 +746,16 @@ function footNote(s, text) {
   ];
 
   risks.forEach(([r, m], i) => {
-    const y = 2.05 + i * 0.79;
+    const y = 2.0 + i * 0.73;
     if (i % 2 === 0) {
-      s.addShape(pres.ShapeType.rect, { x: M, y: y - 0.07, w: CW, h: 0.74, fill: { color: LIGHT } });
+      s.addShape(pres.ShapeType.rect, { x: M, y: y - 0.06, w: CW, h: 0.69, fill: { color: LIGHT } });
     }
-    numCircle(s, M + 0.2, y + 0.09, i + 1, i < 2 ? ACCENT : GREEN, WHITE, 0.36);
+    numCircle(s, M + 0.2, y + 0.11, i + 1, (i === 0 || i === 2) ? ACCENT : GREEN, WHITE, 0.36);
     s.addText(r, {
-      x: M + 0.7, y, w: 3.9, h: 0.58, fontFace: HEAD, fontSize: 13, color: INK, bold: true, valign: "middle", margin: 0, lineSpacing: 16,
+      x: M + 0.7, y, w: 3.9, h: 0.6, fontFace: HEAD, fontSize: 12.5, color: INK, bold: true, valign: "middle", margin: 0, lineSpacing: 15,
     });
     s.addText(m, {
-      x: 5.5, y, w: 7.1, h: 0.58, fontFace: BODY, fontSize: 11.5, color: MUTED, valign: "middle", margin: 0, lineSpacing: 14,
+      x: 5.5, y, w: 7.1, h: 0.6, fontFace: BODY, fontSize: 11, color: MUTED, valign: "middle", margin: 0, lineSpacing: 13.5,
     });
   });
 
@@ -818,29 +823,31 @@ function footNote(s, text) {
     "Asian Development Bank estimate on post harvest losses, reported in Dawn.",
     "Pakistan Today and FreshPlaza, 2026. Forty percent post harvest losses and the cold storage gap.",
     "AgriHunt. Stage by stage breakdown of losses in fruits and vegetables.",
+    "The Express Tribune, 2026. Storage fund set against farm losses.",
   ];
   const right = [
-    "The Express Tribune, 2026. Storage fund set against farm losses.",
+    "Dawn, 2026. Punjab potato growers face collapse as oversupply deepens. Prices of PKR 20 to 25 a kg and per acre losses.",
+    "Pakistan Today, August 2026. Tomato moving from roughly PKR 90 to PKR 400 and above a kg.",
+    "Pakistan Horticulture Development and Export Company, potato challenges and prospects in Okara.",
     "International Growth Centre, PAK-22066, March 2023. Understanding the fresh produce supply chain.",
-    "PIDE. The role of the middleman and neglected aspects.",
-    "Arab News and Dawn reporting on the arhti system and farmer share of the retail price.",
-    "Trade press on cold storage build cost and rental rates in Pakistan, 2026.",
+    "PIDE. The role of the middleman and neglected aspects. Arab News and Dawn on the arhti system.",
+    "Post harvest trials on Punjab tomato varieties comparing ambient storage with 10 degrees at 90 to 95 percent humidity.",
   ];
 
   s.addText(
     left.map((t, i) => ({ text: t, options: { bullet: true, breakLine: i !== left.length - 1 } })),
-    { x: M, y: 1.85, w: 5.8, h: 3.6, fontFace: BODY, fontSize: 12, color: INK, valign: "top", lineSpacing: 16, paraSpaceAfter: 10, margin: 0 }
+    { x: M, y: 1.8, w: 5.8, h: 3.5, fontFace: BODY, fontSize: 11, color: INK, valign: "top", lineSpacing: 15, paraSpaceAfter: 9, margin: 0 }
   );
   s.addText(
     right.map((t, i) => ({ text: t, options: { bullet: true, breakLine: i !== right.length - 1 } })),
-    { x: 6.9, y: 1.85, w: 5.7, h: 3.6, fontFace: BODY, fontSize: 12, color: INK, valign: "top", lineSpacing: 16, paraSpaceAfter: 10, margin: 0 }
+    { x: 6.9, y: 1.8, w: 5.7, h: 3.5, fontFace: BODY, fontSize: 11, color: INK, valign: "top", lineSpacing: 15, paraSpaceAfter: 9, margin: 0 }
   );
 
-  card(s, M, 5.6, CW, 1.1, LIGHT);
+  card(s, M, 5.5, CW, 1.15, LIGHT);
   s.addText(
-    "Figures we produced ourselves and have marked as estimates: the PKR 2.5 million build cost, the 60 percent occupancy assumption, " +
-    "the 7 percent aggregation margin, and the 300 to 400 household catchment.",
-    { x: M + 0.42, y: 5.8, w: 11.4, h: 0.7, fontFace: BODY, fontSize: 12.5, color: INK, valign: "middle", margin: 0, lineSpacing: 17 }
+    "Figures that are ours rather than published, and are marked as such on the slides: the PKR 2.5 million build cost, the 60 percent " +
+    "occupancy assumption, the 7 percent aggregation margin, the PKR 12 crate price, and the 300 to 400 household catchment.",
+    { x: M + 0.42, y: 5.7, w: 11.4, h: 0.75, fontFace: BODY, fontSize: 12.5, color: INK, valign: "middle", margin: 0, lineSpacing: 17 }
   );
 
   s.addNotes(

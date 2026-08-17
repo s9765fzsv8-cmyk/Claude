@@ -82,18 +82,22 @@ Any commercial cold storage near you will do, even a large one.
 
 ## Part 4. What to do with the answers
 
+Slide 5 already answers its three questions from published evidence, so the deck stands on its
+own and can be submitted as it is. What the interviews do is upgrade those answers from
+published to local, which is much harder for a panel to argue with. Where a grower's answer
+differs from the published figure, use the grower's.
+
 | Question | Goes into |
 |---|---|
-| Q4, Q5 | Slide 3, the 48 hour window. Replace our description with what growers actually said. |
-| Q7, Q8 | Slide 2 and slide 9. Replace the 25 percent spoilage assumption with your own number. |
-| Q12, Q13 | Slide 5, first and second finding box. This is the number that decides the pitch. |
+| Q4, Q5 | Slide 3, the 48 hour window, and slide 5 answer 1. |
+| Q7, Q8 | Slide 5 answer 3, and the 25 percent spoilage assumption on slide 9. |
+| Q12, Q13 | Slide 5 answer 2. This is the single number the whole pitch turns on. |
 | Q10 | Slide 9, the upside line. |
 | Part 2 Q5 | Slide 11, the commission agent card. |
 | Part 3 Q1, Q2, Q5 | Slide 4 and slide 10. Replace the PKR 2.5 million estimate if you get a real build cost. |
 
-Write the three finding boxes on slide 5 as short sentences with a number in them, for example
-"9 of 12 said they must sell within two days" rather than "most growers sell quickly." Numbers
-are what the panel will remember.
+When you add a local answer, write it with a number in it. "9 of 12 said they must sell within
+two days" beats "most growers sell quickly." Numbers are what a panel remembers.
 
 ---
 
@@ -106,10 +110,29 @@ Be ready to say which is which if you are asked.
 | 40 percent post harvest loss | Published, widely reported |
 | 900,000 tonnes of cold storage against 13 to 15 million tonnes grown | Published |
 | 64 percent of farms under 5 acres, 26 percent under 1 acre | Published, 7th Agricultural Census |
+| 15 to 20 percent lost in handling, 10 to 12 percent in transport | Published |
 | Farmer gets 20 to 30 percent of retail price | Published, reported |
+| Tomato moving from about PKR 90 to PKR 400 a kg in weeks | Published, August 2026 |
+| Commercial cold storage rent of PKR 3 to 6 per kg per month | Published trade press |
+| 75 percent of Punjab's potato crop in Okara, Depalpur, Kasur, Sahiwal, Pakpattan | Published |
+| Potato at PKR 20 to 25 a kg in the 2026 glut, losses of PKR 235,000 an acre | Published, Dawn 2026 |
 | PKR 2.5 million build cost | Our estimate, needs supplier quotes |
 | 60 percent average occupancy | Our assumption |
 | 7 percent aggregation margin | Our assumption |
-| PKR 12 per crate per day | Our proposed price, needs testing in Q12 |
+| PKR 12 per crate per day | Our proposed price, tested by Q12 |
 | 300 to 400 households in the catchment | Our estimate |
-| PKR 60 per kg farm gate tomato price | Illustrative, changes by season |
+| PKR 60 per kg farm gate tomato price | Illustrative and deliberately conservative, moves with season |
+
+## Part 6. The two hardest questions a panel can ask
+
+**"Your PKR 12 a crate a day is three times what a commercial cold store charges per kg."**
+Correct, and say so. A 5 tonne room in a village will never match the per kg economics of a
+1,000 tonne facility. What the grower is buying is that he pays for ten days instead of a
+season, moves the crop 15 minutes instead of to the city, and can bring ten crates instead of
+a truckload. Slide 9 shows he still gets about PKR 2.5 back for every PKR 1.
+
+**"Potato growers in Okara had their crop in cold storage this year and still lost money."**
+Also correct, and it is on the risk slide. Storage buys days, it does not buy a different
+market. In a season wide glut nothing in a cold room saves you. That is exactly why we lead
+with tomato, chili and leafy greens, where the price moves week to week, and why we charge by
+the day so a grower stops paying the moment waiting stops paying.
